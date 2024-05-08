@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     dropdownMenu.addEventListener('mouseleave', (event) => {
         console.log(event);
-        dropdownMenu.classList.add('close');
-            setTimeout(()=>{
-        dropdownMenu.classList.remove('close');
-        dropdownMenu.classList.remove('dropdown-projects-menu-hover');
-            },150)
+        // dropdownMenu.classList.add('close');
+        // setTimeout(() => {
+            // dropdownMenu.classList.remove('close');
+            dropdownMenu.classList.remove('dropdown-projects-menu-hover');
+        // }, 150)
     });
 });
