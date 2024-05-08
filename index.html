@@ -54,6 +54,61 @@
     .w-70px {
       width: 70px;
     }
+
+    header.bg-white  .dropdown-projects-menu {
+      background-color: #fff;
+    }
+
+    .dropdown-projects {
+      position: relative;
+      text-decoration: none;
+      z-index: 100;
+      transform: perspective(1000px);
+    }
+
+    .dropdown-projects-menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      left: 0;
+      opacity: 0;
+      top: 0;
+      visibility: hidden;
+      /* display: none; */
+      z-index: -99999;
+      /* padding-top: 30px; */
+    }
+
+    .dropdown-projects-menu li:first-child {
+      cursor: default;
+    }
+
+    .dropdown-projects-menu a {
+      display: inline-block;
+      white-space: nowrap;
+      line-height: 40px;
+      text-decoration: none;
+      -webkit-transition: all .1s;
+      transition: all .1s;
+    }
+
+    .dropdown-projects-menu-hover {
+      opacity: 1;
+      visibility: visible;
+      /* display: block; */
+      top: 100%;
+      left: 0;
+      -webkit-transition: all .2s, background, .2s .2s linear;
+      transition: all .2s, background .2s .2s linear;
+    }
+
+    .dropdown-projects-menu.close{
+      visibility: visible;
+      opacity: 0;
+      top: 0;
+      transition: all .5s linear;
+    }
   </style>
 
 </head>
@@ -238,7 +293,16 @@
                 <a href="about_us.html">About Us</a>
               </li>
               <li class="menu-item">
-                <a href="projects.html">Projects</a>
+                <div class="dropdown-projects">
+                  <a class="h-100" href="projects.html">Projects</a>
+                  <ul class="menu dropdown-projects-menu">
+                    <li class="menu-item" style="height: 35px; display: block; opacity: 0;"><a href="javascript:void(0)">&nbsp;</a></li>
+                    <li class="menu-item">
+                      <a href="individual_project.html">Project 1</a></li>
+                    <li class="menu-item">
+                      <a href="individual_project.html">Project 2</a></li>
+                  </ul>
+                </div>
               </li>
               <li class="menu-item">
                 <a href="#">Buyer's Guide</a>
@@ -290,7 +354,7 @@
       <!-- - top bar -->
       <!-- fullscreen overlay container -->
       <div class="header__wrapper-overlay-menu container-fluid container-fluid_paddings">
-        <!-- fullscreen menu -->
+        <!-- fullscreen menu for medium and small screen -->
         <div class="header__wrapper-menu">
           <ul class="menu-overlay js-menu-overlay">
             <li class="menu-item"><a class="h2" href="#" data-pjax-link="overlayMenu">
@@ -315,7 +379,7 @@
             </li>
           </ul>
         </div>
-        <!-- - fullscreen menu -->
+        <!-- - fullscreen menu for medium and small screen -->
         <!-- fullscreen widgets -->
         <div class="header__wrapper-overlay-widgets">
           <div class="row">
@@ -430,25 +494,25 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="slider__wrapper-button-footer"><a class="button button_white button_bordered"
-                        data-hover="Explore Project" href="" data-pjax-link="fullscreenSlider"><span
+                        data-hover="Explore Project" href="individual_project.html" data-pjax-link="fullscreenSlider"><span
                           class="button__label-hover">Explore Project</span></a>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="slider__wrapper-button-footer"><a class="button button_white button_bordered"
-                        data-hover="Explore Project" href="" data-pjax-link="fullscreenSlider"><span
+                        data-hover="Explore Project" href="individual_project.html" data-pjax-link="fullscreenSlider"><span
                           class="button__label-hover">Explore Project</span></a>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="slider__wrapper-button-footer"><a class="button button_white button_bordered"
-                        data-hover="Explore Project" href="" data-pjax-link="fullscreenSlider"><span
+                        data-hover="Explore Project" href="individual_project.html" data-pjax-link="fullscreenSlider"><span
                           class="button__label-hover">Explore Project</span></a>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="slider__wrapper-button-footer"><a class="button button_white button_bordered"
-                        data-hover="Explore Project" href="" data-pjax-link="fullscreenSlider"><span
+                        data-hover="Explore Project" href="individual_project.html" data-pjax-link="fullscreenSlider"><span
                           class="button__label-hover">Explore Project</span></a>
                     </div>
                   </div>
@@ -771,7 +835,8 @@
                               <h2 class="h2 mt-0 mb-0">Year-20**</h2>
                             </div>
                             <div class="figure-service__text">
-                              <p class="mb-0 mt-1">Project Description - Lorem ipsum, dolor sit amet consectetur adipisicing.
+                              <p class="mb-0 mt-1">Project Description - Lorem ipsum, dolor sit amet consectetur
+                                adipisicing.
                             </div>
                           </div>
                           <!-- - header -->
@@ -1191,7 +1256,8 @@
                       <!-- - icon -->
                       <!-- header -->
                       <div class="figure-feature__heading h5 mt-0-5 mb-0 mx-2">Abundant amenities</div>
-                      <div class="figure-member__position small-caps mx-2 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, recusandae?</div>
+                      <div class="figure-member__position small-caps mx-2 mt-1">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Suscipit, recusandae?</div>
                       <!-- - header -->
                     </div>
                   </div>
@@ -1202,12 +1268,12 @@
                   <div class="figure-feature bg-white">
                     <div class="figure-feature__header">
                       <!-- icon -->
-                      <div class="figure-feature__icon"><img src="https://placehold.co/64x64"
-                          alt="alt" /></div>
+                      <div class="figure-feature__icon"><img src="https://placehold.co/64x64" alt="alt" /></div>
                       <!-- - icon -->
                       <!-- header -->
                       <div class="figure-feature__heading h5 mt-0-5 mb-0 mx-2">Spacious homes</div>
-                      <div class="figure-member__position small-caps mx-2 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, recusandae?</div>
+                      <div class="figure-member__position small-caps mx-2 mt-1">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Suscipit, recusandae?</div>
                       <!-- - header -->
                     </div>
                   </div>
@@ -1223,7 +1289,8 @@
                       <!-- - icon -->
                       <!-- header -->
                       <div class="figure-feature__heading h5 mt-0-5 mb-0 mx-2">excellent Architecture</div>
-                      <div class="figure-member__position small-caps mx-2 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, recusandae?</div>
+                      <div class="figure-member__position small-caps mx-2 mt-1">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Suscipit, recusandae?</div>
                       <!-- - header -->
                     </div>
                   </div>
@@ -1234,12 +1301,12 @@
                   <div class="figure-feature bg-white">
                     <div class="figure-feature__header">
                       <!-- icon -->
-                      <div class="figure-feature__icon"><img src="https://placehold.co/64x64"
-                          alt="alt" /></div>
+                      <div class="figure-feature__icon"><img src="https://placehold.co/64x64" alt="alt" /></div>
                       <!-- - icon -->
                       <!-- header -->
                       <div class="figure-feature__heading h5 mt-0-5 mb-0 mx-2">Humanitarian Community</div>
-                      <div class="figure-member__position small-caps mx-2 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, recusandae?</div>
+                      <div class="figure-member__position small-caps mx-2 mt-1">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Suscipit, recusandae?</div>
                       <!-- - header -->
                     </div>
                   </div>
@@ -1255,7 +1322,8 @@
                       <!-- - icon -->
                       <!-- header -->
                       <div class="figure-feature__heading h5 mt-0-5 mb-0 mx-2">Humanitarian Community</div>
-                      <div class="figure-member__position small-caps mx-2 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, recusandae?</div>
+                      <div class="figure-member__position small-caps mx-2 mt-1">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Suscipit, recusandae?</div>
                       <!-- - header -->
                     </div>
                   </div>
@@ -1266,12 +1334,12 @@
                   <div class="figure-feature bg-white">
                     <div class="figure-feature__header">
                       <!-- icon -->
-                      <div class="figure-feature__icon"><img src="https://placehold.co/64x64"
-                          alt="alt" /></div>
+                      <div class="figure-feature__icon"><img src="https://placehold.co/64x64" alt="alt" /></div>
                       <!-- - icon -->
                       <!-- header -->
                       <div class="figure-feature__heading h5 mt-0-5 mb-0 mx-2">Absolute Security</div>
-                      <div class="figure-member__position small-caps mx-2 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, recusandae?</div>
+                      <div class="figure-member__position small-caps mx-2 mt-1">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Suscipit, recusandae?</div>
                       <!-- - header -->
                     </div>
                   </div>
@@ -1913,6 +1981,7 @@
   <!-- - VENDOR SCRIPTS -->
   <!-- COMPONENTS -->
   <script src="js/components.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
