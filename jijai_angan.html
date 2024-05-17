@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Shubham Group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="description" content="" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap" />
+    <!-- Template Vendor's Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <!-- Template Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <style>
+        .bg-fit-content {
+            background-size: contain;
+        }
+
+        .logo-footer {
+            height: 45px;
+        }
+
+        .header {
+            padding-top: 15px;
+        }
+
+        .section-projects-slider {
+            /* top: 75px; for no transparency */
+        }
+
+        .section-fullheight__inner_mobile {
+            min-height: calc(var(--fix-bar-vh, 1vh)* 100);
+        }
+
+        .slider-fullscreen-projects__content {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* 
+        .header_menu-right:not(.bg-white) .header__col li a {
+            color: #ffffffaa;
+        }
+
+        .header_menu-right:not(.bg-white) .header__col li a:hover {
+            color: #ffffff;
+        } */
+
+        .w-70px {
+            width: 70px;
+        }
+
+        header.bg-white .dropdown-projects-menu {
+            background-color: #fff;
+        }
+
+        .dropdown-projects {
+            position: relative;
+            text-decoration: none;
+            z-index: 100;
+            transform: perspective(1000px);
+        }
+
+        .dropdown-projects-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            top: 0;
+            visibility: hidden;
+            /* display: none; */
+            z-index: -99999;
+            /* padding-top: 30px; */
+        }
+
+        .dropdown-projects-menu li:first-child {
+            cursor: default;
+        }
+
+        .dropdown-projects-menu a {
+            display: inline-block;
+            white-space: nowrap;
+            line-height: 40px;
+            text-decoration: none;
+            -webkit-transition: all .1s;
+            transition: all .1s;
+        }
+
+        .dropdown-projects-menu-hover {
+            opacity: 1;
+            visibility: visible;
+            /* display: block; */
+            top: 100%;
+            left: 0;
+            -webkit-transition: all .2s, background, .2s .2s linear;
+            transition: all .2s, background .2s .2s linear;
+        }
+
+        .dropdown-projects-menu.close {
+            visibility: visible;
+            opacity: 0;
+            top: 0;
+            transition: all .5s linear;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div data-barba="wrapper">
+        <!-- PAGE PRELOADER -->
+        <div class="preloader text-center bg-dark-2" id="js-preloader" data-arts-theme-text="light">
+            <div class="preloader__content">
+                <!-- header -->
+                <div class="preloader__header mt-auto">
+                    <div class="preloader__heading h2"><img src="img/general/SHUBHAM_logo_216.png" width="200">
+                    </div>
+                    <div class="preloader__subline small-caps mt-1"></div>
+                </div>
+                <!-- - header -->
+                <!-- counter -->
+                <div class="preloader__counter h5"><span
+                        class="preloader__counter-number preloader__counter-current">0</span><span
+                        class="preloader__counter-divider">&nbsp;&nbsp;/&nbsp;&nbsp;</span><span
+                        class="preloader__counter-number preloader__counter-total">100</span></div>
+                <!-- - counter -->
+                <!-- circle holder -->
+                <div class="preloader__circle"></div>
+                <!-- - circle holder -->
+            </div>
+        </div>
+        <!-- - PAGE PRELOADER -->
+        <!-- Loading Spinner -->
+        <svg class="spinner d-lg-none" id="js-spinner" width="65px" height="65px" viewBox="0 0 66 66"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle class="spinner__path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30">
+            </circle>
+        </svg>
+        <!-- - Loading Spinner -->
+        <!-- Transition Curtain-->
+        <!-- TRANSITION CURTAINS -->
+        <!-- page curtain AJAX transition -->
+        <div class="curtain transition-curtain" id="js-page-transition-curtain">
+            <div class="curtain__wrapper-svg">
+                <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Default Rectangle -->
+                    <path class="curtain-svg__normal"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+                    </path>
+                    <!-- - Default Rectangle -->
+                    <!-- Curve Top -->
+                    <path class="curtain-svg__curve curtain-svg__curve_top-desktop"
+                        d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
+                    </path>
+                    <path class="curtain-svg__curve curtain-svg__curve_top-mobile"
+                        d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
+                    </path>
+                    <!-- - Curve Top -->
+                    <!-- Curve Bottom -->
+                    <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+                    </path>
+                    <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
+                    </path>
+                    <!-- - Curve Bottom -->
+                </svg>
+            </div>
+        </div>
+        <!-- - page curtain AJAX transition -->
+        <!-- header curtain show/hide -->
+        <div class="header-curtain curtain" id="js-header-curtain">
+            <div class="curtain__wrapper-svg">
+                <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Default Rectangle -->
+                    <path class="curtain-svg__normal"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+                    </path>
+                    <!-- - Default Rectangle -->
+                    <!-- Curve Top -->
+                    <path class="curtain-svg__curve curtain-svg__curve_top-desktop"
+                        d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
+                    </path>
+                    <path class="curtain-svg__curve curtain-svg__curve_top-mobile"
+                        d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
+                    </path>
+                    <!-- - Curve Top -->
+                    <!-- Curve Bottom -->
+                    <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+                    </path>
+                    <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
+                    </path>
+                    <!-- - Curve Bottom -->
+                </svg>
+            </div>
+        </div>
+        <!-- - header curtain show/hide -->
+        <!-- header curtain AJAX transition -->
+        <div class="header-curtain header-curtain_transition curtain" id="js-header-curtain-transition">
+            <div class="curtain__wrapper-svg">
+                <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Default Rectangle -->
+                    <path class="curtain-svg__normal"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+                    </path>
+                    <!-- - Default Rectangle -->
+                    <!-- Curve Top -->
+                    <path class="curtain-svg__curve curtain-svg__curve_top-desktop"
+                        d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
+                    </path>
+                    <path class="curtain-svg__curve curtain-svg__curve_top-mobile"
+                        d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
+                    </path>
+                    <!-- - Curve Top -->
+                    <!-- Curve Bottom -->
+                    <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+                    </path>
+                    <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
+                    </path>
+                    <!-- - Curve Bottom -->
+                </svg>
+            </div>
+        </div>
+        <!-- - header curtain AJAX transition -->
+        <!-- - TRANSITION CURTAINS -->
+        <!-- Cursor Follower-->
+        <div class="cursor" id="js-cursor">
+            <div class="cursor__wrapper">
+                <!-- circles -->
+                <div class="cursor__follower">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle id="inner" cx="25" cy="25" r="24" style="opacity: 0.6;"></circle>
+                        <circle id="outer" cx="25" cy="25" r="24"
+                            style="stroke-dashoffset: 252.327; stroke-dasharray: 0px, 999999px;"></circle>
+                    </svg>
+                </div>
+                <!-- - circles -->
+                <!-- arrows -->
+                <div class="cursor__arrows">
+                    <div class="cursor__arrow cursor__arrow_up material-icons">keyboard_arrow_up</div>
+                    <div class="cursor__arrow cursor__arrow_down material-icons">keyboard_arrow_down</div>
+                    <div class="cursor__arrow cursor__arrow_left material-icons">keyboard_arrow_left</div>
+                    <div class="cursor__arrow cursor__arrow_right material-icons">keyboard_arrow_right</div>
+                </div>
+                <!-- - arrows -->
+                <!-- label holder -->
+                <div class="cursor__label"></div>
+                <!-- - label holder -->
+                <!-- icon holder -->
+                <div class="cursor__icon material-icons"></div>
+                <!-- - icon holder -->
+            </div>
+        </div>
+        <!-- - Cursor Follower-->
+        <!-- PAGE HEADER -->
+        <header class="header header_menu-right header_fixed container-fluid js-header-sticky" id="page-header"
+            data-arts-theme-text="dark" data-arts-header-sticky-theme="bg-white" data-arts-header-logo="primary"
+            data-arts-header-sticky-logo="primary" data-arts-header-overlay-theme="light"
+            data-arts-header-overlay-background="#ffffff">
+            <!-- top bar -->
+            <div class="header__container header__controls">
+                <div class="row justify-content-between align-items-center">
+                    <!-- logo -->
+                    <div class="col-auto header__col header__col-left"><a class="logo" href="index.html">
+                            <div class="logo__wrapper-img">
+                                <!-- primary logo version (for light backgrounds)--><img class="logo__img-primary"
+                                    src="img/general/SHUBHAM_logo_150.png" alt="" width="70" />
+                                <!-- secondary logo version (for dark backgrounds)--><img class="logo__img-secondary"
+                                    src="img/general/SHUBHAM_logo_150.png" alt="" width="70" />
+                            </div>
+                        </a>
+                    </div>
+                    <!-- - logo -->
+                    <!-- desktop menu-->
+                    <div class="col-auto header__col d-none d-lg-block">
+                        <ul class="menu js-menu">
+                            <li class="menu-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="about_us.html">About Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <div class="dropdown-projects">
+                                    <a class="h-100" href="projects.html">Projects</a>
+                                    <ul class="menu dropdown-projects-menu">
+                                        <li class="menu-item" style="height: 35px; display: block; opacity: 0;"><a
+                                                href="javascript:void(0)">&nbsp;</a></li>
+                                        <li class="menu-item">
+                                            <a href="individual_project.html">Project 1</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="individual_project.html">Project 2</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Buyer's Guide</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="award.html">Awards</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Media</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Gallery</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Career</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- - desktop menu -->
+                    <!-- burger icon -->
+                    <div class="col-auto header__col d-lg-none">
+                        <div class="header__burger" id="js-burger" data-arts-cursor="data-arts-cursor"
+                            data-arts-cursor-scale="1.7" data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+                            data-arts-cursor-hide-native="true">
+                            <div class="header__burger-line"></div>
+                            <div class="header__burger-line"></div>
+                            <div class="header__burger-line"></div>
+                        </div>
+                    </div>
+                    <!-- - burger icon -->
+                    <!-- "back" button for submenu nav -->
+                    <div class="header__overlay-menu-back" id="js-submenu-back">
+                        <div class="arrow arrow-left js-arrow arrow_mini" data-arts-cursor="data-arts-cursor"
+                            data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+                            data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                            <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                            </svg>
+                            <div class="arrow__pointer arrow-left__pointer"></div>
+                            <div class="arrow__triangle"></div>
+                        </div>
+                    </div>
+                    <!-- - "back" button for submenu nav -->
+                </div>
+            </div>
+            <!-- - top bar -->
+            <!-- fullscreen overlay container -->
+            <div class="header__wrapper-overlay-menu container-fluid container-fluid_paddings">
+                <!-- fullscreen menu for medium and small screen -->
+                <div class="header__wrapper-menu">
+                    <ul class="menu-overlay js-menu-overlay">
+                        <li class="menu-item"><a class="h2" href="#" data-pjax-link="overlayMenu">
+                                <div class="menu-overlay__item-wrapper split-text js-split-text"
+                                    data-split-text-type="lines">About Us
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu-item"><a class="h2" href="#" data-pjax-link="overlayMenu">
+                                <div class="menu-overlay__item-wrapper split-text js-split-text"
+                                    data-split-text-type="lines">Projects
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu-item"><a class="h2" href="#" data-pjax-link="overlayMenu">
+                                <div class="menu-overlay__item-wrapper split-text js-split-text"
+                                    data-split-text-type="lines">Media
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu-item"><a class="h2" href="contact.html" data-pjax-link="overlayMenu">
+                                <div class="menu-overlay__item-wrapper split-text js-split-text"
+                                    data-split-text-type="lines">Contact Us
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- - fullscreen menu for medium and small screen -->
+                <!-- fullscreen widgets -->
+                <div class="header__wrapper-overlay-widgets">
+                    <div class="row">
+                        <!-- widget TEXT -->
+                        <div class="col-lg-4 header__widget">
+                            <div class="header__widget-title small-caps js-split-text split-text"
+                                data-split-text-type="lines">
+                                Contacts</div>
+                            <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
+                                <p><a href="#">info@metrogroupindia.com</a><br />022 41228906 <br> 41228907<br />
+                                </p>
+                            </div>
+                        </div>
+                        <!-- - widget TEXT -->
+                        <!-- widget TEXT -->
+                        <div class="col-lg-4 header__widget">
+                            <div class="header__widget-title small-caps js-split-text split-text"
+                                data-split-text-type="lines">Office
+                            </div>
+                            <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
+                                <p>The Ambience Court,<br>Unit No. 301 & 302,<br>Plot No. 2, Sector 19D, Vashi,<br>Navi
+                                    Mumbai - 400703
+                                </p>
+                            </div>
+                        </div>
+                        <!-- - widget TEXT -->
+                        <!-- widget TEXT -->
+                        <div class="col-lg-4 header__widget">
+                            <div class="header__widget-title small-caps js-split-text split-text"
+                                data-split-text-type="lines">Looking
+                                for your dream Home?</div>
+                            <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
+                                <p><a href="#">Get in Touch</a><br />
+                                </p>
+                            </div>
+                        </div>
+                        <!-- - widget TEXT -->
+                    </div>
+                </div>
+                <!-- - fullscreen widgets -->
+            </div>
+            <!-- - fullscreen overlay container -->
+        </header>
+        <!-- - PAGE HEADER -->
+        <!-- PAGE MAIN -->
+        <div class="js-smooth-scroll bg-light-1" id="page-wrapper" data-barba="container">
+            <main class="page-wrapper__content">
+                <!-- section MASTHEAD BOTTOM FULLWIDTH -->
+                <section class="section section-masthead pt-large text-center"
+                    data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-3)">
+                    <div class="section-masthead__inner container-fluid">
+                        <header class="row section-masthead__header justify-content-center">
+                            <div class="col">
+                                <div class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text"
+                                    data-split-text-type="lines,words" data-split-text-set="words"><span>2016</span>
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="section-masthead__heading split-text js-split-text"
+                                    data-split-text-type="lines,words" data-split-text-set="words">
+                                    <h1 class="h1 mt-0 mb-0">Jijai Angan</h1>
+                                    <h4>Taloja, Panvel (Navi Mumbai)</h4>
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="section__headline mt-2 mx-auto"></div>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="section-image section-masthead__background section section_h-900 mt-medium">
+                        <div class="section-image__wrapper js-transition-img" data-arts-parallax="data-arts-parallax"
+                            data-arts-parallax-factor="0.15">
+                            <div class="js-transition-img__transformed-el">
+                                <div class="lazy-bg" data-src="https://placehold.co/1920X1280"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- - section MASTHEAD BOTTOM FULLWIDTH -->
+                <!-- section PROPERTIES -->
+                <section class="section section-properties section-content pb-small bg-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6 section-properties__item mt-small">
+                                <div class="figure-info split-text js-split-text" data-split-text-type="lines,words"
+                                    data-split-text-set="words">
+                                    <div class="figure-info__option small-caps">Role</div>
+                                    <div class="figure-info__value paragraph">Art Director</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 section-properties__item mt-small">
+                                <div class="figure-info split-text js-split-text" data-split-text-type="lines,words"
+                                    data-split-text-set="words">
+                                    <div class="figure-info__option small-caps">Start</div>
+                                    <div class="figure-info__value paragraph">20 Nov 2019</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 section-properties__item mt-small">
+                                <div class="figure-info split-text js-split-text" data-split-text-type="lines,words"
+                                    data-split-text-set="words">
+                                    <div class="figure-info__option small-caps">Launch</div>
+                                    <div class="figure-info__value paragraph">12 Jan 2020</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 section-properties__item mt-small">
+                                <div class="figure-info split-text js-split-text" data-split-text-type="lines,words"
+                                    data-split-text-set="words">
+                                    <div class="figure-info__option small-caps">Website</div>
+                                    <div class="figure-info__value paragraph"><a
+                                            href="https://themeforest.net/user/artemsemkin/portfolio"
+                                            target="_blank">themeforest.net</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- - section PROPERTIES -->
+
+                <!-- section CONTENT #1 -->
+                <div class="section d-none pt-medium pb-medium">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-6">
+                                <section class="section section-content clearfix"
+                                    data-arts-os-animation="data-arts-os-animation">
+                                    <div class="section-content__inner">
+                                        <div class="w-100"></div>
+                                        <div class="section__headline mb-1 mb-md-2"></div>
+                                        <div class="w-100"></div>
+                                        <div class="section-content__heading split-text js-split-text"
+                                            data-split-text-type="lines,words" data-split-text-set="words">
+                                            <h2>Property Details</h2>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-lg-6">
+                                <section class="section section-content clearfix"
+                                    data-arts-os-animation="data-arts-os-animation">
+                                    <div class="section-content__inner">
+                                        <div class="w-100"></div>
+                                        <div class="section-content__text split-text js-split-text mt-md-2 mt-1"
+                                            data-split-text-type="lines" data-split-text-set="lines">
+                                            <p>Late hour new nay able fat each sell. Nor themselves age introduced
+                                                frequently use unsatiable devonshire get. They why quit gay cold rose
+                                                deal park. One same they four did ask busy. Reserved opinions fat him
+                                                nay position. Breakfast as zealously incommode do agreeable furniture.
+                                                One too nay led fanny allow plate.</p>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- - section CONTENT #1 -->
+
+                <!-- Property Details 2 -->
+                <div class="section bg-light-2">
+                    <section class="section section-demo section_w-container-left text-left">
+                        <div class="container-fluid section-demo__container-right">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 offset-lg-6">
+                                    <div class="section-demo__content pt-medium pb-medium">
+                                        <section class="section section-content clearfix"
+                                            data-arts-os-animation="data-arts-os-animation">
+                                            <div class="section-content__inner">
+                                                <div class="w-100"></div>
+                                                <div class="section__headline mb-1 mb-md-2 mr-auto"></div>
+                                                <div class="w-100"></div>
+                                                <div class="section-content__heading split-text js-split-text"
+                                                    data-split-text-type="lines,words" data-split-text-set="words">
+                                                    <h2>Property Details</h2>
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div class="section-content__text split-text js-split-text mt-1"
+                                                    data-split-text-type="lines" data-split-text-set="lines">
+                                                    <p>List your services and get people to know about yourself and how
+                                                        to get in touch with you. Choose between grid or list posts
+                                                        timeline style with optional sidebar.</p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <aside class="aside aside-counters section">
+                                            <div class="container no-gutters">
+                                                <div class="row justify-content-center">
+                                                    <!-- counter -->
+                                                    <div class="aside-counters__wrapper-item col-6 mt-small">
+                                                        <div class="counter js-counter" data-counter-start="0"
+                                                            data-counter-target="8" data-counter-duration="4">
+                                                            <!-- animated number -->
+                                                            <div class="counter__number js-counter__number">8</div>
+                                                            <!-- - animated number -->
+                                                            <div class="counter__label">Inner Templates</div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- - counter -->
+                                                    <!-- counter -->
+                                                    <div class="aside-counters__wrapper-item col-6 mt-small">
+                                                        <div class="counter js-counter" data-counter-start="0"
+                                                            data-counter-target="9" data-counter-duration="4">
+                                                            <!-- animated number -->
+                                                            <div class="counter__number js-counter__number">9</div>
+                                                            <!-- - animated number -->
+                                                            <div class="counter__label">Blog Templates</div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- - counter -->
+                                                </div>
+                                            </div>
+                                        </aside>
+                                        <div class="mt-small d-lg-none"><a class="button button_bordered button_black"
+                                                data-hover="Explore Pages" href="page-inner-services-1.html"
+                                                target="_blank"><span class="button__label-hover">Explore
+                                                    Pages</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="section-demo__bg section-demo__bg_wide section-demo__bg_left bg-white"
+                        data-arts-parallax data-arts-parallax-factor="0.3">
+                        <div>
+                            <div class="lazy-bg" data-src="https://placehold.co/1800X1440"></div>
+                        </div>
+                    </div>
+                    <div class="section-demo__wrapper-button section-demo__wrapper-button_left d-none d-lg-flex"><a
+                            class="circle-button circle-button_link js-circle-button"
+                            data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true"
+                            data-arts-cursor-scale="0" data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+                            data-arts-cursor-icon="add" href="page-inner-services-1.html" target="_blank"
+                            data-arts-os-animation="true">
+                            <!-- curved label -->
+                            <div class="circle-button__outer">
+                                <div class="circle-button__wrapper-label">
+                                    <div class="circle-button__label small-caps">Explore Pages</div>
+                                </div>
+                            </div>
+                            <!-- - curved label -->
+                            <!-- geometry wrapper -->
+                            <div class="circle-button__inner">
+                                <div class="circle-button__circle">
+                                    <svg class="svg-circle" viewBox="0 0 60 60" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                                    </svg>
+                                </div>
+                                <!-- browsers with touch support -->
+                                <div class="circle-button__icon circle-button__icon-touch">
+                                    <div class="material-icons">add</div>
+                                </div>
+                                <!-- - browsers with touch support -->
+                            </div>
+                            <!-- - geometry wrapper -->
+                        </a>
+                    </div>
+                </div>
+                <!-- Property Details 2 End -->
+
+                <!-- section IMAGES -->
+                <section class="section section-slider-images pb-small">
+                    <div class="row pt-small pb-small">
+                        <div class="col">
+                            <section class="section section-content clearfix text-center"
+                                data-arts-os-animation="data-arts-os-animation">
+                                <div class="section-content__inner">
+                                    <div class="w-100"></div>
+                                    <div class="section__headline mb-1 mb-md-2 mx-auto"></div>
+                                    <div class="w-100"></div>
+                                    <div class="section-content__heading split-text js-split-text"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
+                                        <h2>Gallery</h2>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="slider slider-images js-slider-images">
+                        <div class="swiper-container js-slider-images__slider" data-drag-mouse="true"
+                            data-drag-cursor="true" data-drag-class="slider-images_touched" data-auto-height="true"
+                            data-slides-per-view="1.5" data-centered-slides="data-centered-slides"
+                            data-space-between="120">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide overflow d-flex-centered text-center">
+                                    <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="10%">
+                                        <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#"
+                                                data-src="https://placehold.co/1600x900.jpg" width="1120" height="700"
+                                                alt="" /></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide overflow d-flex-centered text-center">
+                                    <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="10%">
+                                        <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#"
+                                                data-src="https://placehold.co/1600x900.jpg" width="1120" height="700"
+                                                alt="" /></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide overflow d-flex-centered text-center">
+                                    <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="10%">
+                                        <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#"
+                                                data-src="https://placehold.co/1600x900.jpg" width="1120" height="700"
+                                                alt="" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider FOOTER -->
+                        <div class="slider-images__footer">
+                            <div class="row no-gutters justify-content-center">
+                                <div class="col-auto">
+                                    <!-- slider DOTS -->
+                                    <div class="slider__dots js-slider__dots">
+                                        <div class="slider__dot slider__dot_active">
+                                            <svg class="svg-circle" viewBox="0 0 60 60" version="1.1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                                            </svg>
+                                        </div>
+                                        <div class="slider__dot">
+                                            <svg class="svg-circle" viewBox="0 0 60 60" version="1.1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                                            </svg>
+                                        </div>
+                                        <div class="slider__dot">
+                                            <svg class="svg-circle" viewBox="0 0 60 60" version="1.1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                                            </svg>
+                                        </div>
+                                        <div class="slider__dot">
+                                            <svg class="svg-circle" viewBox="0 0 60 60" version="1.1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- - slider DOTS -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- - slider FOOTER -->
+                    </div>
+                </section>
+                <!-- - section IMAGES -->
+
+                <!-- sections CONTENT & IMAGE #1 -->
+                <div class="container-fluid no-gutters">
+                    <div class="row pt-small bg-light-2 pb-small">
+                        <div class="col">
+                            <section class="section section-content clearfix text-center"
+                                data-arts-os-animation="data-arts-os-animation">
+                                <div class="section-content__inner">
+                                    <div class="w-100"></div>
+                                    <div class="section__headline mb-1 mb-md-2 mx-auto"></div>
+                                    <div class="w-100"></div>
+                                    <div class="section-content__heading split-text js-split-text"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
+                                        <h2>Highlights and Amenities</h2>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row no-gutters align-items-center">
+                        <div class="col-lg-6">
+                            <section
+                                class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings"
+                                data-arts-os-animation="data-arts-os-animation">
+                                <div class="section-content__inner">
+                                    <div class="w-100"></div>
+                                    <div class="section__headline mb-1 mb-md-2"></div>
+                                    <div class="w-100"></div>
+                                    <div class="section-content__heading split-text js-split-text"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
+                                        <h2>Amenities</h2>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="section-content__text split-text js-split-text mt-1"
+                                        data-split-text-type="lines" data-split-text-set="lines">
+                                        <ul class="my-bullets">
+                                            <li>Club House</li>
+                                            <li>Jogging and Strolling Tracks</li>
+                                            <li>Power Back-up</li>
+                                            <li>Swimming Pool</li>
+                                            <li>Lift</li>
+                                            <li>Security</li>
+                                            <li>Park</li>
+                                            <li>Reserved Parking</li>
+                                            <li>Service/Goods Lift</li>
+                                            <li>Visitors Parking</li>
+                                            <li>Intercom Facility</li>
+                                            <li>Maintenance Staff</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-lg-6 bg-light-2">
+                            <div
+                                class="section-slider-images container-fluid container-fluid_paddings container_px-md-0">
+                                <div class="slider slider-images js-slider-images">
+                                    <!-- slider HEADER -->
+                                    <div class="slider-images__header">
+                                        <div class="row no-gutters justify-content-between">
+                                            <div class="col-auto">
+                                                <div class="slider__counter slider__counter_mini">
+                                                    <div class="js-slider__counter-current swiper-container">
+                                                        <div class="swiper-wrapper"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="slider__total slider__total_mini js-slider__counter-total">I
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- - slider HEADER -->
+                                    <div class="swiper-container js-slider-images__slider" data-drag-mouse="true"
+                                        data-drag-cursor="true" data-drag-class="slider-images_touched"
+                                        data-auto-height="true" data-slides-per-view="1">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide overflow d-flex-centered text-center">
+                                                <div class="w-100 h-100" data-swiper-parallax="10%"
+                                                    data-swiper-parallax-zoom="10%">
+                                                    <div class="slider__zoom-container w-100 h-100"><img
+                                                            class="swiper-lazy" src="#"
+                                                            data-src="https://placehold.co/1280x1280.jpg" width="1280"
+                                                            height="1280" alt="" /></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide overflow d-flex-centered text-center">
+                                                <div class="w-100 h-100" data-swiper-parallax="10%"
+                                                    data-swiper-parallax-zoom="10%">
+                                                    <div class="slider__zoom-container w-100 h-100"><img
+                                                            class="swiper-lazy" src="#"
+                                                            data-src="https://placehold.co/1280x1280.jpg" width="1280"
+                                                            height="1280" alt="" /></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide overflow d-flex-centered text-center">
+                                                <div class="w-100 h-100" data-swiper-parallax="10%"
+                                                    data-swiper-parallax-zoom="10%">
+                                                    <div class="slider__zoom-container w-100 h-100"><img
+                                                            class="swiper-lazy" src="#"
+                                                            data-src="https://placehold.co/1280x1280.jpg" width="1280"
+                                                            height="1280" alt="" /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slider FOOTER -->
+                                    <div class="slider-images__footer">
+                                        <div class="row no-gutters justify-content-center">
+                                            <div class="col-auto">
+                                                <!-- slider DOTS -->
+                                                <div class="slider__dots js-slider__dots">
+                                                    <div class="slider__dot slider__dot_active">
+                                                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <circle class="circle" cx="30" cy="30" r="29" fill="none">
+                                                            </circle>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="slider__dot">
+                                                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <circle class="circle" cx="30" cy="30" r="29" fill="none">
+                                                            </circle>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="slider__dot">
+                                                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <circle class="circle" cx="30" cy="30" r="29" fill="none">
+                                                            </circle>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="slider__dot">
+                                                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <circle class="circle" cx="30" cy="30" r="29" fill="none">
+                                                            </circle>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <!-- - slider DOTS -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- - slider FOOTER -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- - sections CONTENT & IMAGE #1 -->
+                <!-- sections CONTENT & IMAGE #2 -->
+                <div class="container-fluid no-gutters">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col-lg-6 order-lg-2">
+                            <section
+                                class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings"
+                                data-arts-os-animation="data-arts-os-animation">
+                                <div class="section-content__inner">
+                                    <div class="w-100"></div>
+                                    <div class="section__headline mb-1 mb-md-2"></div>
+                                    <div class="w-100"></div>
+                                    <div class="section-content__heading split-text js-split-text"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
+                                        <h2>Amenities</h2>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="section-content__text split-text js-split-text mt-1"
+                                        data-split-text-type="lines" data-split-text-set="lines">
+                                        <ul class="my-bullets">
+                                            <li>Club House</li>
+                                            <li>Jogging and Strolling Tracks</li>
+                                            <li>Power Back-up</li>
+                                            <li>Swimming Pool</li>
+                                            <li>Lift</li>
+                                            <li>Security</li>
+                                            <li>Park</li>
+                                            <li>Reserved Parking</li>
+                                            <li>Service/Goods Lift</li>
+                                            <li>Visitors Parking</li>
+                                            <li>Intercom Facility</li>
+                                            <li>Maintenance Staff</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-lg-6 order-lg-1 bg-light-2">
+                            <div
+                                class="section-slider-images container-fluid container-fluid_paddings container_px-md-0">
+                                <div class="slider slider-images js-slider-images">
+                                    <!-- slider HEADER -->
+                                    <div class="slider-images__header">
+                                        <div class="row no-gutters justify-content-between">
+                                            <div class="col-auto">
+                                                <div class="slider__counter slider__counter_mini">
+                                                    <div class="js-slider__counter-current swiper-container">
+                                                        <div class="swiper-wrapper"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="slider__total slider__total_mini js-slider__counter-total">I
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- - slider HEADER -->
+                                    <div class="swiper-container js-slider-images__slider" data-drag-mouse="true"
+                                        data-drag-cursor="true" data-drag-class="slider-images_touched"
+                                        data-auto-height="true" data-slides-per-view="1">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide overflow d-flex-centered text-center">
+                                                <div class="w-100 h-100" data-swiper-parallax="10%"
+                                                    data-swiper-parallax-zoom="10%">
+                                                    <div class="slider__zoom-container w-100 h-100"><img
+                                                            class="swiper-lazy" src="#"
+                                                            data-src="https://placehold.co/1280x1280.jpg" width="1280"
+                                                            height="1280" alt="" /></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide overflow d-flex-centered text-center">
+                                                <div class="w-100 h-100" data-swiper-parallax="10%"
+                                                    data-swiper-parallax-zoom="10%">
+                                                    <div class="slider__zoom-container w-100 h-100"><img
+                                                            class="swiper-lazy" src="#"
+                                                            data-src="https://placehold.co/1280x1280.jpg" width="1280"
+                                                            height="1280" alt="" /></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide overflow d-flex-centered text-center">
+                                                <div class="w-100 h-100" data-swiper-parallax="10%"
+                                                    data-swiper-parallax-zoom="10%">
+                                                    <div class="slider__zoom-container w-100 h-100"><img
+                                                            class="swiper-lazy" src="#"
+                                                            data-src="https://placehold.co/1280x1280.jpg" width="1280"
+                                                            height="1280" alt="" /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slider FOOTER -->
+                                    <div class="slider-images__footer">
+                                        <div class="row no-gutters justify-content-center">
+                                            <div class="col-auto">
+                                                <!-- slider DOTS -->
+                                                <div class="slider__dots js-slider__dots">
+                                                    <div class="slider__dot slider__dot_active">
+                                                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <circle class="circle" cx="30" cy="30" r="29" fill="none">
+                                                            </circle>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="slider__dot">
+                                                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <circle class="circle" cx="30" cy="30" r="29" fill="none">
+                                                            </circle>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="slider__dot">
+                                                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <circle class="circle" cx="30" cy="30" r="29" fill="none">
+                                                            </circle>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="slider__dot">
+                                                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <circle class="circle" cx="30" cy="30" r="29" fill="none">
+                                                            </circle>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <!-- - slider DOTS -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- - slider FOOTER -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- - sections CONTENT & IMAGE #2 -->
+
+                <!-- RoadMap -->
+                <div class="container section pt-medium pb-medium">
+                    <div class="row">
+                        <div class="col">
+                            <section class="section section-content clearfix text-center"
+                                data-arts-os-animation="data-arts-os-animation">
+                                <div class="section-content__inner">
+                                    <div class="w-100"></div>
+                                    <div class="section__headline mb-1 mb-md-2 mx-auto"></div>
+                                    <div class="w-100"></div>
+                                    <div class="section-content__heading split-text js-split-text"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
+                                        <h2>Project Roadmap</h2>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between mt-small">
+                        <div class="col-lg-6 section">
+                            <section class="section section-content clearfix"
+                                data-arts-os-animation="data-arts-os-animation">
+                                <div class="section-content__inner">
+                                    <div class="w-100"></div>
+                                    <div class="section-content__heading split-text js-split-text mb-0-5"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
+                                        <h4>Conception</h4>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-lg-6 section">
+                            <section class="section section-content clearfix"
+                                data-arts-os-animation="data-arts-os-animation">
+                                <div class="section-content__inner">
+                                    <div class="w-100"></div>
+                                    <div class="section-content__text split-text js-split-text"
+                                        data-split-text-type="lines" data-split-text-set="lines">
+                                        <p>Furnished unfeeling his sometimes see day promotion. Quitting informed
+                                            concerns can men now. Projection to or up conviction uncommonly delightful
+                                            continuing.</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between mt-small">
+                        <div class="col-lg-6 section">
+                            <section class="section section-content clearfix"
+                                data-arts-os-animation="data-arts-os-animation">
+                                <div class="section-content__inner">
+                                    <div class="w-100"></div>
+                                    <div class="section-content__heading split-text js-split-text mb-0-5"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
+                                        <h4>Drafts</h4>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-lg-6 section">
+                            <section class="section section-content clearfix"
+                                data-arts-os-animation="data-arts-os-animation">
+                                <div class="section-content__inner">
+                                    <div class="w-100"></div>
+                                    <div class="section-content__text split-text js-split-text"
+                                        data-split-text-type="lines" data-split-text-set="lines">
+                                        <p>Enquire ye without it garrets up himself. Interest our nor received followed
+                                            was.</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between mt-small">
+                        <div class="col-lg-6 section">
+                            <section class="section section-content clearfix"
+                                data-arts-os-animation="data-arts-os-animation">
+                                <div class="section-content__inner">
+                                    <div class="w-100"></div>
+                                    <div class="section-content__heading split-text js-split-text mb-0-5"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
+                                        <h4>Approval</h4>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-lg-6 section">
+                            <section class="section section-content clearfix"
+                                data-arts-os-animation="data-arts-os-animation">
+                                <div class="section-content__inner">
+                                    <div class="w-100"></div>
+                                    <div class="section-content__text split-text js-split-text"
+                                        data-split-text-type="lines" data-split-text-set="lines">
+                                        <p>One same they four did ask busy. Reserved opinions fat him nay position.
+                                            Breakfast as zealously incommode do agreeable furniture. One too nay led
+                                            fanny allow plate.</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <!-- RoadMap -->
+
+
+                <!-- section VIDEO -->
+                <section
+                    class="section section-video section-content section-image js-gallery section-offset offset_bottom container-fluid bg-dark-2 pt-medium mb-medium"
+                    data-arts-os-animation="data-arts-os-animation" data-grid-columns="1" data-grid-tablet="1"
+                    data-grid-mobile="1" data-arts-theme-text="light">
+                    <div class="section-offset__content">
+                        <header class="section-video__header text-center pb-small">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <div class="section__headline mb-1 mb-md-2 mx-auto"></div>
+                                        <div class="w-100"></div>
+                                        <div class="section-content__heading split-text js-split-text"
+                                            data-split-text-type="lines" data-split-text-set="lines">
+                                            <h2>Commercial Reel</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="section-video__container section section_h-700 section-content__image"><a
+                                class="section-video__link" href="https://www.youtube.com/watch?v=2d1VrCvdzbY"
+                                data-autoplay="data-autoplay">
+                                <div class="section-video__link-inner" data-arts-cursor="data-arts-cursor"
+                                    data-arts-cursor-scale="0" data-arts-cursor-label="Play"
+                                    data-arts-cursor-hide-native="true"
+                                    data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                                    <div class="section-video__icon material-icons">play_arrow</div>
+                                </div>
+                            </a>
+                            <div class="section__bg">
+                                <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax"
+                                    data-arts-parallax-factor="0.15">
+                                    <div>
+                                        <div class="lazy-bg" data-src="img/assets/project6/img-6-5.jpg"></div>
+                                    </div>
+                                </div>
+                                <div class="overlay overlay_dark"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- - section VIDEO -->
+                <!-- section CONTENT #2 -->
+                <div class="section pt-medium pb-medium">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-6">
+                                <section class="section section-content clearfix"
+                                    data-arts-os-animation="data-arts-os-animation">
+                                    <div class="section-content__inner">
+                                        <div class="w-100"></div>
+                                        <div class="section__headline mb-1 mb-md-2"></div>
+                                        <div class="w-100"></div>
+                                        <div class="section-content__heading split-text js-split-text"
+                                            data-split-text-type="lines,words" data-split-text-set="words">
+                                            <h2>Honors & Mentions</h2>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-lg-6">
+                                <section class="section section-content clearfix"
+                                    data-arts-os-animation="data-arts-os-animation">
+                                    <div class="section-content__inner">
+                                        <div class="w-100"></div>
+                                        <div class="section-content__text split-text js-split-text mt-md-2 mt-1"
+                                            data-split-text-type="lines" data-split-text-set="lines">
+                                            <p><strong>Awwwards: Site of the Day</strong></p>
+                                            <p><strong>Awwwards: Developer Award</strong></p>
+                                            <p><strong>Awwwards: Mobile Excellence Award</strong></p>
+                                            <p><strong>CSS Design Awards: Website of the Day</strong></p>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+            <!-- PAGE FOOTER -->
+            <footer class="footer container-fluid" id="page-footer" data-arts-theme-text="dark"
+                data-arts-footer-logo="primary">
+                <!-- widgets top area -->
+                <div class="footer__area pt-md-5 pt-sm-3 pb-md-3 pb-sm-1 pt-2 pb-0 footer__area-border-top">
+                    <div class="row">
+                        <!-- call to action -->
+                        <div class="col-lg-5">
+                            <section class="widget widget_rhye_cta">
+                                <!-- header -->
+                                <h2 class="h2 mt-0 mb-0-5">Ready to Capture the Moments?</h2>
+                                <!-- - header -->
+                                <!-- button --><a class="button button_solid button_black mb-0-5"
+                                    data-hover="Get in Touch" href="#"><span class="button__label-hover">Get in
+                                        Touch</span></a>
+                                <!-- - button -->
+                            </section>
+                        </div>
+                        <!-- - call to action -->
+                        <div class="col-lg-7">
+                            <div class="row justify-content-lg-between">
+                                <!-- widget MENU #1 -->
+                                <div class="col-lg-3 col-sm-6 col-12">
+                                    <section class="widget widget_nav_menu">
+                                        <!-- header -->
+                                        <h2 class="widgettitle">About Us</h2>
+                                        <!-- - header -->
+                                        <!-- content -->
+                                        <ul class="menu js-menu">
+                                            <li><a href="#">Company Profile</a>
+                                            </li>
+                                            <li><a href="#">Our Journey</a>
+                                            </li>
+                                            <li><a href="#">Promoters</a>
+                                            </li>
+                                            <li><a href="#">CSR</a>
+                                            </li>
+                                        </ul>
+                                        <!-- - content -->
+                                    </section>
+                                </div>
+                                <!-- - widget MENU #1 -->
+                                <!-- widget MENU #2 -->
+                                <div class="col-lg-3 col-sm-6 col-12">
+                                    <section class="widget widget_nav_menu">
+                                        <!-- header -->
+                                        <h2 class="widgettitle">Projects</h2>
+                                        <!-- - header -->
+                                        <!-- content -->
+                                        <ul class="menu js-menu">
+                                            <li><a href="#">Ongoing</a>
+                                            </li>
+                                            <li><a href="#">Completed</a>
+                                            </li>
+                                        </ul>
+                                        <!-- - content -->
+                                    </section>
+                                </div>
+                                <!-- - widget MENU #2 -->
+                                <!-- widget MENU #3 -->
+                                <div class="col-lg-3 col-sm-6 col-12">
+                                    <section class="widget widget_nav_menu">
+                                        <!-- header -->
+                                        <h2 class="widgettitle">Buyers Hub</h2>
+                                        <!-- - header -->
+                                        <!-- content -->
+                                        <ul class="menu js-menu">
+                                            <li><a href="#">Home Loan</a>
+                                            </li>
+                                            <li><a href="#">EMI Calculator</a>
+                                            </li>
+                                            <li><a href="#">NRI Corner</a>
+                                            </li>
+                                        </ul>
+                                        <!-- - content -->
+                                    </section>
+                                </div>
+                                <!-- - widget MENU #3 -->
+                                <!-- widget MENU #4 -->
+                                <div class="col-lg-3 col-sm-6 col-12">
+                                    <section class="widget widget_nav_menu">
+                                        <!-- header -->
+                                        <h2 class="widgettitle">Media & Events</h2>
+                                        <!-- - header -->
+                                        <!-- content -->
+                                        <ul class="menu js-menu">
+                                            <li><a href="#">Press Release</a>
+                                            </li>
+                                            <li><a href="#">Events</a>
+                                            </li>
+                                            <li><a href="#">Contact Us</a>
+                                            </li>
+                                        </ul>
+                                        <!-- - content -->
+                                    </section>
+                                </div>
+                                <!-- - widget MENU #4 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- - widgets top area -->
+                <!-- widgets bottom area -->
+                <div class="footer__area footer__area-border-top pt-sm-0 pt-2 pb-sm-0 pb-2">
+                    <div class="row align-items-center">
+                        <!-- widget LOGO -->
+                        <div class="col-lg-3 footer__column text-center text-lg-left order-lg-1">
+                            <section class="widget widget_rhye_logo">
+                                <!-- content --><a class="logo" href="#">
+                                    <div class="logo__wrapper-img">
+                                        <!-- primary logo version (for light backgrounds)--><img
+                                            class="logo__img-primary logo-footer" src="img/general/SHUBHAM_logo_216.png"
+                                            alt="" />
+                                        <!-- secondary logo version (for dark backgrounds)--><img
+                                            class="logo__img-secondary logo-footer"
+                                            src="img/general/SHUBHAM_logo_216.png" alt="" />
+                                    </div>
+                                </a>
+                                <!-- - content -->
+                            </section>
+                        </div>
+                        <!-- - widget LOGO -->
+                        <!-- widget SOCIAL -->
+                        <div class="col-lg-3 footer__column text-center text-lg-right order-lg-3">
+                            <section class="widget widget_rhye_social">
+                                <!-- content -->
+                                <ul class="social">
+                                    <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
+                                    <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
+                                    <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
+                                    <li class="social__item"><a class="fa fa-linkedin" href="#"></a></li>
+                                </ul>
+                                <!-- - content -->
+                            </section>
+                        </div>
+                        <!-- - widget SOCIAL -->
+                        <!-- widget TEXT -->
+                        <div class="col-lg-6 footer__column text-center text-lg-center order-lg-2">
+                            <section class="widget widget_text">
+                                <!-- content -->
+                                <div class="textwidget">
+                                    <p><small>&copy; 2024 Shubham Group. All Rights Reserved.</small></p>
+                                </div>
+                                <!-- - content -->
+                            </section>
+                        </div>
+                        <!-- - widget TEXT -->
+                    </div>
+                </div>
+                <!-- - widgetst bottom area -->
+            </footer>
+            <!-- - PAGE FOOTER -->
+        </div>
+        <!-- - PAGE MAIN -->
+    </div>
+    <canvas id="js-webgl"></canvas>
+    <!-- PhotoSwipe -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" data-arts-theme-text="light">
+        <!-- background -->
+        <div class="pswp__bg"></div>
+        <!-- - background -->
+        <!-- slider wrapper -->
+        <div class="pswp__scroll-wrap">
+            <!-- slides holder (don't modify)-->
+            <div class="pswp__container">
+                <div class="pswp__item">
+                    <div class="pswp__img pswp__img--placeholder"></div>
+                </div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <!-- - slides holder (don't modify)-->
+            <!-- UI -->
+            <div class="pswp__ui pswp__ui--hidden">
+                <!-- top bar -->
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"
+                        data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.2"
+                        data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+                        data-arts-cursor-hide-native="true"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"
+                        data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.2"
+                        data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+                        data-arts-cursor-hide-native="true"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- - top bar -->
+                <!-- left arrow -->
+                <div class="pswp__button pswp__button--arrow--left">
+                    <div class="arrow arrow-left js-arrow" data-arts-cursor="data-arts-cursor"
+                        data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+                        data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                        </svg>
+                        <div class="arrow__pointer arrow-left__pointer"></div>
+                        <div class="arrow__triangle"></div>
+                    </div>
+                </div>
+                <!-- - left arrow -->
+                <!-- right arrow -->
+                <div class="pswp__button pswp__button--arrow--right">
+                    <div class="arrow arrow-right js-arrow" data-arts-cursor="data-arts-cursor"
+                        data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+                        data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                        </svg>
+                        <div class="arrow__pointer arrow-right__pointer"></div>
+                        <div class="arrow__triangle"></div>
+                    </div>
+                </div>
+                <!-- - right arrow -->
+                <!-- slide caption holder (don't modify) -->
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center text-center"></div>
+                </div>
+                <!-- - slide caption holder (don't modify) -->
+            </div>
+            <!-- - UI -->
+        </div>
+        <!-- slider wrapper -->
+    </div>
+    <!-- - PhotoSwipe -->
+    <!-- List Hover Shaders -->
+    <script id="list-hover-vs" type="x-shader/x-vertex">
+      uniform vec2 uOffset;
+      
+      varying vec2 vUv;
+      
+      vec3 deformationCurve(vec3 position, vec2 uv, vec2 offset) {
+        float M_PI = 3.1415926535897932384626433832795;
+        position.x = position.x + (sin(uv.y * M_PI) * offset.x);
+        position.y = position.y + (sin(uv.x * M_PI) * offset.y);
+        return position;
+      }
+      
+      void main() {
+        vUv =  uv + (uOffset * 2.);
+        vec3 newPosition = position;
+        newPosition = deformationCurve(position,uv,uOffset);
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( newPosition, 1.0 );
+      }
+    </script>
+    <script id="list-hover-fs" type="x-shader/x-fragment">
+      uniform sampler2D uTexture;
+      uniform float uAlpha;
+      uniform float uScale;
+      
+      varying vec2 vUv;
+      
+      vec2 scaleUV(vec2 uv,float scale) {
+        float center = 0.5;
+        return ((uv - center) * scale) + center;
+      }
+      
+      void main() {
+        vec3 color = texture2D(uTexture,scaleUV(vUv,uScale)).rgb;
+        gl_FragColor = vec4(color,uAlpha);
+      }
+      
+    </script>
+    <!-- - List Hover Shaders -->
+    <!-- Slider Textures Shaders -->
+    <script id="slider-textures-vs" type="x-shader/x-vertex">
+      varying vec2 vUv;
+      void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+      }
+    </script>
+    <script id="slider-textures-horizontal-fs" type="x-shader/x-fragment">
+      varying vec2 vUv;
+      
+      uniform sampler2D texture;
+      uniform sampler2D texture2;
+      uniform sampler2D disp;
+      
+      uniform float dispFactor;
+      uniform float effectFactor;
+      
+      void main() {
+      
+        vec2 uv = vUv;
+      
+        vec4 disp = texture2D(disp, uv);
+      
+        vec2 distortedPosition = vec2(uv.x + dispFactor * (disp.r*effectFactor), uv.y);
+        vec2 distortedPosition2 = vec2(uv.x - (1.0 - dispFactor) * (disp.r*effectFactor), uv.y);
+      
+        vec4 _texture = texture2D(texture, distortedPosition);
+        vec4 _texture2 = texture2D(texture2, distortedPosition2);
+      
+        vec4 finalTexture = mix(_texture, _texture2, dispFactor);
+      
+        gl_FragColor = finalTexture;
+      
+      }
+    </script>
+    <script id="slider-textures-vertical-fs" type="x-shader/x-fragment">
+      varying vec2 vUv;
+      
+      uniform sampler2D texture;
+      uniform sampler2D texture2;
+      uniform sampler2D disp;
+      
+      uniform float dispFactor;
+      uniform float effectFactor;
+      
+      void main() {
+      
+        vec2 uv = vUv;
+      
+        vec4 disp = texture2D(disp, uv);
+      
+        vec2 distortedPosition = vec2(uv.x, uv.y - dispFactor * (disp.r*effectFactor));
+        vec2 distortedPosition2 = vec2(uv.x, uv.y + (1.0 - dispFactor) * (disp.r*effectFactor));
+      
+        vec4 _texture = texture2D(texture, distortedPosition);
+        vec4 _texture2 = texture2D(texture2, distortedPosition2);
+      
+        vec4 finalTexture = mix(_texture, _texture2, dispFactor);
+      
+        gl_FragColor = finalTexture;
+      
+      }
+      
+    </script>
+    <!-- - Slider Textures Shaders -->
+    <!-- VENDOR SCRIPTS -->
+    <script src="js/vendor.js"></script>
+    <!-- - VENDOR SCRIPTS -->
+    <!-- COMPONENTS -->
+    <script src="js/components.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

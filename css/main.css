@@ -11280,3 +11280,26 @@ small, .small {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+/* =========================================================
+  My fixes
+=========================================================== */
+.figure-feature__header {
+  height: 180px;
+}
+
+.my-bullets li{
+  list-style: inside;
+  padding-top: 8px;
+}
+
+@media screen and (max-width: 991px) {
+  .figure-feature__header {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .figure-feature__header {
+    height: auto;
+  }
+}
