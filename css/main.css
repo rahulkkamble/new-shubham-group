@@ -1,9 +1,4 @@
 /*!==========================================================================
- * ==========================================================================
- * ==========================================================================
- *
- * Rhye – AJAX Portfolio HTML5 Template
- *
  * [Table of Contents]
  *
  * 1. Arrow
@@ -122,13 +117,10 @@
  * 114. Widget CTA
  * 115. Widget Logo
  * 116. Widget Text
- *
- * ==========================================================================
- * ==========================================================================
  * ==========================================================================
  */
 
-:root {
+ :root {
   /* Fonts */
   --font-primary: "Raleway", sans-serif;
   --font-secondary: "Cinzel", serif;
@@ -2951,7 +2943,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
  * ======================================================================!*/
 .header {
   pointer-events: none;
-  padding-top: var(--gutter-vertical);
+  padding-top: 5px /* var(--gutter-vertical) */;
   padding-bottom: 0;
 }
 .header a, .header select, .header input {
@@ -3208,8 +3200,8 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   box-shadow: 0px 0px 30px 0px rgba(24, 24, 24, 0.1);
 }
 .header_sticky[data-arts-header-sticky-logo=primary] .logo__img-primary {
@@ -3758,16 +3750,19 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 .menu > li {
   display: inline-block;
 }
-.menu > li:not(:last-child) {
+/* .menu > li:not(:last-child) {
   margin-right: 17px;
-}
-.menu > li a {
+} */
+/* .menu > li a {
   display: block;
   padding: 0px 15px;
-}
-.menu > li > a {
+} */
+/* .menu > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
+} */
+.menu > li > a {
+  padding: 0px 10px;
 }
 .menu .menu-item-has-children {
   position: relative;
@@ -6903,7 +6898,8 @@ em, i, .em {
 
 small, .small {
   display: block;
-  font-size: 14px;
+  font-size: 75%; /* 14px */
+  line-height: 1.7;
 }
 
 .small-caps {
