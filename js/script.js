@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const dropdownProjects = document.querySelector(".dropdown-projects");
     const dropdownMenu = document.querySelector('.dropdown-projects-menu');
+    const allLinks = document.querySelectorAll('.menu .menu-item');
 
     dropdownProjects.addEventListener('mouseover', () => {
         dropdownMenu.classList.add('dropdown-projects-menu-hover');
@@ -13,4 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
             dropdownMenu.classList.remove('dropdown-projects-menu-hover');
         // }, 150)
     });
+
+    // allLinks.forEach((link)=>{
+    //     link.addEventListener('mouseover',(target)=>{
+    //         if (!link.classList.contains('hover-menu')) {
+    //             dropdownMenu.classList.remove('dropdown-projects-menu-hover')
+    //         }
+    //     })
+    // })
+
 });
