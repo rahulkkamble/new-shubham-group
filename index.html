@@ -55,60 +55,6 @@
       width: 70px;
     }
 
-    header.bg-white .dropdown-projects-menu {
-      background-color: #fff;
-    }
-
-    .dropdown-projects {
-      position: relative;
-      text-decoration: none;
-      z-index: 100;
-      transform: perspective(1000px);
-    }
-
-    .dropdown-projects-menu {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      position: absolute;
-      left: 0;
-      opacity: 0;
-      top: 0;
-      visibility: hidden;
-      /* display: none; */
-      z-index: -99999;
-      /* padding-top: 30px; */
-    }
-
-    .dropdown-projects-menu li:first-child {
-      cursor: default;
-    }
-
-    .dropdown-projects-menu a {
-      display: inline-block;
-      white-space: nowrap;
-      line-height: 40px;
-      text-decoration: none;
-      -webkit-transition: all .1s;
-      transition: all .1s;
-    }
-
-    .dropdown-projects-menu-hover {
-      opacity: 1;
-      visibility: visible;
-      /* display: block; */
-      top: 100%;
-      left: 0;
-      -webkit-transition: all .2s, background, .2s .2s linear;
-      transition: all .2s, background .2s .2s linear;
-    }
-
-    .dropdown-projects-menu.close {
-      visibility: visible;
-      opacity: 0;
-      top: 0;
-      transition: all .5s linear;
-    }
   </style>
 
 </head>
@@ -116,19 +62,20 @@
 <body>
   <div data-barba="wrapper">
     <!-- PAGE PRELOADER -->
-    <div class="preloader text-center bg-dark-2" id="js-preloader" data-arts-theme-text="light">
+    <div class="preloader text-center bg-light-4" id="js-preloader" data-arts-theme-text="dark">
       <div class="preloader__content">
         <!-- header -->
         <div class="preloader__header mt-auto">
-          <div class="preloader__heading h2"><img src="img/general/logo_White_one_liner.png" width="200"></div>
+          <div class="preloader__heading h2"><img src="img/general/logo_Black_one_liner.png" width="200"></div>
           <div class="preloader__subline small-caps mt-1"></div>
         </div>
         <!-- - header -->
         <!-- counter -->
-        <div class="preloader__counter h5"><span
-            class="preloader__counter-number preloader__counter-current">0</span><span
+        <div class="preloader__counter text-danger h5"><span
+            class="preloader__counter-number text-secondary preloader__counter-current">0</span><span
             class="preloader__counter-divider">&nbsp;&nbsp;/&nbsp;&nbsp;</span><span
-            class="preloader__counter-number preloader__counter-total">100</span></div>
+            class="preloader__counter-number text-secondary preloader__counter-total">100</span>
+        </div>
         <!-- - counter -->
         <!-- circle holder -->
         <div class="preloader__circle"></div>
@@ -296,8 +243,9 @@
                 <div class="dropdown-projects">
                   <a class="h-100" href="projects.html">Projects</a>
                   <ul class="menu dropdown-projects-menu">
-                    <li class="menu-item" style="height: 35px; display: block; opacity: 0;"><a
-                        href="javascript:void(0)">&nbsp;</a></li>
+                    <li class="menu-item" style="height: 35px; display: block; opacity: 0;">
+                      <a class="d-block" href="javascript:void(0)">&nbsp;</a>
+                    </li>
                     <li class="menu-item">
                       <a href="jijai_angan.html">Jijai Angan</a>
                     </li>
@@ -308,13 +256,7 @@
                 </div>
               </li>
               <li class="menu-item">
-                <a href="#">Buyer's Guide</a>
-              </li>
-              <li class="menu-item">
-                <a href="award.html">Awards</a>
-              </li>
-              <li class="menu-item">
-                <a href="#">Media</a>
+                <a href="award.html">Awards & Media</a>
               </li>
               <li class="menu-item">
                 <a href="#">Gallery</a>
@@ -437,13 +379,16 @@
                 class="slider-fullscreen-projects__content swiper-container pointer-events-none js-slider-fullscreen-projects__content">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars">Transforming Skylines Nationwide</h2>
+                    <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars">Transforming
+                      Skylines Nationwide</h2>
                   </div>
                   <div class="swiper-slide">
-                    <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars">Iconic Residences Redefined</h2>
+                    <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars">Iconic
+                      Residences Redefined</h2>
                   </div>
                   <div class="swiper-slide">
-                    <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars">Eco-Friendly Living at Its Best</h2>
+                    <h2 class="h1 slider__heading js-split-text" data-split-text-type="lines, words, chars">Eco-Friendly
+                      Living at Its Best</h2>
                   </div>
                 </div>
               </div>
@@ -472,7 +417,7 @@
                         data-texture-src="img/home/slider/2.jpg"></div>
                     </div>
                   </div>
-                  
+
                 </div>
                 <!-- overlay -->
                 <div class="slider__overlay overlay overlay_circle-dark-70 overlay_deither"></div>
@@ -571,8 +516,8 @@
                   <div class="section-about__floating-image" data-arts-parallax="element" data-arts-parallax-y="-25%">
                     <div class="w-100 h-100">
                       <div data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.1">
-                        <div class="lazy"><img data-src="img/about_us/team_all.jpg" src="#" alt="" width="420"
-                            height="420" /></div>
+                        <div class="lazy"><img data-src="img/home/2023_BEST_RESIDENTIAL_PROPERTY_AWARD_JIJAI_ANGAN.jpg"
+                            src="#" alt="" width="420" height="420" /></div>
                       </div>
                     </div>
                   </div>
@@ -931,7 +876,8 @@
             <header class="row justify-content-center section-masthead__header">
               <div class="col-12">
                 <div class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text"
-                  data-split-text-type="lines,words" data-split-text-set="words"><span>Why you should choose us</span></div>
+                  data-split-text-type="lines,words" data-split-text-set="words"><span>Why you should choose us</span>
+                </div>
                 <div class="section-masthead__heading mt-0 mb-1 mb-md-2 split-text js-split-text"
                   data-split-text-type="lines,words" data-split-text-set="words">
                   <h1 class="mt-0 mb-0 h2">Growth which embodies trust</h1>
@@ -955,7 +901,8 @@
                       <!-- - icon -->
                       <!-- header -->
                       <div class="figure-feature__heading h5 mt-0-5 mb-0 mx-2">Reputation and Legacy</div>
-                      <div class="figure-member__position small-caps mx-2 mt-1">We are known for our small beginnings yet our reputation precedes us.On our way to make an out-living legacy.</div>
+                      <div class="figure-member__position small-caps mx-2 mt-1">We are known for our small beginnings
+                        yet our reputation precedes us.On our way to make an out-living legacy.</div>
                       <!-- - header -->
                     </div>
                   </div>
@@ -966,11 +913,13 @@
                   <div class="figure-feature bg-white">
                     <div class="figure-feature__header">
                       <!-- icon -->
-                      <div class="figure-feature__icon"><img src="img/home/why_us/architectural_excellence.png" alt="alt" /></div>
+                      <div class="figure-feature__icon"><img src="img/home/why_us/architectural_excellence.png"
+                          alt="alt" /></div>
                       <!-- - icon -->
                       <!-- header -->
                       <div class="figure-feature__heading h5 mt-0-5 mb-0 mx-2">Architectural Excellence</div>
-                      <div class="figure-member__position small-caps mx-2 mt-1">We blend innovative design with efficient space utilising and ensuring architectural brilliance.</div>
+                      <div class="figure-member__position small-caps mx-2 mt-1">We blend innovative design with
+                        efficient space utilising and ensuring architectural brilliance.</div>
                       <!-- - header -->
                     </div>
                   </div>
@@ -981,12 +930,14 @@
                   <div class="figure-feature bg-white">
                     <div class="figure-feature__header">
                       <!-- icon -->
-                      <div class="figure-feature__icon"><img src="img/home/why_us/expansive_living_space.png" alt="alt" />
+                      <div class="figure-feature__icon"><img src="img/home/why_us/expansive_living_space.png"
+                          alt="alt" />
                       </div>
                       <!-- - icon -->
                       <!-- header -->
                       <div class="figure-feature__heading h5 mt-0-5 mb-0 mx-2">Expansive Living Spaces</div>
-                      <div class="figure-member__position small-caps mx-2 mt-1">Our properties offer generous living areas that enhance mental and physical well-being.</div>
+                      <div class="figure-member__position small-caps mx-2 mt-1">Our properties offer generous living
+                        areas that enhance mental and physical well-being.</div>
                       <!-- - header -->
                     </div>
                   </div>
@@ -1001,7 +952,8 @@
                       <!-- - icon -->
                       <!-- header -->
                       <div class="figure-feature__heading h5 mt-0-5 mb-0 mx-2">Community Enrichment</div>
-                      <div class="figure-member__position small-caps mx-2 mt-1">We build to unite families, and our events better present our points.</div>
+                      <div class="figure-member__position small-caps mx-2 mt-1">We build to unite families, and our
+                        events better present our points.</div>
                       <!-- - header -->
                     </div>
                   </div>
@@ -1017,7 +969,8 @@
                       <!-- - icon -->
                       <!-- header -->
                       <div class="figure-feature__heading h5 mt-0-5 mb-0 mx-2">Comprehensive Security</div>
-                      <div class="figure-member__position small-caps mx-2 mt-1">Your Security is our concern, 24/7 surveillance, from the gate to your floor.</div>
+                      <div class="figure-member__position small-caps mx-2 mt-1">Your Security is our concern, 24/7
+                        surveillance, from the gate to your floor.</div>
                       <!-- - header -->
                     </div>
                   </div>
@@ -1032,7 +985,8 @@
                       <!-- - icon -->
                       <!-- header -->
                       <div class="figure-feature__heading h5 mt-0-5 mb-0 mx-2">Luxurious Amenities</div>
-                      <div class="figure-member__position small-caps mx-2 mt-1">Our extensive range of amenities enhances the overall lifestyle of our community.</div>
+                      <div class="figure-member__position small-caps mx-2 mt-1">Our extensive range of amenities
+                        enhances the overall lifestyle of our community.</div>
                       <!-- - header -->
                     </div>
                   </div>

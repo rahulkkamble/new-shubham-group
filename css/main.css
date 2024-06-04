@@ -11289,6 +11289,64 @@ small, .small {
   padding-top: 8px;
 }
 
+/* Header Dropdown */
+
+header.bg-white .dropdown-projects-menu {
+  background-color: #fff;
+}
+
+.dropdown-projects {
+  position: relative;
+  text-decoration: none;
+  z-index: 100;
+  transform: perspective(1000px);
+}
+
+.dropdown-projects-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: -10px;
+  opacity: 0;
+  top: 0;
+  visibility: hidden;
+  /* display: none; */
+  z-index: -99999;
+  /* padding-top: 30px; */
+}
+
+.dropdown-projects-menu li:first-child {
+  cursor: default;
+}
+
+.dropdown-projects-menu a {
+  display: inline-block;
+  white-space: nowrap;
+  line-height: 40px;
+  text-decoration: none;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
+.dropdown-projects-menu-hover {
+  opacity: 1;
+  visibility: visible;
+  /* display: block; */
+  top: 100%;
+  left: -10px;
+  -webkit-transition: all .2s, background, .2s .2s linear;
+  transition: all .2s, background .2s .2s linear;
+}
+
+.dropdown-projects-menu.close {
+  visibility: visible;
+  opacity: 0;
+  top: 0;
+  transition: all .5s linear;
+}
+/* Header Dropdown End */
+
 @media screen and (max-width: 991px) {
   .figure-feature__header {
     height: 200px;
