@@ -1,26 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const dropdownProjects = document.querySelector(".dropdown-projects");
+    const dropdownProjects = document.querySelector(".hover-dropdown");
     const dropdownMenu = document.querySelector('.dropdown-projects-menu');
-    const allLinks = document.querySelectorAll('.menu .menu-item');
+    const menuItems = document.querySelectorAll('.menu .menu-item');
 
     dropdownProjects.addEventListener('mouseover', () => {
         dropdownMenu.classList.add('dropdown-projects-menu-hover');
     });
-    dropdownMenu.addEventListener('mouseleave', (event) => {
-        console.log(event);
-        // dropdownMenu.classList.add('close');
-        // setTimeout(() => {
-            // dropdownMenu.classList.remove('close');
-            dropdownMenu.classList.remove('dropdown-projects-menu-hover');
-        // }, 150)
+
+    dropdownProjects.addEventListener('mouseleave', () => {
+        setTimeout(() => {
+            if (!dropdownProjects.matches(':hover')) {
+                dropdownMenu.classList.remove('dropdown-projects-menu-hover');
+            }
+        }, 100);
     });
 
-    // allLinks.forEach((link)=>{
-    //     link.addEventListener('mouseover',(target)=>{
-    //         if (!link.classList.contains('hover-menu')) {
-    //             dropdownMenu.classList.remove('dropdown-projects-menu-hover')
-    //         }
-    //     })
-    // })
-
+    menuItems.forEach((item) => {
+        item.addEventListener('mouseover', () => {
+            if (!item.classList.contains('hover-dropdown')) {
+                dropdownMenu.classList.remove('dropdown-projects-menu-hover');
+            }
+        });
+    });
 });
