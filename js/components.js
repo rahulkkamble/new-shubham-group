@@ -152,7 +152,7 @@ window.$window = $(window);
 window.$body = $('body');
 window.$html = $('html');
 window.$spinner = $('#js-spinner');
-window.$barbaWrapper = $('[data-barba="wrapper"]');
+// window.$barbaWrapper = $('[data-barba="wrapper"]');
 window.$pageWrapper = $('#page-wrapper');
 window.$pageContent = $('.page-wrapper__content');
 window.$pagePreloader = $('#js-preloader');
