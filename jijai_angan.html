@@ -114,20 +114,21 @@
 <body>
     <div data-barba="wrapper">
         <!-- PAGE PRELOADER -->
-        <div class="preloader text-center bg-dark-2" id="js-preloader" data-arts-theme-text="light">
+        <div class="preloader text-center bg-light-4" id="js-preloader" data-arts-theme-text="dark">
             <div class="preloader__content">
                 <!-- header -->
                 <div class="preloader__header mt-auto">
-                    <div class="preloader__heading h2"><img src="img/general/SHUBHAM_logo_216.png" width="200">
+                    <div class="preloader__heading h2"><img src="img/general/logo_Black_one_liner.png" width="200">
                     </div>
                     <div class="preloader__subline small-caps mt-1"></div>
                 </div>
                 <!-- - header -->
                 <!-- counter -->
-                <div class="preloader__counter h5"><span
-                        class="preloader__counter-number preloader__counter-current">0</span><span
+                <div class="preloader__counter text-danger h5"><span
+                        class="preloader__counter-number text-secondary preloader__counter-current">0</span><span
                         class="preloader__counter-divider">&nbsp;&nbsp;/&nbsp;&nbsp;</span><span
-                        class="preloader__counter-number preloader__counter-total">100</span></div>
+                        class="preloader__counter-number text-secondary preloader__counter-total">100</span>
+                </div>
                 <!-- - counter -->
                 <!-- circle holder -->
                 <div class="preloader__circle"></div>
@@ -276,9 +277,9 @@
                     <div class="col-auto header__col header__col-left"><a class="logo" href="index.html">
                             <div class="logo__wrapper-img">
                                 <!-- primary logo version (for light backgrounds)--><img class="logo__img-primary"
-                                    src="img/general/SHUBHAM_logo_150.png" alt="" width="70" />
+                                    src="img/general/logo_Black_one_liner.png" alt="" width="70" />
                                 <!-- secondary logo version (for dark backgrounds)--><img class="logo__img-secondary"
-                                    src="img/general/SHUBHAM_logo_150.png" alt="" width="70" />
+                                    src="img/general/logo_White_one_liner.png" alt="" width="70" />
                             </div>
                         </a>
                     </div>
@@ -292,35 +293,24 @@
                             <li class="menu-item">
                                 <a href="about_us.html">About Us</a>
                             </li>
-                            <li class="menu-item">
+                            <li class="menu-item hover-dropdown">
                                 <div class="dropdown-projects">
                                     <a class="h-100" href="projects.html">Projects</a>
                                     <ul class="menu dropdown-projects-menu">
-                                        <li class="menu-item" style="height: 35px; display: block; opacity: 0;"><a
-                                                href="javascript:void(0)">&nbsp;</a></li>
-                                        <li class="menu-item">
-                                            <a href="individual_project.html">Project 1</a>
+                                        <li class="menu-item" style="height: 35px; display: block; opacity: 0;">
+                                            <a class="d-block" href="javascript:void(0)">&nbsp;</a>
                                         </li>
                                         <li class="menu-item">
-                                            <a href="individual_project.html">Project 2</a>
+                                            <a href="jijai_angan.html">Jijai Angan</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Buyer's Guide</a>
+                                <a href="award.html">Awards & Media</a>
                             </li>
                             <li class="menu-item">
-                                <a href="award.html">Awards</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">Media</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">Gallery</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">Career</a>
+                                <a href="gallery.html">Gallery</a>
                             </li>
                             <li class="menu-item">
                                 <a href="contact.html">Contact Us</a>
@@ -361,21 +351,27 @@
                 <!-- fullscreen menu for medium and small screen -->
                 <div class="header__wrapper-menu">
                     <ul class="menu-overlay js-menu-overlay">
-                        <li class="menu-item"><a class="h2" href="#" data-pjax-link="overlayMenu">
+                        <li class="menu-item"><a class="h2" href="about_us.html" data-pjax-link="overlayMenu">
                                 <div class="menu-overlay__item-wrapper split-text js-split-text"
                                     data-split-text-type="lines">About Us
                                 </div>
                             </a>
                         </li>
-                        <li class="menu-item"><a class="h2" href="#" data-pjax-link="overlayMenu">
+                        <li class="menu-item"><a class="h2" href="projects.html" data-pjax-link="overlayMenu">
                                 <div class="menu-overlay__item-wrapper split-text js-split-text"
                                     data-split-text-type="lines">Projects
                                 </div>
                             </a>
                         </li>
-                        <li class="menu-item"><a class="h2" href="#" data-pjax-link="overlayMenu">
+                        <li class="menu-item"><a class="h2" href="award.html" data-pjax-link="overlayMenu">
                                 <div class="menu-overlay__item-wrapper split-text js-split-text"
-                                    data-split-text-type="lines">Media
+                                    data-split-text-type="lines">Awards & Media
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu-item"><a class="h2" href="gallery.html" data-pjax-link="overlayMenu">
+                                <div class="menu-overlay__item-wrapper split-text js-split-text"
+                                    data-split-text-type="lines">Gallery
                                 </div>
                             </a>
                         </li>
@@ -397,7 +393,8 @@
                                 data-split-text-type="lines">
                                 Contacts</div>
                             <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
-                                <p><a href="#">sales@shubhamgroups.in</a><br />022 41228906 <br> 41228907<br />
+                                <p><a href="#">sales@shubhamgroups.in</a><br />+ 91 0000000000 <br> + 91
+                                    0000000000<br />
                                 </p>
                             </div>
                         </div>
@@ -408,9 +405,11 @@
                                 data-split-text-type="lines">Office
                             </div>
                             <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
-                                <p>The Ambience Court,<br>Unit No. 301 & 302,<br>Plot No. 2, Sector 19D, Vashi,<br>Navi
-                                    Mumbai - 400703
-                                </p>
+                                <p>plot no.02, sector 9E, <br>
+                                    Parth Solitaire,
+                                    7 th floor, near D-Mart Road,
+                                    Roadpali, Kalamboli, Panvel, <br>
+                                    Navi Mumbai, <br> Maharashtra - 410218</p>
                             </div>
                         </div>
                         <!-- - widget TEXT -->
@@ -431,7 +430,6 @@
             </div>
             <!-- - fullscreen overlay container -->
         </header>
-        <!-- - PAGE HEADER -->
         <!-- PAGE MAIN -->
         <div class="js-smooth-scroll bg-light-1" id="page-wrapper" data-barba="container">
             <main class="page-wrapper__content">
@@ -1190,12 +1188,13 @@
                                         <h2 class="widgettitle">About Us</h2>
                                         <!-- - header -->
                                         <!-- content -->
-                                        <p>White Castle, 5th Floor,
-                                            Sion-Trombay Road, Union Park,
-                                            Chembur, Mumbai, <br>
-                                            Maharashtra - 400071</p>
-                                        <p class="fa fa-phone"><a class="px-1" href="tel:02225559361">022 2555 9361</a>
-                                        </p>
+                                        <p>plot no.02, sector 9E, <br>
+                                            Parth Solitaire,
+                                            7 th floor, near D-Mart Road,
+                                            Roadpali, Kalamboli, Panvel, <br>
+                                            Navi Mumbai, <br> Maharashtra - 410218</p>
+                                        <p class="fa fa-phone"><a class="px-1" href="tel: 84229996971">+ 91
+                                                84229996971</a></p>
                                         <p class="fa fa-envelope"><a class="px-1"
                                                 href="mailto:sales@shubhamgroups.in">sales@shubhamgroups.in</a></p>
                                         <!-- - content -->
@@ -1217,8 +1216,6 @@
                                             <li><a href="award.html">Awards & Media</a>
                                             </li>
                                             <li><a href="gallery.html">Gallery</a>
-                                            </li>
-                                            <li><a href="career.html">Career</a>
                                             </li>
                                             <li><a href="contact.html">Contact Us</a>
                                             </li>

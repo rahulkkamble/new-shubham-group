@@ -61,19 +61,20 @@
 <body>
   <div data-barba="wrapper">
     <!-- PAGE PRELOADER -->
-    <div class="preloader text-center bg-dark-2" id="js-preloader" data-arts-theme-text="light">
+    <div class="preloader text-center bg-light-4" id="js-preloader" data-arts-theme-text="dark">
       <div class="preloader__content">
         <!-- header -->
         <div class="preloader__header mt-auto">
-          <div class="preloader__heading h2"><img src="img/general/SHUBHAM_logo_216.png" width="200"></div>
+          <div class="preloader__heading h2"><img src="img/general/logo_Black_one_liner.png" width="200"></div>
           <div class="preloader__subline small-caps mt-1"></div>
         </div>
         <!-- - header -->
         <!-- counter -->
-        <div class="preloader__counter h5"><span
-            class="preloader__counter-number preloader__counter-current">0</span><span
+        <div class="preloader__counter text-danger h5"><span
+            class="preloader__counter-number text-secondary preloader__counter-current">0</span><span
             class="preloader__counter-divider">&nbsp;&nbsp;/&nbsp;&nbsp;</span><span
-            class="preloader__counter-number preloader__counter-total">100</span></div>
+            class="preloader__counter-number text-secondary preloader__counter-total">100</span>
+        </div>
         <!-- - counter -->
         <!-- circle holder -->
         <div class="preloader__circle"></div>
@@ -238,7 +239,7 @@
               <li class="menu-item">
                 <a href="about_us.html">About Us</a>
               </li>
-              <li class="menu-item hover-menu">
+              <li class="menu-item hover-dropdown">
                 <div class="dropdown-projects">
                   <a class="h-100" href="projects.html">Projects</a>
                   <ul class="menu dropdown-projects-menu">
@@ -248,9 +249,6 @@
                     <li class="menu-item">
                       <a href="jijai_angan.html">Jijai Angan</a>
                     </li>
-                    <li class="menu-item">
-                      <a href="individual_project.html">Project 2</a>
-                    </li>
                   </ul>
                 </div>
               </li>
@@ -258,10 +256,7 @@
                 <a href="award.html">Awards & Media</a>
               </li>
               <li class="menu-item">
-                <a href="#">Gallery</a>
-              </li>
-              <li class="menu-item">
-                <a href="#">Career</a>
+                <a href="gallery.html">Gallery</a>
               </li>
               <li class="menu-item">
                 <a href="contact.html">Contact Us</a>
@@ -301,18 +296,24 @@
         <!-- fullscreen menu for medium and small screen -->
         <div class="header__wrapper-menu">
           <ul class="menu-overlay js-menu-overlay">
-            <li class="menu-item"><a class="h2" href="#" data-pjax-link="overlayMenu">
+            <li class="menu-item"><a class="h2" href="about_us.html" data-pjax-link="overlayMenu">
                 <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">About Us
                 </div>
               </a>
             </li>
-            <li class="menu-item"><a class="h2" href="#" data-pjax-link="overlayMenu">
+            <li class="menu-item"><a class="h2" href="projects.html" data-pjax-link="overlayMenu">
                 <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Projects
                 </div>
               </a>
             </li>
-            <li class="menu-item"><a class="h2" href="#" data-pjax-link="overlayMenu">
-                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Media
+            <li class="menu-item"><a class="h2" href="award.html" data-pjax-link="overlayMenu">
+                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Awards &
+                  Media
+                </div>
+              </a>
+            </li>
+            <li class="menu-item"><a class="h2" href="gallery.html" data-pjax-link="overlayMenu">
+                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Gallery
                 </div>
               </a>
             </li>
@@ -332,7 +333,7 @@
               <div class="header__widget-title small-caps js-split-text split-text" data-split-text-type="lines">
                 Contacts</div>
               <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
-                <p><a href="#">sales@shubhamgroups.in</a><br />022 41228906 <br> 41228907<br />
+                <p><a href="#">sales@shubhamgroups.in</a><br />+ 91 0000000000 <br> + 91 0000000000<br />
                 </p>
               </div>
             </div>
@@ -342,8 +343,11 @@
               <div class="header__widget-title small-caps js-split-text split-text" data-split-text-type="lines">Office
               </div>
               <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
-                <p>White castle, 5th floor, Sion-trombay road,<br>union park, chembur, mumbai,<br>MAHARASHTRA - 400071
-                </p>
+                <p>plot no.02, sector 9E, <br>
+                  Parth Solitaire,
+                  7 th floor, near D-Mart Road,
+                  Roadpali, Kalamboli, Panvel, <br>
+                  Navi Mumbai, <br> Maharashtra - 410218</p>
               </div>
             </div>
             <!-- - widget TEXT -->
@@ -363,7 +367,6 @@
       </div>
       <!-- - fullscreen overlay container -->
     </header>
-    <!-- - PAGE HEADER -->
     <!-- PAGE MAIN -->
     <div class="js-smooth-scroll bg-light-1" id="page-wrapper" data-barba="container">
       <main class="page-wrapper__content">
@@ -490,7 +493,8 @@
           data-grid-mobile="1">
           <div class="section-offset__content">
             <div class="section-video__container section section_h-700 section-content__image"><a
-                class="section-video__link" href="https://player.vimeo.com/video/954331401?h=9ae5968b75" data-autoplay="data-autoplay">
+                class="section-video__link" href="https://player.vimeo.com/video/954331401?h=9ae5968b75"
+                data-autoplay="data-autoplay">
                 <div class="section-video__link-inner" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="0"
                   data-arts-cursor-label="Play" data-arts-cursor-hide-native="true"
                   data-arts-cursor-magnetic="data-arts-cursor-magnetic">
@@ -501,7 +505,8 @@
                 <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax"
                   data-arts-parallax-factor="0.15">
                   <div>
-                    <div class="lazy-bg" data-src="img/award/2023_BEST_RESIDENTIAL_PROPERTY_AWARD_JIJAI_ANGAN.jpg"></div>
+                    <div class="lazy-bg" data-src="img/award/2023_BEST_RESIDENTIAL_PROPERTY_AWARD_JIJAI_ANGAN.jpg">
+                    </div>
                   </div>
                 </div>
                 <div class="overlay overlay_dark"></div>
@@ -539,11 +544,12 @@
                     <h2 class="widgettitle">About Us</h2>
                     <!-- - header -->
                     <!-- content -->
-                    <p>White Castle, 5th Floor,
-                      Sion-Trombay Road, Union Park,
-                      Chembur, Mumbai, <br>
-                      Maharashtra - 400071</p>
-                    <p class="fa fa-phone"><a class="px-1" href="tel:02225559361">022 2555 9361</a></p>
+                    <p>plot no.02, sector 9E, <br>
+                      Parth Solitaire,
+                      7 th floor, near D-Mart Road,
+                      Roadpali, Kalamboli, Panvel, <br>
+                      Navi Mumbai, <br> Maharashtra - 410218</p>
+                    <p class="fa fa-phone"><a class="px-1" href="tel: 84229996971">+ 91 84229996971</a></p>
                     <p class="fa fa-envelope"><a class="px-1"
                         href="mailto:sales@shubhamgroups.in">sales@shubhamgroups.in</a></p>
                     <!-- - content -->
@@ -565,8 +571,6 @@
                       <li><a href="award.html">Awards & Media</a>
                       </li>
                       <li><a href="gallery.html">Gallery</a>
-                      </li>
-                      <li><a href="career.html">Career</a>
                       </li>
                       <li><a href="contact.html">Contact Us</a>
                       </li>
@@ -604,9 +608,9 @@
                 <!-- content --><a class="logo" href="index.html">
                   <div class="logo__wrapper-img">
                     <!-- primary logo version (for light backgrounds)--><img class="logo__img-primary logo-footer"
-                      src="img/general/SHUBHAM_logo_216.png" alt="" />
+                      src="img/general/logo_Black_one_liner.png" alt="" />
                     <!-- secondary logo version (for dark backgrounds)--><img class="logo__img-secondary logo-footer"
-                      src="img/general/SHUBHAM_logo_216.png" alt="" />
+                      src="img/general/logo_White_one_liner.png" alt="" />
                   </div>
                 </a>
                 <!-- - content -->
