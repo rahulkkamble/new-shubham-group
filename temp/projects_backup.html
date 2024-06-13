@@ -1,0 +1,445 @@
+<body>
+    <div data-barba="wrapper">
+        [[This-Is-Component title=&#039;Preloader&#039;]]
+        [[This-Is-Component title=&#039;Spinner&#039;]]
+        <!-- TRANSITION CURTAINS -->
+        <!-- page curtain AJAX transition -->
+        <div id="js-page-transition-curtain" class="curtain transition-curtain">
+            <div class="curtain__wrapper-svg">
+                <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" class="curtain-svg">
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+                        class="curtain-svg__normal">
+                    </path>
+                    <path
+                        d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-desktop">
+                    </path>
+                    <path
+                        d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-mobile">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-desktop">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-mobile">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <!-- - page curtain AJAX transition -->
+        <!-- header curtain show/hide -->
+        <div id="js-header-curtain" class="header-curtain curtain">
+            <div class="curtain__wrapper-svg">
+                <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" class="curtain-svg">
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+                        class="curtain-svg__normal">
+                    </path>
+                    <path
+                        d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-desktop">
+                    </path>
+                    <path
+                        d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-mobile">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-desktop">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-mobile">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <!-- - header curtain show/hide -->
+        <!-- header curtain AJAX transition -->
+        <div id="js-header-curtain-transition" class="header-curtain header-curtain_transition curtain">
+            <div class="curtain__wrapper-svg">
+                <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" class="curtain-svg">
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+                        class="curtain-svg__normal">
+                    </path>
+                    <path
+                        d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-desktop">
+                    </path>
+                    <path
+                        d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-mobile">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-desktop">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-mobile">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <!-- - header curtain AJAX transition -->
+        <!-- - TRANSITION CURTAINS -->
+        [[This-Is-Component title=&#039;Cursor&#039;]]
+        <!-- PAGE HEADER -->
+        [[This-Is-Component title=&#039;Header&#039;]]
+        <!-- - PAGE HEADER -->
+        <!-- PAGE MAIN -->
+        <div id="page-wrapper" data-barba="container" class="js-smooth-scroll bg-light-1">
+            <main class="page-wrapper__content">
+                <!-- section GRID PROJECTS 3 COLUMNS-->
+                <section data-arts-os-animation="data-arts-os-animation" data-grid-columns="3" data-grid-tablet="2"
+                    data-grid-mobile="1" data-arts-theme-text="dark"
+                    class="section section-grid section-content overflow pt-medium pb-medium">
+                    <div class="container-fluid">
+                        <div class="row justify-content-between align-items-center section pb-medium">
+                            <div class="col-12 col-lg-auto">
+                                <h1 class="h1 mt-0 mb-0">Projects
+                                </h1>
+                                <div class="w-100">
+                                </div>
+                                <div class="section__headline mt-2 mr-auto">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-auto pt-medium pt-md-0 pb-md-3">
+                                <div class="filter js-filter">
+                                    <div class="filter__inner">
+                                        <div class="container-fluid no-gutters">
+                                            <!-- items -->
+                                            <div class="row justify-content-center">
+                                                <!-- all (*) -->
+                                                <div data-filter="*"
+                                                    class="col-lg-auto col-12 filter__item filter__item_active js-filter__item">
+                                                    <div data-split-text-type="lines,words" data-split-text-set="words"
+                                                        class="split-text js-split-text">
+                                                        All
+                                                    </div>
+                                                </div>
+                                                <!-- - all (*) -->
+                                                <div data-filter=".category-ongoing"
+                                                    class="col-lg-auto col-12 filter__item js-filter__item">
+                                                    <div data-split-text-type="lines,words" data-split-text-set="words"
+                                                        class="split-text js-split-text">
+                                                        Ongoing
+                                                    </div>
+                                                </div>
+                                                <div data-filter=".category-upcoming"
+                                                    class="col-lg-auto col-12 filter__item js-filter__item">
+                                                    <div data-split-text-type="lines,words" data-split-text-set="words"
+                                                        class="split-text js-split-text">
+                                                        Upcoming
+                                                    </div>
+                                                </div>
+                                                <div data-filter=".category-completed"
+                                                    class="col-lg-auto col-12 filter__item js-filter__item">
+                                                    <div data-split-text-type="lines,words" data-split-text-set="words"
+                                                        class="split-text js-split-text">
+                                                        Completed
+                                                    </div>
+                                                </div>
+                                                <!-- - items-->
+                                            </div>
+                                            <!-- underline -->
+                                            <div class="filter__underline js-filter__underline">
+                                            </div>
+                                            <!-- - underline -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid_fluid-5 js-grid">
+                            <div
+                                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-5 grid__item_fluid-5-fancy grid__sizer js-grid__sizer">
+                            </div>
+                            <div
+                                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-5 grid__item_fluid-5-fancy js-grid__item category-ongoing">
+                                <div class="section-grid__item">
+                                    <a href="individual_project.html"
+                                        class="figure-project hover-zoom js-change-text-hover">
+                                        <div class="hover-zoom__inner">
+                                            <div class="hover-zoom__zoom">
+                                                <div data-arts-parallax="data-arts-parallax"
+                                                    data-arts-parallax-factor="0.15"
+                                                    class="figure-project__wrapper-img js-transition-img">
+                                                    <div class="lazy js-transition-img__transformed-el">
+                                                        <img src="#" data-src="https://placehold.co/1280x1920" alt=""
+                                                            width="1280" height="1920" class="img-fluid" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="figure-project__content pl-md-2 pt-md-2 pt-1 pl-0">
+                                            <h2 class="h3 figure-project__heading">Nordic Adventure
+                                            </h2>
+                                            <div class="figure-project__category mt-md-1 mt-0-5">
+                                                <div
+                                                    class="change-text-hover small-caps js-change-text-hover change-text-hover_has-line text-left">
+                                                    <!-- label by default -->
+                                                    <div data-split-text-type="lines" data-split-text-set="lines"
+                                                        class="change-text-hover__normal js-split-text split-text js-change-text-hover__normal">
+                                                        project category
+                                                    </div>
+                                                    <!-- - label by default -->
+                                                    <!-- label on hover -->
+                                                    <div class="change-text-hover__hover js-change-text-hover__hover">
+                                                        <!-- hover line -->
+                                                        <div class="change-text-hover__line js-change-text-hover__line">
+                                                        </div>
+                                                        <!-- - hover line -->
+                                                        <span data-split-text-type="lines" data-split-text-set="lines"
+                                                            class="js-split-text split-text">Explore Project</span>
+                                                    </div>
+                                                    <!-- - label on hover -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div
+                                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-5 grid__item_fluid-5-fancy js-grid__item category-ongoing">
+                                <div class="section-grid__item">
+                                    <a href="" class="figure-project hover-zoom js-change-text-hover">
+                                        <div class="hover-zoom__inner">
+                                            <div class="hover-zoom__zoom">
+                                                <div data-arts-parallax="data-arts-parallax"
+                                                    data-arts-parallax-factor="0.15"
+                                                    class="figure-project__wrapper-img js-transition-img">
+                                                    <div class="lazy js-transition-img__transformed-el">
+                                                        <img src="#" data-src="https://placehold.co/1280x1920" alt=""
+                                                            width="1280" height="1920" class="img-fluid" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="figure-project__content pl-md-2 pt-md-2 pt-1 pl-0">
+                                            <h2 class="h3 figure-project__heading">Jijai Angan
+                                            </h2>
+                                            <div class="figure-project__category mt-md-1 mt-0-5">
+                                                <div
+                                                    class="change-text-hover small-caps js-change-text-hover change-text-hover_has-line text-left">
+                                                    <!-- label by default -->
+                                                    <div data-split-text-type="lines" data-split-text-set="lines"
+                                                        class="change-text-hover__normal js-split-text split-text js-change-text-hover__normal">
+                                                        - Luxury 2BHK
+                                                    </div>
+                                                    <!-- - label by default -->
+                                                    <!-- label on hover -->
+                                                    <div class="change-text-hover__hover js-change-text-hover__hover">
+                                                        <!-- hover line -->
+                                                        <div class="change-text-hover__line js-change-text-hover__line">
+                                                        </div>
+                                                        <!-- - hover line -->
+                                                        <span data-split-text-type="lines" data-split-text-set="lines"
+                                                            class="js-split-text split-text">Explore Project</span>
+                                                    </div>
+                                                    <!-- - label on hover -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div
+                                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-5 grid__item_fluid-5-fancy js-grid__item category-upcoming">
+                                <div class="section-grid__item">
+                                    <a href="" class="figure-project hover-zoom js-change-text-hover">
+                                        <div class="hover-zoom__inner">
+                                            <div class="hover-zoom__zoom">
+                                                <div data-arts-parallax="data-arts-parallax"
+                                                    data-arts-parallax-factor="0.15"
+                                                    class="figure-project__wrapper-img js-transition-img">
+                                                    <div class="lazy js-transition-img__transformed-el">
+                                                        <img src="#" data-src="https://placehold.co/1280x1920" alt=""
+                                                            width="1280" height="1920" class="img-fluid" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="figure-project__content pl-md-2 pt-md-2 pt-1 pl-0">
+                                            <h2 class="h3 figure-project__heading">Cassio Apartment
+                                            </h2>
+                                            <div class="figure-project__category mt-md-1 mt-0-5">
+                                                <div
+                                                    class="change-text-hover small-caps js-change-text-hover change-text-hover_has-line text-left">
+                                                    <!-- label by default -->
+                                                    <div data-split-text-type="lines" data-split-text-set="lines"
+                                                        class="change-text-hover__normal js-split-text split-text js-change-text-hover__normal">
+                                                        project
+                                                        category
+                                                    </div>
+                                                    <!-- - label by default -->
+                                                    <!-- label on hover -->
+                                                    <div class="change-text-hover__hover js-change-text-hover__hover">
+                                                        <!-- hover line -->
+                                                        <div class="change-text-hover__line js-change-text-hover__line">
+                                                        </div>
+                                                        <!-- - hover line -->
+                                                        <span data-split-text-type="lines" data-split-text-set="lines"
+                                                            class="js-split-text split-text">Explore Project</span>
+                                                    </div>
+                                                    <!-- - label on hover -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div
+                                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-5 grid__item_fluid-5-fancy js-grid__item category-completed">
+                                <div class="section-grid__item">
+                                    <a href="" class="figure-project hover-zoom js-change-text-hover">
+                                        <div class="hover-zoom__inner">
+                                            <div class="hover-zoom__zoom">
+                                                <div data-arts-parallax="data-arts-parallax"
+                                                    data-arts-parallax-factor="0.15"
+                                                    class="figure-project__wrapper-img js-transition-img">
+                                                    <div class="lazy js-transition-img__transformed-el">
+                                                        <img src="#" data-src="https://placehold.co/1280x1920" alt=""
+                                                            width="1280" height="1920" class="img-fluid" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="figure-project__content pl-md-2 pt-md-2 pt-1 pl-0">
+                                            <h2 class="h3 figure-project__heading">Nothern Wave
+                                            </h2>
+                                            <div class="figure-project__category mt-md-1 mt-0-5">
+                                                <div
+                                                    class="change-text-hover small-caps js-change-text-hover change-text-hover_has-line text-left">
+                                                    <!-- label by default -->
+                                                    <div data-split-text-type="lines" data-split-text-set="lines"
+                                                        class="change-text-hover__normal js-split-text split-text js-change-text-hover__normal">
+                                                        project category
+                                                    </div>
+                                                    <!-- - label by default -->
+                                                    <!-- label on hover -->
+                                                    <div class="change-text-hover__hover js-change-text-hover__hover">
+                                                        <!-- hover line -->
+                                                        <div class="change-text-hover__line js-change-text-hover__line">
+                                                        </div>
+                                                        <!-- - hover line -->
+                                                        <span data-split-text-type="lines" data-split-text-set="lines"
+                                                            class="js-split-text split-text">Explore Project</span>
+                                                    </div>
+                                                    <!-- - label on hover -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div
+                                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-5 grid__item_fluid-5-fancy js-grid__item category-ongoing">
+                                <div class="section-grid__item">
+                                    <a href="" class="figure-project hover-zoom js-change-text-hover">
+                                        <div class="hover-zoom__inner">
+                                            <div class="hover-zoom__zoom">
+                                                <div data-arts-parallax="data-arts-parallax"
+                                                    data-arts-parallax-factor="0.15"
+                                                    class="figure-project__wrapper-img js-transition-img">
+                                                    <div class="lazy js-transition-img__transformed-el">
+                                                        <img src="#" data-src="https://placehold.co/1280x1920" alt=""
+                                                            width="1280" height="1920" class="img-fluid" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="figure-project__content pl-md-2 pt-md-2 pt-1 pl-0">
+                                            <h2 class="h3 figure-project__heading">Jijai Angan – Premium 2 BHK
+                                            </h2>
+                                            <div class="figure-project__category mt-md-1 mt-0-5">
+                                                <div
+                                                    class="change-text-hover small-caps js-change-text-hover change-text-hover_has-line text-left">
+                                                    <!-- label by default -->
+                                                    <div data-split-text-type="lines" data-split-text-set="lines"
+                                                        class="change-text-hover__normal js-split-text split-text js-change-text-hover__normal">
+                                                        project category
+                                                    </div>
+                                                    <!-- - label by default -->
+                                                    <!-- label on hover -->
+                                                    <div class="change-text-hover__hover js-change-text-hover__hover">
+                                                        <!-- hover line -->
+                                                        <div class="change-text-hover__line js-change-text-hover__line">
+                                                        </div>
+                                                        <!-- - hover line -->
+                                                        <span data-split-text-type="lines" data-split-text-set="lines"
+                                                            class="js-split-text split-text">Explore Project</span>
+                                                    </div>
+                                                    <!-- - label on hover -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div
+                                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-5 grid__item_fluid-5-fancy js-grid__item category-ongoing">
+                                <div class="section-grid__item">
+                                    <a href="" class="figure-project hover-zoom js-change-text-hover">
+                                        <div class="hover-zoom__inner">
+                                            <div class="hover-zoom__zoom">
+                                                <div data-arts-parallax="data-arts-parallax"
+                                                    data-arts-parallax-factor="0.15"
+                                                    class="figure-project__wrapper-img js-transition-img">
+                                                    <div class="lazy js-transition-img__transformed-el">
+                                                        <img src="#" data-src="https://placehold.co/1280x1920" alt=""
+                                                            width="1280" height="1920" class="img-fluid" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="figure-project__content pl-md-2 pt-md-2 pt-1 pl-0">
+                                            <h2 class="h3 figure-project__heading">Dancing in the Dark
+                                            </h2>
+                                            <div class="figure-project__category mt-md-1 mt-0-5">
+                                                <div
+                                                    class="change-text-hover small-caps js-change-text-hover change-text-hover_has-line text-left">
+                                                    <!-- label by default -->
+                                                    <div data-split-text-type="lines" data-split-text-set="lines"
+                                                        class="change-text-hover__normal js-split-text split-text js-change-text-hover__normal">
+                                                        project category
+                                                    </div>
+                                                    <!-- - label by default -->
+                                                    <!-- label on hover -->
+                                                    <div class="change-text-hover__hover js-change-text-hover__hover">
+                                                        <!-- hover line -->
+                                                        <div class="change-text-hover__line js-change-text-hover__line">
+                                                        </div>
+                                                        <!-- - hover line -->
+                                                        <span data-split-text-type="lines" data-split-text-set="lines"
+                                                            class="js-split-text split-text">Explore Project</span>
+                                                    </div>
+                                                    <!-- - label on hover -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- - section GRID PROJECTS 3 COLUMNS-->
+            </main>
+            <!-- PAGE FOOTER -->
+            [[This-Is-Component title=&#039;Footer&#039;]]
+            <!-- - PAGE FOOTER -->
+        </div>
+        <!-- - PAGE MAIN -->
+    </div>
+    [[This-Is-Projects-Shader]]
+    [[This-Is-Asset-Loader style=contact]]
+</body>
