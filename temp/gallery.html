@@ -1,0 +1,398 @@
+<body>
+    <div data-barba="wrapper">
+        [[This-Is-Component title=&#039;Preloader&#039;]]
+        [[This-Is-Component title=&#039;Spinner&#039;]]
+        <!-- TRANSITION CURTAINS -->
+        <!-- page curtain AJAX transition -->
+        <div id="js-page-transition-curtain" class="curtain transition-curtain">
+            <div class="curtain__wrapper-svg">
+                <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" class="curtain-svg">
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+                        class="curtain-svg__normal">
+                    </path>
+                    <path
+                        d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-desktop">
+                    </path>
+                    <path
+                        d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-mobile">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-desktop">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-mobile">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <!-- - page curtain AJAX transition -->
+        <!-- header curtain show/hide -->
+        <div id="js-header-curtain" class="header-curtain curtain">
+            <div class="curtain__wrapper-svg">
+                <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" class="curtain-svg">
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+                        class="curtain-svg__normal">
+                    </path>
+                    <path
+                        d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-desktop">
+                    </path>
+                    <path
+                        d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-mobile">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-desktop">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-mobile">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <!-- - header curtain show/hide -->
+        <!-- header curtain AJAX transition -->
+        <div id="js-header-curtain-transition" class="header-curtain header-curtain_transition curtain">
+            <div class="curtain__wrapper-svg">
+                <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" class="curtain-svg">
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+                        class="curtain-svg__normal">
+                    </path>
+                    <path
+                        d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-desktop">
+                    </path>
+                    <path
+                        d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-mobile">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-desktop">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-mobile">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <!-- - header curtain AJAX transition -->
+        <!-- - TRANSITION CURTAINS -->
+        [[This-Is-Component title=&#039;Cursor&#039;]]
+        <!-- PAGE HEADER -->
+        [[This-Is-Component title=&#039;Header&#039;]]
+        <!-- - PAGE HEADER -->
+        <!-- PAGE MAIN -->
+        <div id="page-wrapper" data-barba="container" class="js-smooth-scroll bg-light-1">
+            <main class="page-wrapper__content">
+                <!-- section PROJECTS SLIDER FULLSCREEN -->
+                <section data-arts-theme-text="light" data-arts-os-animation=""
+                    class="section section-fullheight section-projects section-projects-slider bg-dark-1 overflow">
+                    <div class="section-fullheight__inner section-fullheight__inner_mobile text-center">
+                        <div class="slider slider-fullscreen-projects js-slider-fullscreen-projects js-slider">
+                            <!-- slider CONTENT -->
+                            <div
+                                class="slider-fullscreen-projects__content swiper-container pointer-events-none js-slider-fullscreen-projects__content">
+                                <h1 class="h1 mt-0 mb-0">Gallery
+                                </h1>
+                            </div>
+                            <!-- - slider CONTENT -->
+                            <!-- slider IMAGES -->
+                            <div data-direction="horizontal" data-transition-effect="distortion" data-aspect-ratio="1.5"
+                                data-transition-displacement-img="https://shubhamgroups.in//frontend/shubham/assets/img/general/bg-displacement-7.jpg"
+                                data-speed="1200" data-autoplay-enabled="true" data-autoplay-delay="5000"
+                                data-counter-style="roman"
+                                class="slider-fullscreen-projects__images swiper-container js-slider-fullscreen-projects__images">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide overflow">
+                                        <div data-swiper-parallax="90%"
+                                            class="slider__images-slide-inner js-transition-img overflow">
+                                            <div data-texture-src="https://shubhamgroups.in//frontend/shubham/assets/img/award/2023_BEST_RESIDENTIAL_PROPERTY_AWARD_JIJAI_ANGAN.jpg"
+                                                class="slider__bg lazy-bg js-transition-img__transformed-el">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide overflow">
+                                        <div data-swiper-parallax="90%"
+                                            class="slider__images-slide-inner js-transition-img overflow">
+                                            <div data-texture-src="https://shubhamgroups.in//frontend/shubham/assets/img/award/SUSTAINABLE_CITIES_APPRECIATION.jpg"
+                                                class="slider__bg lazy-bg js-transition-img__transformed-el">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide overflow">
+                                        <div data-swiper-parallax="90%"
+                                            class="slider__images-slide-inner js-transition-img overflow">
+                                            <div data-texture-src="https://shubhamgroups.in//frontend/shubham/assets/img/about_us/team_all.jpg"
+                                                class="slider__bg lazy-bg js-transition-img__transformed-el">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- overlay -->
+                                <div class="slider__overlay overlay overlay_circle-dark-70 overlay_deither">
+                                </div>
+                                <div class="slider__circle">
+                                </div>
+                                <!-- - overlay -->
+                            </div>
+                            <!-- - slider IMAGES -->
+                            <!-- slider CANVAS -->
+                            <div class="slider__wrapper-canvas">
+                                <div class="slider__wrapper-canvas-inner">
+                                    <canvas class="slider__canvas">
+                                    </canvas>
+                                </div>
+                            </div>
+                            <!-- - slider CANVAS -->
+                        </div>
+                    </div>
+                </section>
+                <!-- - section PROJECTS SLIDER FULLSCREEN -->
+                <!-- IMAGES GALLERY BLOCK -->
+                <div class="js-gallery">
+                    <!-- section GRID #1 -->
+                    <section data-arts-os-animation="data-arts-os-animation" data-grid-columns="2"
+                        data-grid-columns-tablet="2" data-grid-columns-mobile="1"
+                        class="section section-grid section-content overflow pt-medium pb-xsmall">
+                        <div class="container-fluid">
+                            <div class="grid grid_fluid-4 js-grid">
+                                <div
+                                    class="grid__item grid__item_desktop-4 grid__item_tablet-4 grid__item_mobile-12 grid__item_fluid-4 grid__sizer js-grid__sizer">
+                                </div>
+                                <div
+                                    class="grid__item grid__item_desktop-4 grid__item_tablet-4 grid__item_mobile-12 grid__item_fluid-4 js-grid__item">
+                                    <div class="section-grid__item">
+                                        <div class="figure-image section-image">
+                                            <a data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.6"
+                                                data-arts-cursor-icon="add" data-arts-cursor-hide-native="true"
+                                                href="https://shubhamgroups.in//frontend/shubham/assets/img/about_us/dilip_patil.jpg"
+                                                data-size="1560x1560" data-title=""
+                                                class="hover-zoom figure-image__link">
+                                                <div class="hover-zoom__inner">
+                                                    <div class="hover-zoom__zoom">
+                                                        <div data-arts-parallax="data-arts-parallax"
+                                                            data-arts-parallax-factor="0.15"
+                                                            class="figure-image__wrapper-img">
+                                                            <div class="lazy">
+                                                                <img src="#"
+                                                                    data-src="https://shubhamgroups.in//frontend/shubham/assets/img/about_us/dilip_patil.jpg"
+                                                                    alt="" width="780" height="780" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="grid__item grid__item_desktop-4 grid__item_tablet-4 grid__item_mobile-12 grid__item_fluid-4 js-grid__item">
+                                    <div class="section-grid__item">
+                                        <div class="figure-image section-image">
+                                            <a data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.6"
+                                                data-arts-cursor-icon="add" data-arts-cursor-hide-native="true"
+                                                href="https://shubhamgroups.in//frontend/shubham/assets/img/about_us/gurunath_patil.jpg"
+                                                data-size="1560x1560" data-title=""
+                                                class="hover-zoom figure-image__link">
+                                                <div class="hover-zoom__inner">
+                                                    <div class="hover-zoom__zoom">
+                                                        <div data-arts-parallax="data-arts-parallax"
+                                                            data-arts-parallax-factor="0.15"
+                                                            class="figure-image__wrapper-img">
+                                                            <div class="lazy">
+                                                                <img src="#"
+                                                                    data-src="https://shubhamgroups.in//frontend/shubham/assets/img/about_us/gurunath_patil.jpg"
+                                                                    alt="" width="780" height="780" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="grid__item grid__item_desktop-4 grid__item_tablet-4 grid__item_mobile-12 grid__item_fluid-4 js-grid__item">
+                                    <div class="section-grid__item">
+                                        <div class="figure-image section-image">
+                                            <a data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.6"
+                                                data-arts-cursor-icon="add" data-arts-cursor-hide-native="true"
+                                                href="https://shubhamgroups.in//frontend/shubham/assets/img/15yrs.jpg"
+                                                data-size="1200x1600" data-title=""
+                                                class="hover-zoom figure-image__link">
+                                                <div class="hover-zoom__inner">
+                                                    <div class="hover-zoom__zoom">
+                                                        <div data-arts-parallax="data-arts-parallax"
+                                                            data-arts-parallax-factor="0.15"
+                                                            class="figure-image__wrapper-img">
+                                                            <div class="lazy">
+                                                                <img src="#"
+                                                                    data-src="https://shubhamgroups.in//frontend/shubham/assets/img/15yrs.jpg"
+                                                                    alt="" width="780" height="780" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- - section GRID #1 -->
+                    <!-- section GRID #2 -->
+                    <section data-arts-os-animation="data-arts-os-animation" data-grid-columns="1"
+                        data-grid-columns-tablet="1" data-grid-columns-mobile="1"
+                        class="section section-grid section-content overflow pt-xsmall pb-xsmall">
+                        <div class="container-fluid">
+                            <div class="grid grid_fluid-4 js-grid">
+                                <div
+                                    class="grid__item grid__item_desktop-12 grid__item_tablet-12 grid__item_mobile-12 grid__item_fluid-4 grid__sizer js-grid__sizer">
+                                </div>
+                                <div
+                                    class="grid__item grid__item_desktop-12 grid__item_tablet-12 grid__item_mobile-12 grid__item_fluid-4 js-grid__item">
+                                    <div class="section-grid__item">
+                                        <div class="figure-image section-image">
+                                            <a data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.6"
+                                                data-arts-cursor-icon="add" data-arts-cursor-hide-native="true"
+                                                href="https://shubhamgroups.in//frontend/shubham/assets/img/fullHD/HD_2023_BEST_RESIDENTIAL_PROPERTY_AWARD_JIJAI_ANGAN.JPG"
+                                                data-size="1920x1080" data-title=""
+                                                class="hover-zoom figure-image__link">
+                                                <div class="hover-zoom__inner">
+                                                    <div class="hover-zoom__zoom">
+                                                        <div data-arts-parallax="data-arts-parallax"
+                                                            data-arts-parallax-factor="0.15"
+                                                            class="figure-image__wrapper-img">
+                                                            <div class="lazy">
+                                                                <img src="#"
+                                                                    data-src="https://shubhamgroups.in//frontend/shubham/assets/img/award/2023_BEST_RESIDENTIAL_PROPERTY_AWARD_JIJAI_ANGAN.jpg"
+                                                                    alt="" width="1920" height="1080"
+                                                                    class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- - section GRID #2 -->
+                    <!-- section GRID #3 -->
+                    <section data-arts-os-animation="data-arts-os-animation" data-grid-columns="2"
+                        data-grid-columns-tablet="2" data-grid-columns-mobile="1"
+                        class="section section-grid section-content overflow pt-xsmall pb-medium">
+                        <div class="container-fluid">
+                            <div class="grid grid_fluid-4 js-grid">
+                                <div
+                                    class="grid__item grid__item_desktop-4 grid__item_tablet-4 grid__item_mobile-12 grid__item_fluid-4 grid__sizer js-grid__sizer">
+                                </div>
+                                <div
+                                    class="grid__item grid__item_desktop-4 grid__item_tablet-4 grid__item_mobile-12 grid__item_fluid-4 js-grid__item">
+                                    <div class="section-grid__item">
+                                        <div class="figure-image section-image">
+                                            <a data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.6"
+                                                data-arts-cursor-icon="add" data-arts-cursor-hide-native="true"
+                                                href="https://shubhamgroups.in//frontend/shubham/assets/img/award/SUSTAINABLE_CITIES_APPRECIATION.jpg"
+                                                data-size="1920x1080" data-title=""
+                                                class="hover-zoom figure-image__link">
+                                                <div class="hover-zoom__inner">
+                                                    <div class="hover-zoom__zoom">
+                                                        <div data-arts-parallax="data-arts-parallax"
+                                                            data-arts-parallax-factor="0.15"
+                                                            class="figure-image__wrapper-img">
+                                                            <div class="lazy">
+                                                                <img src="#"
+                                                                    data-src="https://shubhamgroups.in//frontend/shubham/assets/img/fullHD/HD_SUSTAINABLE_CITIES_APPRECIATION.JPG"
+                                                                    alt="" width="780" height="780" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="grid__item grid__item_desktop-4 grid__item_tablet-4 grid__item_mobile-12 grid__item_fluid-4 js-grid__item">
+                                    <div class="section-grid__item">
+                                        <div class="figure-image section-image">
+                                            <a data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.6"
+                                                data-arts-cursor-icon="add" data-arts-cursor-hide-native="true"
+                                                href="https://shubhamgroups.in//frontend/shubham/assets/img/about_us/team_all.jpg"
+                                                data-size="1920x1080" data-title=""
+                                                class="hover-zoom figure-image__link">
+                                                <div class="hover-zoom__inner">
+                                                    <div class="hover-zoom__zoom">
+                                                        <div data-arts-parallax="data-arts-parallax"
+                                                            data-arts-parallax-factor="0.15"
+                                                            class="figure-image__wrapper-img">
+                                                            <div class="lazy">
+                                                                <img src="#"
+                                                                    data-src="https://shubhamgroups.in//frontend/shubham/assets/img/about_us/team_all.jpg"
+                                                                    alt="" width="780" height="780" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="grid__item grid__item_desktop-4 grid__item_tablet-4 grid__item_mobile-12 grid__item_fluid-4 js-grid__item">
+                                    <div class="section-grid__item">
+                                        <div class="figure-image section-image">
+                                            <a data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.6"
+                                                data-arts-cursor-icon="add" data-arts-cursor-hide-native="true"
+                                                href="https://placehold.co/780x780" data-size="1560x1560" data-title=""
+                                                class="hover-zoom figure-image__link">
+                                                <div class="hover-zoom__inner">
+                                                    <div class="hover-zoom__zoom">
+                                                        <div data-arts-parallax="data-arts-parallax"
+                                                            data-arts-parallax-factor="0.15"
+                                                            class="figure-image__wrapper-img">
+                                                            <div class="lazy">
+                                                                <img src="#" data-src="https://placehold.co/780x780"
+                                                                    alt="" width="780" height="780" class="img-fluid" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- - section GRID #3 -->
+                </div>
+                <!-- - IMAGES GALLERY BLOCK -->
+            </main>
+            <!-- PAGE FOOTER -->
+            [[This-Is-Component title=&#039;Footer&#039;]]
+            <!-- - PAGE FOOTER -->
+        </div>
+        <!-- - PAGE MAIN -->
+    </div>
+    [[This-Is-Gallery-Shader]]
+    [[This-Is-Asset-Loader style=home]]
+</body>

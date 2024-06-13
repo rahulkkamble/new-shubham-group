@@ -1,0 +1,957 @@
+<body>
+    <div data-barba="wrapper">
+        [[This-Is-Component title=&#039;Preloader&#039;]]
+        [[This-Is-Component title=&#039;Spinner&#039;]]
+        <!-- Transition Curtain-->
+        <!-- TRANSITION CURTAINS -->
+        <!-- page curtain AJAX transition -->
+        <div id="js-page-transition-curtain" class="curtain transition-curtain">
+            <div class="curtain__wrapper-svg">
+                <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" class="curtain-svg">
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+                        class="curtain-svg__normal">
+                    </path>
+                    <path
+                        d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-desktop">
+                    </path>
+                    <path
+                        d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-mobile">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-desktop">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-mobile">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <!-- - page curtain AJAX transition -->
+        <!-- header curtain show/hide -->
+        <div id="js-header-curtain" class="header-curtain curtain">
+            <div class="curtain__wrapper-svg">
+                <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" class="curtain-svg">
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+                        class="curtain-svg__normal">
+                    </path>
+                    <path
+                        d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-desktop">
+                    </path>
+                    <path
+                        d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-mobile">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-desktop">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-mobile">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <!-- - header curtain show/hide -->
+        <!-- header curtain AJAX transition -->
+        <div id="js-header-curtain-transition" class="header-curtain header-curtain_transition curtain">
+            <div class="curtain__wrapper-svg">
+                <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" class="curtain-svg">
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+                        class="curtain-svg__normal">
+                    </path>
+                    <path
+                        d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-desktop">
+                    </path>
+                    <path
+                        d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
+                        class="curtain-svg__curve curtain-svg__curve_top-mobile">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-desktop">
+                    </path>
+                    <path
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
+                        class="curtain-svg__curve curtain-svg__curve_bottom-mobile">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <!-- - header curtain AJAX transition -->
+        <!-- - TRANSITION CURTAINS -->
+        [[This-Is-Component title=&#039;Cursor&#039;]]
+        <!-- PAGE HEADER -->
+        [[This-Is-Component title=&#039;Header&#039;]]
+        <!-- - PAGE HEADER -->
+        <!-- PAGE MAIN -->
+        <div id="page-wrapper" data-barba="container" class="js-smooth-scroll bg-light-1">
+            <main class="page-wrapper__content">
+                <!-- section MASTHEAD FULLSCREEN -->
+                <section data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="light"
+                    data-background-color="var(--color-dark-1)"
+                    class="section section-masthead section-fullheight text-center bg-dark-1">
+                    <div class="section-masthead__inner section-fullheight__inner container-fluid">
+                        <header class="row section-masthead__header justify-content-center">
+                            <div class="col">
+                                <div data-split-text-type="lines,words" data-split-text-set="words"
+                                    class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text">
+                                    <span>since 2010</span>
+                                </div>
+                                <div class="w-100">
+                                </div>
+                                <div data-split-text-type="lines,words" data-split-text-set="words"
+                                    class="section-masthead__heading split-text js-split-text">
+                                    <h1 class="h1 mt-0 mb-0">Our History
+                                    </h1>
+                                </div>
+                                <div class="w-100">
+                                </div>
+                                <div class="section__headline mt-2 mx-auto">
+                                </div>
+                            </div>
+                            <div
+                                class="section-masthead__wrapper-scroll-down section-masthead__wrapper-scroll-down_center">
+                                <div data-arts-os-animation="true" class="circle-button js-circle-button">
+                                    <!-- curved label -->
+                                    <div class="circle-button__outer">
+                                        <div class="circle-button__wrapper-label">
+                                            <div class="circle-button__label small-caps">Scroll Down
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- - curved label -->
+                                    <!-- geometry wrapper -->
+                                    <div class="circle-button__inner">
+                                        <div data-arts-scroll-down="data-arts-scroll-down"
+                                            data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true"
+                                            data-arts-cursor-scale="0" class="circle-button__circle">
+                                            <svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
+                                                <circle cx="30" cy="30" r="29" fill="none" class="circle">
+                                                </circle>
+                                            </svg>
+                                        </div>
+                                        <!-- browsers with touch support -->
+                                        <div class="circle-button__icon circle-button__icon-touch">
+                                            <svg enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64"
+                                                width="512" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="m32 8c-1.104 0-2 .896-2 2v39.899l-14.552-15.278c-.761-.799-2.026-.832-2.828-.069-.8.762-.831 2.027-.069 2.827l16.62 17.449c.756.756 1.76 1.172 2.829 1.172 1.068 0 2.073-.416 2.862-1.207l16.586-17.414c.762-.8.73-2.065-.069-2.827-.799-.763-2.065-.731-2.827.069l-14.552 15.342v-39.963c0-1.104-.896-2-2-2z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <!-- - browsers with touch support -->
+                                        <!-- - browsers without touch support -->
+                                        <div class="circle-button__icon circle-button__icon-mouse">
+                                            <svg width="23px" height="35px" viewBox="0 0 23 35" version="1.1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-mouse">
+                                                <path
+                                                    d="M11.5,0 C5.15875132,0 0,5.23135343 0,11.6610111 L0,23.3396542 C0,29.7691456 5.15875132,35 11.5,35 C17.8412487,35 23,29.7693119 23,23.3396542 L23,11.6610111 C23,5.23135343 17.8410847,0 11.5,0 Z M21.7222404,23.3396542 C21.7222404,29.0545544 17.136538,33.7037222 11.5,33.7037222 C5.86346203,33.7037222 1.27775956,29.0545544 1.27775956,23.3396542 L1.27775956,11.6610111 C1.27775956,5.946111 5.86346203,1.29627781 11.5,1.29627781 C17.136538,1.29627781 21.7222404,5.94594466 21.7222404,11.6610111 L21.7222404,23.3396542 Z"
+                                                    class="svg-mouse__border">
+                                                </path>
+                                                <path
+                                                    d="M11.5,4 C11.2238902,4 11,4.28321727 11,4.63321727 L11,10.3667827 C11,10.7167827 11.2238902,11 11.5,11 C11.7761098,11 12,10.7167827 12,10.3667827 L12,4.63321727 C11.9998717,4.28321727 11.7761098,4 11.5,4 Z"
+                                                    class="svg-mouse__wheel">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <!-- - browsers without touch support -->
+                                    </div>
+                                    <!-- - geometry wrapper -->
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="section-image section-masthead__background section-masthead__background_fullscreen">
+                        <div data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15"
+                            class="section-image__wrapper js-transition-img">
+                            <div class="js-transition-img__transformed-el">
+                                <div data-src="https://shubhamgroups.in/storage/laravel-grapesjs/media/about_us_compressed.png"
+                                    class="lazy-bg">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- overlay -->
+                        <div class="overlay overlay_circle-dark-70 overlay_deither section-masthead__overlay">
+                        </div>
+                        <!-- - overlay -->
+                    </div>
+                </section>
+                <!-- - section MASTHEAD FULLSCREEN -->
+                <!-- About us new -->
+                <!-- section DEMO #1 -->
+                <div class="section bg-light-1 pt-medium pb-medium overflow">
+                    <section class="section section-demo section_w-container-right text-left">
+                        <div class="container-fluid section-demo__container-left">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7">
+                                    <div class="section-demo__content">
+                                        <section data-arts-os-animation="data-arts-os-animation"
+                                            class="section section-content clearfix">
+                                            <div class="section-content__inner">
+                                                <div data-split-text-type="lines,words" data-split-text-set="words"
+                                                    class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text">
+                                                    <span>Who we are</span>
+                                                </div>
+                                                <div class="w-100">
+                                                </div>
+                                                <div class="section__headline mb-1 mb-md-2 mr-auto">
+                                                </div>
+                                                <div class="w-100">
+                                                </div>
+                                                <div data-split-text-type="lines,words" data-split-text-set="words"
+                                                    class="section-content__heading split-text js-split-text">
+                                                    <h3>A foundation that helps you flourish
+                                                    </h3>
+                                                </div>
+                                                <div class="w-100">
+                                                </div>
+                                                <div data-split-text-type="lines" data-split-text-set="lines"
+                                                    class="section-content__text split-text js-split-text mt-1">
+                                                    <p>Welcome to Shubham Group, your premier destination for luxury
+                                                        real estate in Navi Mumbai and Panvel. Established in 2010 by
+                                                        Mr. Gurunath and Mr. Dilip Patil, we specialize in crafting
+                                                        exquisite, affordable living spaces. Our commitment to superior
+                                                        construction quality earned us the Best Construction Quality
+                                                        Award from former Maharashtra Chief Minister, Mr. Devendra
+                                                        Fadnavis.
+                                                    </p>
+                                                    <p>With 500+ homes delivered over 20,000 square meters,
+                                                        we prioritize customer satisfaction and foster strong
+                                                        relationships. Experience the Shubham Group difference—where
+                                                        luxury meets affordability, and your dream home awaits with
+                                                        comfort, elegance, and unmatched architectural excellence.
+                                                        Discover our diverse range of projects, each meticulously
+                                                        designed to cater to your lifestyle needs, ensuring a harmonious
+                                                        blend of functionality and aesthetic appeal.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <aside class="aside aside-counters section">
+                                            <div class="container no-gutters">
+                                                <div class="row justify-content-center">
+                                                    <!-- counter -->
+                                                    <div class="aside-counters__wrapper-item col-6 mt-small">
+                                                        <div data-counter-start="0" data-counter-target="500"
+                                                            data-counter-duration="3" class="counter js-counter">
+                                                            <!-- animated number -->
+                                                            <div class="counter__number js-counter__number">500
+                                                            </div>
+                                                            <!-- - animated number -->
+                                                            <div class="counter__label">Homes
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- - counter -->
+                                                    <!-- counter -->
+                                                    <div class="aside-counters__wrapper-item col-6 mt-small">
+                                                        <div data-counter-start="0" data-counter-target="20000"
+                                                            data-counter-duration="3" class="counter js-counter">
+                                                            <!-- animated number -->
+                                                            <div class="counter__number js-counter__number">20000
+                                                            </div>
+                                                            <!-- - animated number -->
+                                                            <div class="counter__label">Square Meters Area
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- - counter -->
+                                                </div>
+                                            </div>
+                                        </aside>
+                                        <div class="mt-small d-lg-none">
+                                            <a data-hover="Explore Projects" href="" target="_blank"
+                                                class="button button_bordered button_black"><span
+                                                    class="button__label-hover">12+ years of Experience</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="section-demo__stacked-images pt-small pt-md-0">
+                                        <div data-arts-parallax="element" data-arts-parallax-x="10%"
+                                            class="section-demo__stacked-image">
+                                            <div class="lazy">
+                                                <img src="#"
+                                                    data-src="https://shubhamgroups.in//frontend/shubham/assets/img/about_us/about_us_img1.png"
+                                                    width="940" height="1410" alt="" class="img-fluid" />
+                                            </div>
+                                        </div>
+                                        <div data-arts-parallax="element" data-arts-parallax-x="20%"
+                                            class="section-demo__stacked-image">
+                                            <div class="lazy">
+                                                <img src="#"
+                                                    data-src="https://shubhamgroups.in//frontend/shubham/assets/img/home/facility.png"
+                                                    width="940" height="1410" alt="" class="img-fluid" />
+                                            </div>
+                                        </div>
+                                        <div data-arts-parallax="element" data-arts-parallax-x="30%"
+                                            class="section-demo__stacked-image">
+                                            <div class="lazy">
+                                                <img src="#"
+                                                    data-src="https://shubhamgroups.in//frontend/shubham/assets/img/home/jijai_angan_bldg.jpg"
+                                                    width="940" height="1410" alt="" class="img-fluid" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="section-demo__bg section-demo__bg_right bg-light-3 d-none d-lg-block">
+                    </div>
+                    <div class="section-demo__wrapper-button section-demo__wrapper-button_right d-none d-lg-flex">
+                        <a data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true"
+                            data-arts-cursor-scale="0" data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+                            data-arts-cursor-icon="add" href="" target="_blank" data-arts-os-animation="true"
+                            class="circle-button circle-button_link js-circle-button"><!-- curved label -->
+                            <div class="circle-button__outer">
+                                <div class="circle-button__wrapper-label">
+                                    <div class="circle-button__label small-caps">12+ years of Experience
+                                    </div>
+                                </div>
+                            </div><!-- - curved label --><!-- geometry wrapper -->
+                            <div class="circle-button__inner">
+                                <div class="circle-button__circle">
+                                    <svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
+                                        <circle cx="30" cy="30" r="29" fill="none" class="circle">
+                                        </circle>
+                                    </svg>
+                                </div>
+                                <!-- browsers with touch support -->
+                                <div class="circle-button__icon circle-button__icon-touch">
+                                    <div class="material-icons">add
+                                    </div>
+                                </div>
+                                <!-- - browsers with touch support -->
+                            </div><!-- - geometry wrapper -->
+                        </a>
+                    </div>
+                </div>
+                <!-- - section DEMO #1 -->
+                <!-- About us new end -->
+                <!-- Our Core Values -->
+                <!-- section CONTENT #2 -->
+                <section data-arts-os-animation="data-arts-os-animation"
+                    class="section section-content pt-small clearfix pb-small text-center">
+                    <div class="section-content__inner">
+                        <div class="w-100">
+                        </div>
+                        <div data-split-text-type="lines,words" data-split-text-set="words"
+                            class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text">
+                            <span>We build on
+                                values</span>
+                        </div>
+                        <div class="section__headline mb-1 mb-md-1 mx-auto">
+                        </div>
+                        <div class="w-100">
+                        </div>
+                        <div data-split-text-type="lines,words" data-split-text-set="words"
+                            class="section-content__heading split-text js-split-text">
+                            <h2>Our Core Values
+                            </h2>
+                            <div class="container">
+                                <p>We also have an experienced customer service team which regularly interacts with
+                                    customers and is responsible for assisting them through the entire sales &amp; after
+                                    sales
+                                    process. Shubham Groups as an organization is highly focused on delivering
+                                    international
+                                    quality homes in a timely manner with utmost perfection.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- - section CONTENT #2 -->
+                <!-- section LOGOS -->
+                <section data-arts-os-animation="data-arts-os-animation" data-grid-columns="3"
+                    data-grid-columns-tablet="2" data-grid-columns-mobile="1"
+                    class="section section-logos section-grid pb-medium">
+                    <div class="container">
+                        <div class="row row-gutters justify-content-center">
+                            <div class="col-lg-4 col-gutters">
+                                <div class="section-grid__item">
+                                    <div class="figure-logo grayscale bg-white d-flex flex-column align-items-center">
+                                        <img src="https://shubhamgroups.in//frontend/shubham/assets/img/about_us/core_values/integrity.png"
+                                            alt="" class="img-fluid" />
+                                        <h5>Integrity
+                                        </h5>
+                                        <div class="figure-logo__description">
+                                            <p>Integrity
+                                            </p>
+                                            <div class="figure-logo__line">
+                                            </div>
+                                            <p>We uphold honesty and ethical practices. We are trusted for a reason.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-gutters">
+                                <div class="section-grid__item">
+                                    <div class="figure-logo grayscale bg-white d-flex flex-column align-items-center">
+                                        <img src="https://shubhamgroups.in//frontend/shubham/assets/img/about_us/core_values/excellence.png"
+                                            alt="" class="img-fluid" />
+                                        <h5>Excellence
+                                        </h5>
+                                        <div class="figure-logo__description">
+                                            <p>Excellence
+                                            </p>
+                                            <div class="figure-logo__line">
+                                            </div>
+                                            <p>Efficiently and flawlessly executing the delivery of your expectations
+                                                and our services.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-gutters">
+                                <div class="section-grid__item">
+                                    <div class="figure-logo grayscale bg-white d-flex flex-column align-items-center">
+                                        <img src="https://shubhamgroups.in//frontend/shubham/assets/img/about_us/core_values/modernization.png"
+                                            alt="" class="img-fluid" />
+                                        <h5>Modernization
+                                        </h5>
+                                        <div class="figure-logo__description">
+                                            <p>Modernization
+                                            </p>
+                                            <div class="figure-logo__line">
+                                            </div>
+                                            <p>To instil a sense of change towards where the world is headed.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-gutters">
+                                <div class="section-grid__item">
+                                    <div class="figure-logo grayscale bg-white d-flex flex-column align-items-center">
+                                        <img src="https://shubhamgroups.in//frontend/shubham/assets/img/about_us/core_values/community.png"
+                                            alt="" class="img-fluid" />
+                                        <h5>Community
+                                        </h5>
+                                        <div class="figure-logo__description">
+                                            <p>Community
+                                            </p>
+                                            <div class="figure-logo__line">
+                                            </div>
+                                            <p>We help friends make families and families make friends.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-gutters">
+                                <div class="section-grid__item">
+                                    <div class="figure-logo grayscale bg-white d-flex flex-column align-items-center">
+                                        <img src="https://shubhamgroups.in//frontend/shubham/assets/img/about_us/core_values/innovative.png"
+                                            alt="" class="img-fluid" />
+                                        <h5>Innovative
+                                        </h5>
+                                        <div class="figure-logo__description">
+                                            <p>Innovative
+                                            </p>
+                                            <div class="figure-logo__line">
+                                            </div>
+                                            <p>We thrive on creativity and ingenuity, is essential to the continued
+                                                success of our company.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-gutters">
+                                <div class="section-grid__item">
+                                    <div class="figure-logo grayscale bg-white d-flex flex-column align-items-center">
+                                        <img src="https://shubhamgroups.in//frontend/shubham/assets/img/about_us/core_values/reliability.png"
+                                            alt="" class="img-fluid" />
+                                        <h5>Reliability
+                                        </h5>
+                                        <div class="figure-logo__description">
+                                            <p>Reliability
+                                            </p>
+                                            <div class="figure-logo__line">
+                                            </div>
+                                            <p>We care about letting our customers take a back seat and experience us at
+                                                work.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- - section Our core values  -->
+                <!-- Our Core Values End -->
+                <!-- Our Core Proficiency -->
+                <div data-arts-theme-text="dark" data-arts-scroll-theme-text="light" data-arts-default-theme="bg-white"
+                    data-arts-scroll-theme="bg-dark-1" data-arts-scroll-trigger-hook="0.0"
+                    data-arts-scroll-offset="-100" class="bg-white text-center section-scroll">
+                    <!-- section CONTENT #4 -->
+                    <section data-arts-os-animation="data-arts-os-animation"
+                        class="section section-content clearfix pt-medium pb-small text-center">
+                        <div class="section-content__inner">
+                            <div class="w-100">
+                            </div>
+                            <div data-split-text-type="lines,words" data-split-text-set="words"
+                                class="section-masthead__subheading small-caps mt-1 mb-1 mb-md-2 split-text js-split-text">
+                                <span>We envision your
+                                    possibility</span>
+                            </div>
+                            <div class="section__headline mb-1 mb-md-1 mx-auto">
+                            </div>
+                            <div class="w-100">
+                            </div>
+                            <div data-split-text-type="lines,words" data-split-text-set="words"
+                                class="section-content__heading split-text js-split-text">
+                                <div class="container">
+                                    <h2 class="mt-0 pt-0">Our Core Proficiency
+                                    </h2>
+                                    <p>Shubham Group aims to make a significant contribution to the future of Real
+                                        Estate
+                                        Projects. We have an integrated team approach to development to ensure that our
+                                        projects fully address all design and lifestyle parameters from the initial
+                                        planning
+                                        stages through to conclusion.
+                                    </p>
+                                    <h4>Our Comprehensive service portfolio includes:
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- - section CONTENT #4 -->
+                    <!-- section FEATURES -->
+                    <section data-arts-os-animation="data-arts-os-animation" data-grid-columns="4"
+                        data-grid-columns-tablet="2" data-grid-columns-mobile="1"
+                        class="section section-features section-grid pb-medium">
+                        <div class="container">
+                            <div class="row row-gutters justify-content-center">
+                                <div class="col-lg-3 col-sm-6 col-gutters">
+                                    <div class="section-grid__item">
+                                        <div class="figure-icon">
+                                            <!-- icon -->
+                                            <div data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true"
+                                                data-arts-cursor-scale="0"
+                                                data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+                                                class="figure-icon__wrapper-icon">
+                                                <div class="figure-icon__icon icon-repeat">
+                                                </div>
+                                            </div>
+                                            <!-- - icon -->
+                                            <!-- header -->
+                                            <div class="figure-icon__header">
+                                                <div class="figure-feature__heading paragraph strong mt-1 mb-0">
+                                                    Land/Property Acquisition
+                                                </div>
+                                            </div>
+                                            <!-- - header -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6 col-gutters">
+                                    <div class="section-grid__item">
+                                        <div class="figure-icon">
+                                            <!-- icon -->
+                                            <div data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true"
+                                                data-arts-cursor-scale="0"
+                                                data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+                                                class="figure-icon__wrapper-icon">
+                                                <div class="figure-icon__icon icon-magic-wand">
+                                                </div>
+                                            </div>
+                                            <!-- - icon -->
+                                            <!-- header -->
+                                            <div class="figure-icon__header">
+                                                <div class="figure-feature__heading paragraph strong mt-1 mb-0">Property
+                                                    Development
+                                                </div>
+                                            </div>
+                                            <!-- - header -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6 col-gutters">
+                                    <div class="section-grid__item">
+                                        <div class="figure-icon">
+                                            <!-- icon -->
+                                            <div data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true"
+                                                data-arts-cursor-scale="0"
+                                                data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+                                                class="figure-icon__wrapper-icon">
+                                                <div class="figure-icon__icon icon-move">
+                                                </div>
+                                            </div>
+                                            <!-- - icon -->
+                                            <!-- header -->
+                                            <div class="figure-icon__header">
+                                                <div class="figure-feature__heading paragraph strong mt-1 mb-0">Property
+                                                    Management
+                                                </div>
+                                            </div>
+                                            <!-- - header -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6 col-gutters">
+                                    <div class="section-grid__item">
+                                        <div class="figure-icon">
+                                            <!-- icon -->
+                                            <div data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true"
+                                                data-arts-cursor-scale="0"
+                                                data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+                                                class="figure-icon__wrapper-icon">
+                                                <div class="figure-icon__icon icon-text">
+                                                </div>
+                                            </div>
+                                            <!-- - icon -->
+                                            <!-- header -->
+                                            <div class="figure-icon__header">
+                                                <div class="figure-feature__heading paragraph strong mt-1 mb-0">Real
+                                                    Estate Loan Syndication
+                                                </div>
+                                            </div>
+                                            <!-- - header -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6 col-gutters">
+                                    <div class="section-grid__item">
+                                        <div class="figure-icon">
+                                            <!-- icon -->
+                                            <div data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true"
+                                                data-arts-cursor-scale="0"
+                                                data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+                                                class="figure-icon__wrapper-icon">
+                                                <div class="figure-icon__icon icon-font">
+                                                </div>
+                                            </div>
+                                            <!-- - icon -->
+                                            <!-- header -->
+                                            <div class="figure-icon__header">
+                                                <div class="figure-feature__heading paragraph strong mt-1 mb-0">In-house
+                                                    Brand Development
+                                                </div>
+                                            </div>
+                                            <!-- - header -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- - section FEATURES -->
+                </div>
+                <!-- Our Core Proficiency End -->
+                <!-- Our Team -->
+                <!-- section CONTENT #1 -->
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <section data-arts-os-animation="data-arts-os-animation"
+                                class="section section-content clearfix pt-medium pb-small text-center">
+                                <div class="section-content__inner">
+                                    <div class="w-100">
+                                    </div>
+                                    <div data-split-text-type="lines,words" data-split-text-set="words"
+                                        class="section-masthead__subheading small-caps mt-1 mb-1 mb-md-2 split-text js-split-text">
+                                        <span>Our
+                                            Team</span>
+                                    </div>
+                                    <div class="section__headline mb-1 mb-md-1 mx-auto">
+                                    </div>
+                                    <div class="w-100">
+                                    </div>
+                                    <div data-split-text-type="lines,words" data-split-text-set="words"
+                                        class="section-content__heading split-text js-split-text">
+                                        <h2>Subham Group’s Building Blocks
+                                        </h2>
+                                    </div>
+                                    <div class="w-100">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <!-- - section CONTENT #1 -->
+                <!-- section TEAM -->
+                <section data-arts-os-animation="data-arts-os-animation" data-grid-columns="3"
+                    data-grid-columns-tablet="2" data-grid-columns-mobile="1"
+                    class="section section-team section-grid text-center mb-medium">
+                    <div class="container">
+                        <div class="row row-gutters">
+                            <div class="col-lg-6 col-sm-6 col-gutters">
+                                <div class="section-grid__item">
+                                    <div class="figure-member figure-member_has-social">
+                                        <!-- image -->
+                                        <div class="figure-member__avatar">
+                                            <div class="lazy">
+                                                <img src="#"
+                                                    data-src="https://shubhamgroups.in/storage/laravel-grapesjs/media/gurunath_patil_compressed.jpg"
+                                                    width="680" height="680" alt="" class="img-fluid" />
+                                            </div>
+                                        </div>
+                                        <!-- - image -->
+                                        <div class="figure-member__headline mt-1">
+                                        </div>
+                                        <!-- content -->
+                                        <div class="figure-member__footer mt-0-5">
+                                            <div class="figure-member__name h4">Mr. Gurunath Patil
+                                            </div>
+                                            <div class="figure-member__position small-caps mt-1">Director
+                                            </div>
+                                            <div class="figure-member__social">
+                                                <ul class="social">
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-facebook-f"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-twitter"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-instagram"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-behance"></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- - content -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-gutters">
+                                <div class="section-grid__item">
+                                    <div class="figure-member figure-member_has-social">
+                                        <!-- image -->
+                                        <div class="figure-member__avatar">
+                                            <div class="lazy">
+                                                <img src="#"
+                                                    data-src="https://shubhamgroups.in/storage/laravel-grapesjs/media/dilip_patil_compressed.jpg"
+                                                    width="680" height="680" alt="" class="img-fluid" />
+                                            </div>
+                                        </div>
+                                        <!-- - image -->
+                                        <div class="figure-member__headline mt-1">
+                                        </div>
+                                        <!-- content -->
+                                        <div class="figure-member__footer mt-0-5">
+                                            <div class="figure-member__name h4">Mr. Dilip Patil
+                                            </div>
+                                            <div class="figure-member__position small-caps mt-1">Director
+                                            </div>
+                                            <div class="figure-member__social">
+                                                <ul class="social">
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-facebook-f"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-twitter"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-instagram"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-behance"></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- - content -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-gutters">
+                                <div class="section-grid__item">
+                                    <div class="figure-member figure-member_has-social">
+                                        <!-- image -->
+                                        <div class="figure-member__avatar">
+                                            <div class="lazy">
+                                                <img src="#" data-src="https://placehold.co/680x680" width="680"
+                                                    height="680" alt="" class="img-fluid" />
+                                            </div>
+                                        </div>
+                                        <!-- - image -->
+                                        <div class="figure-member__headline mt-1">
+                                        </div>
+                                        <!-- content -->
+                                        <div class="figure-member__footer mt-0-5">
+                                            <div class="figure-member__name h4">Shubham Group Member
+                                            </div>
+                                            <div class="figure-member__position small-caps mt-1">Position/Role
+                                            </div>
+                                            <div class="figure-member__social">
+                                                <ul class="social">
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-facebook-f"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-twitter"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-instagram"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-behance"></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- - content -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-gutters">
+                                <div class="section-grid__item">
+                                    <div class="figure-member figure-member_has-social">
+                                        <!-- image -->
+                                        <div class="figure-member__avatar">
+                                            <div class="lazy">
+                                                <img src="#" data-src="https://placehold.co/680x680" width="680"
+                                                    height="680" alt="" class="img-fluid" />
+                                            </div>
+                                        </div>
+                                        <!-- - image -->
+                                        <div class="figure-member__headline mt-1">
+                                        </div>
+                                        <!-- content -->
+                                        <div class="figure-member__footer mt-0-5">
+                                            <div class="figure-member__name h4">Shubham Group Member
+                                            </div>
+                                            <div class="figure-member__position small-caps mt-1">Position/Role
+                                            </div>
+                                            <div class="figure-member__social">
+                                                <ul class="social">
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-facebook-f"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-twitter"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-instagram"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-behance"></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- - content -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-gutters">
+                                <div class="section-grid__item">
+                                    <div class="figure-member figure-member_has-social">
+                                        <!-- image -->
+                                        <div class="figure-member__avatar">
+                                            <div class="lazy">
+                                                <img src="#" data-src="https://placehold.co/680x680" width="680"
+                                                    height="680" alt="" class="img-fluid" />
+                                            </div>
+                                        </div>
+                                        <!-- - image -->
+                                        <div class="figure-member__headline mt-1">
+                                        </div>
+                                        <!-- content -->
+                                        <div class="figure-member__footer mt-0-5">
+                                            <div class="figure-member__name h4">Shubham Group Member
+                                            </div>
+                                            <div class="figure-member__position small-caps mt-1">Position/Role
+                                            </div>
+                                            <div class="figure-member__social">
+                                                <ul class="social">
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-facebook-f"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-twitter"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-instagram"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-behance"></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- - content -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-gutters">
+                                <div class="section-grid__item">
+                                    <div class="figure-member figure-member_has-social">
+                                        <!-- image -->
+                                        <div class="figure-member__avatar">
+                                            <div class="lazy">
+                                                <img src="#" data-src="https://placehold.co/680x680" width="680"
+                                                    height="680" alt="" class="img-fluid" />
+                                            </div>
+                                        </div>
+                                        <!-- - image -->
+                                        <div class="figure-member__headline mt-1">
+                                        </div>
+                                        <!-- content -->
+                                        <div class="figure-member__footer mt-0-5">
+                                            <div class="figure-member__name h4">Shubham Group Member
+                                            </div>
+                                            <div class="figure-member__position small-caps mt-1">Position/Role
+                                            </div>
+                                            <div class="figure-member__social">
+                                                <ul class="social">
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-facebook-f"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-twitter"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-instagram"></a>
+                                                    </li>
+                                                    <li class="social__item">
+                                                        <a href="#" class="fa fa-behance"></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- - content -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- -  section TEAM -->
+                <!-- Our Team End -->
+            </main>
+            <!-- PAGE FOOTER -->
+            [[This-Is-Component title=&#039;Footer&#039;]]
+            <!-- - PAGE FOOTER -->
+        </div>
+        <!-- - PAGE MAIN -->
+    </div>
+    [[This-Is-About-Shader]]
+    [[This-Is-Asset-Loader style=home]]
+</body>
