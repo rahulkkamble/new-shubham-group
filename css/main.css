@@ -11374,3 +11374,7 @@ header.bg-white .dropdown-projects-menu {
     height: auto;
   }
 }
+
+.opacity-60{
+  opacity: .6;
+}
