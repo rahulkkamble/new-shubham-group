@@ -1,729 +1,861 @@
 <body>
-  <div data-barba="wrapper">
-	[[This-Is-Component title=&#039;Preloader&#039;]]
-	[[This-Is-Component title=&#039;Spinner&#039;]]
-	<!-- TRANSITION CURTAINS -->
-	<!-- page curtain AJAX transition -->
-	<div id="js-page-transition-curtain" class="curtain transition-curtain">
-	  <div class="curtain__wrapper-svg">
-		<svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="curtain-svg">
-		  <path d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z" class="curtain-svg__normal">
-		  </path>
-		  <path d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z" class="curtain-svg__curve curtain-svg__curve_top-desktop">
-		  </path>
-		  <path d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z" class="curtain-svg__curve curtain-svg__curve_top-mobile">
-		  </path>
-		  <path d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z" class="curtain-svg__curve curtain-svg__curve_bottom-desktop">
-		  </path>
-		  <path d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z" class="curtain-svg__curve curtain-svg__curve_bottom-mobile">
-		  </path>
-		</svg>
-	  </div>
-	</div>
-	<!-- - page curtain AJAX transition -->
-	<!-- header curtain show/hide -->
-	<div id="js-header-curtain" class="header-curtain curtain">
-	  <div class="curtain__wrapper-svg">
-		<svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="curtain-svg">
-		  <path d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z" class="curtain-svg__normal">
-		  </path>
-		  <path d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z" class="curtain-svg__curve curtain-svg__curve_top-desktop">
-		  </path>
-		  <path d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z" class="curtain-svg__curve curtain-svg__curve_top-mobile">
-		  </path>
-		  <path d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z" class="curtain-svg__curve curtain-svg__curve_bottom-desktop">
-		  </path>
-		  <path d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z" class="curtain-svg__curve curtain-svg__curve_bottom-mobile">
-		  </path>
-		</svg>
-	  </div>
-	</div>
-	<!-- - header curtain show/hide -->
-	<!-- header curtain AJAX transition -->
-	<div id="js-header-curtain-transition" class="header-curtain header-curtain_transition curtain">
-	  <div class="curtain__wrapper-svg">
-		<svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="curtain-svg">
-		  <path d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z" class="curtain-svg__normal">
-		  </path>
-		  <path d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z" class="curtain-svg__curve curtain-svg__curve_top-desktop">
-		  </path>
-		  <path d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z" class="curtain-svg__curve curtain-svg__curve_top-mobile">
-		  </path>
-		  <path d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z" class="curtain-svg__curve curtain-svg__curve_bottom-desktop">
-		  </path>
-		  <path d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z" class="curtain-svg__curve curtain-svg__curve_bottom-mobile">
-		  </path>
-		</svg>
-	  </div>
-	</div>
-	<!-- - header curtain AJAX transition -->
-	<!-- - TRANSITION CURTAINS -->
-	[[This-Is-Component title=&#039;Cursor&#039;]]
-	<!-- PAGE HEADER -->
-	[[This-Is-Component title=&#039;Header&#039;]]
-	<!-- - PAGE HEADER -->
-	<!-- PAGE MAIN -->
-	<div id="page-wrapper" data-barba="container" class="js-smooth-scroll bg-light-1">
-	  <main class="page-wrapper__content">
-		<!-- section MASTHEAD BOTTOM FULLWIDTH -->
-		<section data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-3)" class="section section-masthead pt-large text-center">
-		  <div class="section-masthead__inner container-fluid">
-			<header class="row section-masthead__header justify-content-center">
-			  <div class="col">
-				<div data-split-text-type="lines,words" data-split-text-set="words" class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text">
-				  <span>2016</span>
-				</div>
-				<div class="w-100">
-				</div>
-				<div data-split-text-type="lines,words" data-split-text-set="words" class="section-masthead__heading split-text js-split-text">
-				  <h1 class="h1 mt-0 mb-0">Jijai Angan
-				  </h1>
-				  <h4>Taloja, Panvel (Navi Mumbai)
-				  </h4>
-				</div>
-				<div class="w-100">
-				</div>
-				<div class="section__headline mt-2 mx-auto">
-				</div>
-			  </div>
-			</header>
-		  </div>
-		  <div class="section-image section-masthead__background section section_h-900 mt-medium">
-			<div data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15" class="section-image__wrapper js-transition-img">
-			  <div class="js-transition-img__transformed-el">
-				<div data-src="https://placehold.co/1920X1280" class="lazy-bg">
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</section>
-		<!-- - section MASTHEAD BOTTOM FULLWIDTH -->
-		<!-- section PROPERTIES -->
-		<section class="section section-properties section-content pb-small bg-white">
-		  <div class="container">
-			<div class="row">
-			  <div class="col-lg-3 col-sm-6 section-properties__item mt-small">
-				<div data-split-text-type="lines,words" data-split-text-set="words" class="figure-info split-text js-split-text">
-				  <div class="figure-info__option small-caps">1 BHK
-				  </div>
-				  <div class="figure-info__value paragraph">680.0 Sq. Ft.
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-lg-3 col-sm-6 section-properties__item mt-small">
-				<div data-split-text-type="lines,words" data-split-text-set="words" class="figure-info split-text js-split-text">
-				  <div class="figure-info__option small-caps">2 BHK
-				  </div>
-				  <div class="figure-info__value paragraph">1080.0 Sq. Ft.
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-lg-3 col-sm-6 section-properties__item mt-small">
-				<div data-split-text-type="lines,words" data-split-text-set="words" class="figure-info split-text js-split-text">
-				  <div class="figure-info__option small-caps">Total Units
-				  </div>
-				  <div class="figure-info__value paragraph">266 Units spread over 2 acres
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-lg-3 col-sm-6 section-properties__item mt-small">
-				<div data-split-text-type="lines,words" data-split-text-set="words" class="figure-info split-text js-split-text">
-				  <div class="figure-info__option small-caps">Towers
-				  </div>
-				  <div class="figure-info__value paragraph">3
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</section>
-		<!-- - section PROPERTIES -->
-		<!-- section CONTENT #1 -->
-		<!-- - section CONTENT #1 -->
-		<!-- Property Details 2 -->
-		<div class="section bg-light-2">
-		  <section class="section section-demo section_w-container-left text-left">
-			<div class="container-fluid section-demo__container-right">
-			  <div class="row align-items-center">
-				<div class="col-lg-6 offset-lg-6">
-				  <div class="section-demo__content pt-medium pb-medium">
-					<section data-arts-os-animation="data-arts-os-animation" class="section section-content clearfix">
-					  <div class="section-content__inner">
-						<div class="w-100">
-						</div>
-						<div class="section__headline mb-1 mb-md-2 mr-auto">
-						</div>
-						<div class="w-100">
-						</div>
-						<div data-split-text-type="lines,words" data-split-text-set="words" class="section-content__heading split-text js-split-text">
-						  <h3>A courtyard for the family man of today
-						  </h3>
-						</div>
-						<div class="w-100">
-						</div>
-						<div data-split-text-type="lines" data-split-text-set="lines" class="section-content__text split-text js-split-text mt-1">
-						  <p>A house which can afford your taste in style with a lifestyle you
-							have always wanted. Here, at Taloja, Shubhan Builders and
-							Developers brought you the iconic Jijai Angan. Amenities here
-							only talk about comfort and nothing else. Come here, kick your
-							shoes out and relax while we make your time with us soothing and
-							enjoyable. With a total of 266 units spread over 2 acres of land
-							with houses ranging from 680 sqft for 1 BHK to 1080 sqft for
-							2BHK we help you cherish your time with your family. A promise
-							once made, is our command.
-						  </p>
-						</div>
-					  </div>
-					</section>
-					<aside class="aside aside-counters section">
-					  <div class="container no-gutters">
-						<div class="row justify-content-center">
-						  <!-- counter -->
-						  <div class="aside-counters__wrapper-item col-6 mt-small">
-							<div data-counter-start="0" data-counter-target="266" data-counter-duration="4" class="counter js-counter">
-							  <!-- animated number -->
-							  <div class="counter__number js-counter__number">266
-							  </div>
-							  <!-- - animated number -->
-							  <div class="counter__label">Total Units
-							  </div>
-							</div>
-						  </div>
-						  <!-- - counter -->
-						  <!-- counter -->
-						  <div class="aside-counters__wrapper-item col-6 mt-small">
-							<div data-counter-start="0" data-counter-target="2" data-counter-duration="4" class="counter js-counter">
-							  <!-- animated number -->
-							  <div class="counter__number js-counter__number">2
-							  </div>
-							  <!-- - animated number -->
-							  <div class="counter__label">Acres of Land
-							  </div>
-							</div>
-						  </div>
-						  <!-- - counter -->
-						</div>
-					  </div>
-					</aside>
-					<div class="mt-small d-lg-none">
-					  <a data-hover="Explore Pages" href="page-inner-services-1.html" target="_blank" class="button button_bordered button_black"><span class="button__label-hover">Explore
-						Pages</span></a>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  </section>
-		  <div data-arts-parallax="" data-arts-parallax-factor="0.3" class="section-demo__bg section-demo__bg_wide section-demo__bg_left bg-white">
-			<div>
-			  <div data-src="https://placehold.co/1800X1440" class="lazy-bg">
-			  </div>
-			</div>
-		  </div>
-		  <div class="section-demo__wrapper-button section-demo__wrapper-button_left d-none d-lg-flex">
-			<a data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true" data-arts-cursor-scale="0" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-icon="add" href="page-inner-services-1.html" target="_blank" data-arts-os-animation="true" class="circle-button circle-button_link js-circle-button"><!-- curved label --><div class="circle-button__outer">
-			  <div class="circle-button__wrapper-label">
-				<div class="circle-button__label small-caps">Explore Pages
-				</div>
-			  </div>
-			  </div><!-- - curved label --><!-- geometry wrapper --><div class="circle-button__inner">
-			  <div class="circle-button__circle">
-				<svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
-				  <circle cx="30" cy="30" r="29" fill="none" class="circle">
-				  </circle>
+	<div data-barba="wrapper">
+		[[This-Is-Component title=&#039;Preloader&#039;]]
+		[[This-Is-Component title=&#039;Spinner&#039;]]
+		<!-- TRANSITION CURTAINS -->
+		<!-- page curtain AJAX transition -->
+		<div id="js-page-transition-curtain" class="curtain transition-curtain">
+			<div class="curtain__wrapper-svg">
+				<svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink" class="curtain-svg">
+					<path
+						d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+						class="curtain-svg__normal">
+					</path>
+					<path
+						d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
+						class="curtain-svg__curve curtain-svg__curve_top-desktop">
+					</path>
+					<path
+						d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
+						class="curtain-svg__curve curtain-svg__curve_top-mobile">
+					</path>
+					<path
+						d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
+						class="curtain-svg__curve curtain-svg__curve_bottom-desktop">
+					</path>
+					<path
+						d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
+						class="curtain-svg__curve curtain-svg__curve_bottom-mobile">
+					</path>
 				</svg>
-			  </div>
-			  <!-- browsers with touch support -->
-			  <div class="circle-button__icon circle-button__icon-touch">
-				<div class="material-icons">add
-				</div>
-			  </div>
-			  <!-- - browsers with touch support -->
-			  </div><!-- - geometry wrapper --></a>
-		  </div>
+			</div>
 		</div>
-		<!-- Property Details 2 End -->
-		<!-- section IMAGES -->
-		<section class="section section-slider-images pb-small">
-		  <div class="row pt-small pb-small">
-			<div class="col">
-			  <section data-arts-os-animation="data-arts-os-animation" class="section section-content clearfix text-center">
-				<div class="section-content__inner">
-				  <div class="w-100">
-				  </div>
-				  <div class="section__headline mb-1 mb-md-2 mx-auto">
-				  </div>
-				  <div class="w-100">
-				  </div>
-				  <div data-split-text-type="lines,words" data-split-text-set="words" class="section-content__heading split-text js-split-text">
-					<h2>Gallery
-					</h2>
-				  </div>
-				</div>
-			  </section>
+		<!-- - page curtain AJAX transition -->
+		<!-- header curtain show/hide -->
+		<div id="js-header-curtain" class="header-curtain curtain">
+			<div class="curtain__wrapper-svg">
+				<svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink" class="curtain-svg">
+					<path
+						d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+						class="curtain-svg__normal">
+					</path>
+					<path
+						d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
+						class="curtain-svg__curve curtain-svg__curve_top-desktop">
+					</path>
+					<path
+						d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
+						class="curtain-svg__curve curtain-svg__curve_top-mobile">
+					</path>
+					<path
+						d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
+						class="curtain-svg__curve curtain-svg__curve_bottom-desktop">
+					</path>
+					<path
+						d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
+						class="curtain-svg__curve curtain-svg__curve_bottom-mobile">
+					</path>
+				</svg>
 			</div>
-		  </div>
-		  <div class="slider slider-images js-slider-images">
-			<div data-drag-mouse="true" data-drag-cursor="true" data-drag-class="slider-images_touched" data-auto-height="true" data-slides-per-view="1.5" data-centered-slides="data-centered-slides" data-space-between="120" class="swiper-container js-slider-images__slider">
-			  <div class="swiper-wrapper">
-				<div class="swiper-slide overflow d-flex-centered text-center">
-				  <div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%" class="w-100 h-100">
-					<div class="slider__zoom-container w-100 h-100">
-					  <img src="#" data-src="https://placehold.co/1600x900.jpg" width="1120" height="700" alt="" class="swiper-lazy"/>
-					</div>
-				  </div>
-				</div>
-				<div class="swiper-slide overflow d-flex-centered text-center">
-				  <div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%" class="w-100 h-100">
-					<div class="slider__zoom-container w-100 h-100">
-					  <img src="#" data-src="https://placehold.co/1600x900.jpg" width="1120" height="700" alt="" class="swiper-lazy"/>
-					</div>
-				  </div>
-				</div>
-				<div class="swiper-slide overflow d-flex-centered text-center">
-				  <div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%" class="w-100 h-100">
-					<div class="slider__zoom-container w-100 h-100">
-					  <img src="#" data-src="https://placehold.co/1600x900.jpg" width="1120" height="700" alt="" class="swiper-lazy"/>
-					</div>
-				  </div>
-				</div>
-			  </div>
+		</div>
+		<!-- - header curtain show/hide -->
+		<!-- header curtain AJAX transition -->
+		<div id="js-header-curtain-transition" class="header-curtain header-curtain_transition curtain">
+			<div class="curtain__wrapper-svg">
+				<svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink" class="curtain-svg">
+					<path
+						d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+						class="curtain-svg__normal">
+					</path>
+					<path
+						d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"
+						class="curtain-svg__curve curtain-svg__curve_top-desktop">
+					</path>
+					<path
+						d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"
+						class="curtain-svg__curve curtain-svg__curve_top-mobile">
+					</path>
+					<path
+						d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
+						class="curtain-svg__curve curtain-svg__curve_bottom-desktop">
+					</path>
+					<path
+						d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"
+						class="curtain-svg__curve curtain-svg__curve_bottom-mobile">
+					</path>
+				</svg>
 			</div>
-			<!-- slider FOOTER -->
-			<div class="slider-images__footer">
-			  <div class="row no-gutters justify-content-center">
-				<div class="col-auto">
-				  <!-- slider DOTS -->
-				  <div class="slider__dots js-slider__dots">
-					<div class="slider__dot slider__dot_active">
-					  <svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
-						<circle cx="30" cy="30" r="29" fill="none" class="circle">
-						</circle>
-					  </svg>
-					</div>
-					<div class="slider__dot">
-					  <svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
-						<circle cx="30" cy="30" r="29" fill="none" class="circle">
-						</circle>
-					  </svg>
-					</div>
-					<div class="slider__dot">
-					  <svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
-						<circle cx="30" cy="30" r="29" fill="none" class="circle">
-						</circle>
-					  </svg>
-					</div>
-					<div class="slider__dot">
-					  <svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
-						<circle cx="30" cy="30" r="29" fill="none" class="circle">
-						</circle>
-					  </svg>
-					</div>
-				  </div>
-				  <!-- - slider DOTS -->
-				</div>
-			  </div>
-			</div>
-			<!-- - slider FOOTER -->
-		  </div>
-		</section>
-		<!-- - section IMAGES -->
-		<!-- sections CONTENT & IMAGE #1 -->
-		<div class="container-fluid no-gutters">
-		  <div class="row pt-small bg-light-2 pb-small">
-			<div class="col">
-			  <section data-arts-os-animation="data-arts-os-animation" class="section section-content clearfix text-center">
-				<div class="section-content__inner">
-				  <div class="w-100">
-				  </div>
-				  <div class="section__headline mb-1 mb-md-2 mx-auto">
-				  </div>
-				  <div class="w-100">
-				  </div>
-				  <div data-split-text-type="lines,words" data-split-text-set="words" class="section-content__heading split-text js-split-text">
-					<h2>Highlights and Amenities
-					</h2>
-				  </div>
-				</div>
-			  </section>
-			</div>
-		  </div>
-		  <div class="row no-gutters align-items-center">
-			<div class="col-lg-6">
-			  <section data-arts-os-animation="data-arts-os-animation" class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings">
-				<div class="section-content__inner">
-				  <div class="w-100">
-				  </div>
-				  <div class="section__headline mb-1 mb-md-2">
-				  </div>
-				  <div class="w-100">
-				  </div>
-				  <div data-split-text-type="lines,words" data-split-text-set="words" class="section-content__heading split-text js-split-text">
-					<h2>Amenities
-					</h2>
-				  </div>
-				  <div class="w-100">
-				  </div>
-				  <div data-split-text-type="lines" data-split-text-set="lines" class="section-content__text split-text js-split-text mt-1">
-					<ul class="my-bullets">
-					  <li>Vitrified Flooring in Flats
-					  </li>
-					  <li>Premium Quality CP Fittings
-					  </li>
-					  <li>Tiling till Beam Level in Toilet &amp; Bath Areas
-					  </li>
-					  <li>Branded Electrical Switches
-					  </li>
-					  <li>Granite Platform and SS Sink
-					  </li>
-					  <li>Modular Kitchen
-					  </li>
-					  <li>Concealed Wiring with Provision for Cable TV, Television Points &amp;
-						Internet
-					  </li>
-					  <li>Decorative Main Door
-					  </li>
-					  <li>Branded Sanitaryware
-					  </li>
-					  <li>Dado Wall Tiles in the Kitchen up to the Beam Bottom
-					  </li>
-					  <li>Powder-coated Aluminium Windows
-					  </li>
-					</ul>
-				  </div>
-				</div>
-			  </section>
-			</div>
-			<div class="col-lg-6 bg-light-2">
-			  <div class="section-slider-images container-fluid container-fluid_paddings container_px-md-0">
-				<div class="slider slider-images js-slider-images">
-				  <!-- slider HEADER -->
-				  <div class="slider-images__header">
-					<div class="row no-gutters justify-content-between">
-					  <div class="col-auto">
-						<div class="slider__counter slider__counter_mini">
-						  <div class="js-slider__counter-current swiper-container">
-							<div class="swiper-wrapper">
+		</div>
+		<!-- - header curtain AJAX transition -->
+		<!-- - TRANSITION CURTAINS -->
+		[[This-Is-Component title=&#039;Cursor&#039;]]
+		<!-- PAGE HEADER -->
+		[[This-Is-Component title=&#039;Header&#039;]]
+		<!-- - PAGE HEADER -->
+		<!-- PAGE MAIN -->
+		<div id="page-wrapper" data-barba="container" class="js-smooth-scroll bg-light-1">
+			<main class="page-wrapper__content">
+				<!-- section MASTHEAD BOTTOM FULLWIDTH -->
+				<section data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-3)"
+					class="section section-masthead pt-large text-center">
+					<div class="section-masthead__inner container-fluid">
+						<header class="row section-masthead__header justify-content-center">
+							<div class="col">
+								<div data-split-text-type="lines,words" data-split-text-set="words"
+									class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text">
+									<span>2016</span>
+								</div>
+								<div class="w-100">
+								</div>
+								<div data-split-text-type="lines,words" data-split-text-set="words"
+									class="section-masthead__heading split-text js-split-text">
+									<h1 class="h1 mt-0 mb-0">Jijai Angan
+									</h1>
+									<h4>Taloja, Panvel (Navi Mumbai)
+									</h4>
+								</div>
+								<div class="w-100">
+								</div>
+								<div class="section__headline mt-2 mx-auto">
+								</div>
 							</div>
-						  </div>
-						</div>
-					  </div>
-					  <div class="col-auto">
-						<div class="slider__total slider__total_mini js-slider__counter-total">I
-						</div>
-					  </div>
+						</header>
 					</div>
-				  </div>
-				  <!-- - slider HEADER -->
-				  <div data-drag-mouse="true" data-drag-cursor="true" data-drag-class="slider-images_touched" data-auto-height="true" data-slides-per-view="1" class="swiper-container js-slider-images__slider">
-					<div class="swiper-wrapper">
-					  <div class="swiper-slide overflow d-flex-centered text-center">
-						<div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%" class="w-100 h-100">
-						  <div class="slider__zoom-container w-100 h-100">
-							<img src="#" data-src="https://placehold.co/1280x1280.jpg" width="1280" height="1280" alt="" class="swiper-lazy"/>
-						  </div>
-						</div>
-					  </div>
-					  <div class="swiper-slide overflow d-flex-centered text-center">
-						<div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%" class="w-100 h-100">
-						  <div class="slider__zoom-container w-100 h-100">
-							<img src="#" data-src="https://placehold.co/1280x1280.jpg" width="1280" height="1280" alt="" class="swiper-lazy"/>
-						  </div>
-						</div>
-					  </div>
-					  <div class="swiper-slide overflow d-flex-centered text-center">
-						<div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%" class="w-100 h-100">
-						  <div class="slider__zoom-container w-100 h-100">
-							<img src="#" data-src="https://placehold.co/1280x1280.jpg" width="1280" height="1280" alt="" class="swiper-lazy"/>
-						  </div>
-						</div>
-					  </div>
-					</div>
-				  </div>
-				  <!-- slider FOOTER -->
-				  <div class="slider-images__footer">
-					<div class="row no-gutters justify-content-center">
-					  <div class="col-auto">
-						<!-- slider DOTS -->
-						<div class="slider__dots js-slider__dots">
-						  <div class="slider__dot slider__dot_active">
-							<svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
-							  <circle cx="30" cy="30" r="29" fill="none" class="circle">
-							  </circle>
-							</svg>
-						  </div>
-						  <div class="slider__dot">
-							<svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
-							  <circle cx="30" cy="30" r="29" fill="none" class="circle">
-							  </circle>
-							</svg>
-						  </div>
-						  <div class="slider__dot">
-							<svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
-							  <circle cx="30" cy="30" r="29" fill="none" class="circle">
-							  </circle>
-							</svg>
-						  </div>
-						  <div class="slider__dot">
-							<svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
-							  <circle cx="30" cy="30" r="29" fill="none" class="circle">
-							  </circle>
-							</svg>
-						  </div>
-						</div>
-						<!-- - slider DOTS -->
-					  </div>
-					</div>
-				  </div>
-				  <!-- - slider FOOTER -->
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		<!-- - sections CONTENT & IMAGE #1 -->
-		<!-- sections CONTENT & IMAGE #2 -->
-		<div class="container-fluid no-gutters">
-		  <div class="row no-gutters align-items-center">
-			<div class="col-lg-6 order-lg-2">
-			  <section data-arts-os-animation="data-arts-os-animation" class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings">
-				<div class="section-content__inner">
-				  <div class="w-100">
-				  </div>
-				  <div class="section__headline mb-1 mb-md-2">
-				  </div>
-				  <div class="w-100">
-				  </div>
-				  <div data-split-text-type="lines,words" data-split-text-set="words" class="section-content__heading split-text js-split-text">
-					<h2>Common Facilities
-					</h2>
-				  </div>
-				  <div class="w-100">
-				  </div>
-				  <div data-split-text-type="lines" data-split-text-set="lines" class="section-content__text split-text js-split-text mt-1">
-					<ul class="my-bullets">
-					  <li>Club House
-					  </li>
-					  <li>Jogging and Strolling Tracks
-					  </li>
-					  <li>Power Back-up
-					  </li>
-					  <li>Swimming Pool
-					  </li>
-					  <li>Lift
-					  </li>
-					  <li>Security
-					  </li>
-					  <li>Park
-					  </li>
-					  <li>Reserved Parking
-					  </li>
-					  <li>Service/Goods Lift
-					  </li>
-					  <li>Visitors Parking
-					  </li>
-					  <li>Intercom Facility
-					  </li>
-					  <li>Maintenance Staff
-					  </li>
-					</ul>
-				  </div>
-				</div>
-			  </section>
-			</div>
-			<div class="col-lg-6 order-lg-1 bg-light-2">
-			  <div class="section-slider-images container-fluid container-fluid_paddings container_px-md-0">
-				<div class="slider slider-images js-slider-images">
-				  <!-- slider HEADER -->
-				  <div class="slider-images__header">
-					<div class="row no-gutters justify-content-between">
-					  <div class="col-auto">
-						<div class="slider__counter slider__counter_mini">
-						  <div class="js-slider__counter-current swiper-container">
-							<div class="swiper-wrapper">
+					<div class="section-image section-masthead__background section section_h-900 mt-medium">
+						<div data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15"
+							class="section-image__wrapper js-transition-img">
+							<div class="js-transition-img__transformed-el">
+								<div data-src="https://placehold.co/1920X1280" class="lazy-bg">
+								</div>
 							</div>
-						  </div>
 						</div>
-					  </div>
-					  <div class="col-auto">
-						<div class="slider__total slider__total_mini js-slider__counter-total">I
-						</div>
-					  </div>
 					</div>
-				  </div>
-				  <!-- - slider HEADER -->
-				  <div data-drag-mouse="true" data-drag-cursor="true" data-drag-class="slider-images_touched" data-auto-height="true" data-slides-per-view="1" class="swiper-container js-slider-images__slider">
-					<div class="swiper-wrapper">
-					  <div class="swiper-slide overflow d-flex-centered text-center">
-						<div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%" class="w-100 h-100">
-						  <div class="slider__zoom-container w-100 h-100">
-							<img src="#" data-src="https://placehold.co/1280x1280.jpg" width="1280" height="1280" alt="" class="swiper-lazy"/>
-						  </div>
+				</section>
+				<!-- - section MASTHEAD BOTTOM FULLWIDTH -->
+				<!-- section PROPERTIES -->
+				<section class="section section-properties section-content pb-small bg-white">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-sm-6 section-properties__item mt-small">
+								<div data-split-text-type="lines,words" data-split-text-set="words"
+									class="figure-info split-text js-split-text">
+									<div class="figure-info__option small-caps">1 BHK
+									</div>
+									<div class="figure-info__value paragraph">680.0 Sq. Ft.
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-6 section-properties__item mt-small">
+								<div data-split-text-type="lines,words" data-split-text-set="words"
+									class="figure-info split-text js-split-text">
+									<div class="figure-info__option small-caps">2 BHK
+									</div>
+									<div class="figure-info__value paragraph">1080.0 Sq. Ft.
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-6 section-properties__item mt-small">
+								<div data-split-text-type="lines,words" data-split-text-set="words"
+									class="figure-info split-text js-split-text">
+									<div class="figure-info__option small-caps">Total Units
+									</div>
+									<div class="figure-info__value paragraph">266 Units spread over 2 acres
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-6 section-properties__item mt-small">
+								<div data-split-text-type="lines,words" data-split-text-set="words"
+									class="figure-info split-text js-split-text">
+									<div class="figure-info__option small-caps">Towers
+									</div>
+									<div class="figure-info__value paragraph">3
+									</div>
+								</div>
+							</div>
 						</div>
-					  </div>
-					  <div class="swiper-slide overflow d-flex-centered text-center">
-						<div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%" class="w-100 h-100">
-						  <div class="slider__zoom-container w-100 h-100">
-							<img src="#" data-src="https://placehold.co/1280x1280.jpg" width="1280" height="1280" alt="" class="swiper-lazy"/>
-						  </div>
-						</div>
-					  </div>
-					  <div class="swiper-slide overflow d-flex-centered text-center">
-						<div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%" class="w-100 h-100">
-						  <div class="slider__zoom-container w-100 h-100">
-							<img src="#" data-src="https://placehold.co/1280x1280.jpg" width="1280" height="1280" alt="" class="swiper-lazy"/>
-						  </div>
-						</div>
-					  </div>
 					</div>
-				  </div>
-				  <!-- slider FOOTER -->
-				  <div class="slider-images__footer">
-					<div class="row no-gutters justify-content-center">
-					  <div class="col-auto">
-						<!-- slider DOTS -->
-						<div class="slider__dots js-slider__dots">
-						  <div class="slider__dot slider__dot_active">
-							<svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
-							  <circle cx="30" cy="30" r="29" fill="none" class="circle">
-							  </circle>
-							</svg>
-						  </div>
-						  <div class="slider__dot">
-							<svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
-							  <circle cx="30" cy="30" r="29" fill="none" class="circle">
-							  </circle>
-							</svg>
-						  </div>
-						  <div class="slider__dot">
-							<svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
-							  <circle cx="30" cy="30" r="29" fill="none" class="circle">
-							  </circle>
-							</svg>
-						  </div>
-						  <div class="slider__dot">
-							<svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
-							  <circle cx="30" cy="30" r="29" fill="none" class="circle">
-							  </circle>
-							</svg>
-						  </div>
+				</section>
+				<!-- - section PROPERTIES -->
+				<!-- section CONTENT #1 -->
+				<!-- - section CONTENT #1 -->
+				<!-- Property Details 2 -->
+				<div class="section bg-light-2">
+					<section class="section section-demo section_w-container-left text-left">
+						<div class="container-fluid section-demo__container-right">
+							<div class="row align-items-center">
+								<div class="col-lg-6 offset-lg-6">
+									<div class="section-demo__content pt-medium pb-medium">
+										<section data-arts-os-animation="data-arts-os-animation"
+											class="section section-content clearfix">
+											<div class="section-content__inner">
+												<div class="w-100">
+												</div>
+												<div class="section__headline mb-1 mb-md-2 mr-auto">
+												</div>
+												<div class="w-100">
+												</div>
+												<div data-split-text-type="lines,words" data-split-text-set="words"
+													class="section-content__heading split-text js-split-text">
+													<h3>A courtyard for the family man of today
+													</h3>
+												</div>
+												<div class="w-100">
+												</div>
+												<div data-split-text-type="lines" data-split-text-set="lines"
+													class="section-content__text split-text js-split-text mt-1">
+													<p>A house which can afford your taste in style with a lifestyle you
+														have always wanted. Here, at Taloja, Shubhan Builders and
+														Developers brought you the iconic Jijai Angan. Amenities here
+														only talk about comfort and nothing else. Come here, kick your
+														shoes out and relax while we make your time with us soothing and
+														enjoyable. With a total of 266 units spread over 2 acres of land
+														with houses ranging from 680 sqft for 1 BHK to 1080 sqft for
+														2BHK we help you cherish your time with your family. A promise
+														once made, is our command.
+													</p>
+												</div>
+											</div>
+										</section>
+										<aside class="aside aside-counters section">
+											<div class="container no-gutters">
+												<div class="row justify-content-center">
+													<!-- counter -->
+													<div class="aside-counters__wrapper-item col-6 mt-small">
+														<div data-counter-start="0" data-counter-target="266"
+															data-counter-duration="4" class="counter js-counter">
+															<!-- animated number -->
+															<div class="counter__number js-counter__number">266
+															</div>
+															<!-- - animated number -->
+															<div class="counter__label">Total Units
+															</div>
+														</div>
+													</div>
+													<!-- - counter -->
+													<!-- counter -->
+													<div class="aside-counters__wrapper-item col-6 mt-small">
+														<div data-counter-start="0" data-counter-target="2"
+															data-counter-duration="4" class="counter js-counter">
+															<!-- animated number -->
+															<div class="counter__number js-counter__number">2
+															</div>
+															<!-- - animated number -->
+															<div class="counter__label">Acres of Land
+															</div>
+														</div>
+													</div>
+													<!-- - counter -->
+												</div>
+											</div>
+										</aside>
+										<div class="mt-small d-lg-none">
+											<a data-hover="Explore Pages" href="javascript:void(0)"
+												class="button button_bordered button_black"><span
+													class="button__label-hover">Jijai Angan</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<!-- - slider DOTS -->
-					  </div>
+					</section>
+					<div data-arts-parallax="" data-arts-parallax-factor="0.3"
+						class="section-demo__bg section-demo__bg_wide section-demo__bg_left bg-white">
+						<div>
+							<div data-src="https://placehold.co/1800X1440" class="lazy-bg">
+							</div>
+						</div>
 					</div>
-				  </div>
-				  <!-- - slider FOOTER -->
+					<div class="section-demo__wrapper-button section-demo__wrapper-button_left d-none d-lg-flex">
+						<a data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true"
+							data-arts-cursor-scale="0" data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+							data-arts-cursor-icon="add" href="javascript:void(0)" data-arts-os-animation="true"
+							class="circle-button circle-button_link js-circle-button"><!-- curved label -->
+							<div class="circle-button__outer">
+								<div class="circle-button__wrapper-label">
+									<div class="circle-button__label small-caps">Jijai Angan
+									</div>
+								</div>
+							</div><!-- - curved label --><!-- geometry wrapper -->
+							<div class="circle-button__inner">
+								<div class="circle-button__circle">
+									<svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
+										<circle cx="30" cy="30" r="29" fill="none" class="circle">
+										</circle>
+									</svg>
+								</div>
+								<!-- browsers with touch support -->
+								<div class="circle-button__icon circle-button__icon-touch">
+									<div class="material-icons">add
+									</div>
+								</div>
+								<!-- - browsers with touch support -->
+							</div><!-- - geometry wrapper -->
+						</a>
+					</div>
 				</div>
-			  </div>
-			</div>
-		  </div>
+				<!-- Property Details 2 End -->
+				<!-- section IMAGES -->
+				<section class="section section-slider-images pb-small">
+					<div class="row pt-small pb-small">
+						<div class="col">
+							<section data-arts-os-animation="data-arts-os-animation"
+								class="section section-content clearfix text-center">
+								<div class="section-content__inner">
+									<div class="w-100">
+									</div>
+									<div class="section__headline mb-1 mb-md-2 mx-auto">
+									</div>
+									<div class="w-100">
+									</div>
+									<div data-split-text-type="lines,words" data-split-text-set="words"
+										class="section-content__heading split-text js-split-text">
+										<h2>Gallery
+										</h2>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div class="slider slider-images js-slider-images">
+						<div data-drag-mouse="true" data-drag-cursor="true" data-drag-class="slider-images_touched"
+							data-auto-height="true" data-slides-per-view="1.5"
+							data-centered-slides="data-centered-slides" data-space-between="120"
+							class="swiper-container js-slider-images__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide overflow d-flex-centered text-center">
+									<div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%" class="w-100 h-100">
+										<div class="slider__zoom-container w-100 h-100">
+											<img src="#" data-src="https://placehold.co/1600x900.jpg" width="1120"
+												height="700" alt="" class="swiper-lazy" />
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide overflow d-flex-centered text-center">
+									<div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%" class="w-100 h-100">
+										<div class="slider__zoom-container w-100 h-100">
+											<img src="#" data-src="https://placehold.co/1600x900.jpg" width="1120"
+												height="700" alt="" class="swiper-lazy" />
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide overflow d-flex-centered text-center">
+									<div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%" class="w-100 h-100">
+										<div class="slider__zoom-container w-100 h-100">
+											<img src="#" data-src="https://placehold.co/1600x900.jpg" width="1120"
+												height="700" alt="" class="swiper-lazy" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- slider FOOTER -->
+						<div class="slider-images__footer">
+							<div class="row no-gutters justify-content-center">
+								<div class="col-auto">
+									<!-- slider DOTS -->
+									<div class="slider__dots js-slider__dots">
+										<div class="slider__dot slider__dot_active">
+											<svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
+												<circle cx="30" cy="30" r="29" fill="none" class="circle">
+												</circle>
+											</svg>
+										</div>
+										<div class="slider__dot">
+											<svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
+												<circle cx="30" cy="30" r="29" fill="none" class="circle">
+												</circle>
+											</svg>
+										</div>
+										<div class="slider__dot">
+											<svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
+												<circle cx="30" cy="30" r="29" fill="none" class="circle">
+												</circle>
+											</svg>
+										</div>
+										<div class="slider__dot">
+											<svg viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-circle">
+												<circle cx="30" cy="30" r="29" fill="none" class="circle">
+												</circle>
+											</svg>
+										</div>
+									</div>
+									<!-- - slider DOTS -->
+								</div>
+							</div>
+						</div>
+						<!-- - slider FOOTER -->
+					</div>
+				</section>
+				<!-- - section IMAGES -->
+				<!-- sections CONTENT & IMAGE #1 -->
+				<div class="container-fluid no-gutters">
+					<div class="row pt-small bg-light-2 pb-small">
+						<div class="col">
+							<section data-arts-os-animation="data-arts-os-animation"
+								class="section section-content clearfix text-center">
+								<div class="section-content__inner">
+									<div class="w-100">
+									</div>
+									<div class="section__headline mb-1 mb-md-2 mx-auto">
+									</div>
+									<div class="w-100">
+									</div>
+									<div data-split-text-type="lines,words" data-split-text-set="words"
+										class="section-content__heading split-text js-split-text">
+										<h2>Highlights and Amenities
+										</h2>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div class="row no-gutters align-items-center">
+						<div class="col-lg-6">
+							<section data-arts-os-animation="data-arts-os-animation"
+								class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings">
+								<div class="section-content__inner">
+									<div class="w-100">
+									</div>
+									<div class="section__headline mb-1 mb-md-2">
+									</div>
+									<div class="w-100">
+									</div>
+									<div data-split-text-type="lines,words" data-split-text-set="words"
+										class="section-content__heading split-text js-split-text">
+										<h2>Amenities
+										</h2>
+									</div>
+									<div class="w-100">
+									</div>
+									<div data-split-text-type="lines" data-split-text-set="lines"
+										class="section-content__text split-text js-split-text mt-1">
+										<ul class="my-bullets">
+											<li>Vitrified Flooring in Flats
+											</li>
+											<li>Premium Quality CP Fittings
+											</li>
+											<li>Tiling till Beam Level in Toilet &amp; Bath Areas
+											</li>
+											<li>Branded Electrical Switches
+											</li>
+											<li>Granite Platform and SS Sink
+											</li>
+											<li>Modular Kitchen
+											</li>
+											<li>Concealed Wiring with Provision for Cable TV, Television Points &amp;
+												Internet
+											</li>
+											<li>Decorative Main Door
+											</li>
+											<li>Branded Sanitaryware
+											</li>
+											<li>Dado Wall Tiles in the Kitchen up to the Beam Bottom
+											</li>
+											<li>Powder-coated Aluminium Windows
+											</li>
+										</ul>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="col-lg-6 bg-light-2">
+							<div
+								class="section-slider-images container-fluid container-fluid_paddings container_px-md-0">
+								<div class="slider slider-images js-slider-images">
+									<!-- slider HEADER -->
+									<div class="slider-images__header">
+										<div class="row no-gutters justify-content-between">
+											<div class="col-auto">
+												<div class="slider__counter slider__counter_mini">
+													<div class="js-slider__counter-current swiper-container">
+														<div class="swiper-wrapper">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-auto">
+												<div class="slider__total slider__total_mini js-slider__counter-total">I
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- - slider HEADER -->
+									<div data-drag-mouse="true" data-drag-cursor="true"
+										data-drag-class="slider-images_touched" data-auto-height="true"
+										data-slides-per-view="1" class="swiper-container js-slider-images__slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide overflow d-flex-centered text-center">
+												<div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%"
+													class="w-100 h-100">
+													<div class="slider__zoom-container w-100 h-100">
+														<img src="#" data-src="https://placehold.co/1280x1280.jpg"
+															width="1280" height="1280" alt="" class="swiper-lazy" />
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide overflow d-flex-centered text-center">
+												<div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%"
+													class="w-100 h-100">
+													<div class="slider__zoom-container w-100 h-100">
+														<img src="#" data-src="https://placehold.co/1280x1280.jpg"
+															width="1280" height="1280" alt="" class="swiper-lazy" />
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide overflow d-flex-centered text-center">
+												<div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%"
+													class="w-100 h-100">
+													<div class="slider__zoom-container w-100 h-100">
+														<img src="#" data-src="https://placehold.co/1280x1280.jpg"
+															width="1280" height="1280" alt="" class="swiper-lazy" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- slider FOOTER -->
+									<div class="slider-images__footer">
+										<div class="row no-gutters justify-content-center">
+											<div class="col-auto">
+												<!-- slider DOTS -->
+												<div class="slider__dots js-slider__dots">
+													<div class="slider__dot slider__dot_active">
+														<svg viewBox="0 0 60 60" version="1.1"
+															xmlns="http://www.w3.org/2000/svg"
+															xmlns:xlink="http://www.w3.org/1999/xlink"
+															class="svg-circle">
+															<circle cx="30" cy="30" r="29" fill="none" class="circle">
+															</circle>
+														</svg>
+													</div>
+													<div class="slider__dot">
+														<svg viewBox="0 0 60 60" version="1.1"
+															xmlns="http://www.w3.org/2000/svg"
+															xmlns:xlink="http://www.w3.org/1999/xlink"
+															class="svg-circle">
+															<circle cx="30" cy="30" r="29" fill="none" class="circle">
+															</circle>
+														</svg>
+													</div>
+													<div class="slider__dot">
+														<svg viewBox="0 0 60 60" version="1.1"
+															xmlns="http://www.w3.org/2000/svg"
+															xmlns:xlink="http://www.w3.org/1999/xlink"
+															class="svg-circle">
+															<circle cx="30" cy="30" r="29" fill="none" class="circle">
+															</circle>
+														</svg>
+													</div>
+													<div class="slider__dot">
+														<svg viewBox="0 0 60 60" version="1.1"
+															xmlns="http://www.w3.org/2000/svg"
+															xmlns:xlink="http://www.w3.org/1999/xlink"
+															class="svg-circle">
+															<circle cx="30" cy="30" r="29" fill="none" class="circle">
+															</circle>
+														</svg>
+													</div>
+												</div>
+												<!-- - slider DOTS -->
+											</div>
+										</div>
+									</div>
+									<!-- - slider FOOTER -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- - sections CONTENT & IMAGE #1 -->
+				<!-- sections CONTENT & IMAGE #2 -->
+				<div class="container-fluid no-gutters">
+					<div class="row no-gutters align-items-center">
+						<div class="col-lg-6 order-lg-2">
+							<section data-arts-os-animation="data-arts-os-animation"
+								class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings">
+								<div class="section-content__inner">
+									<div class="w-100">
+									</div>
+									<div class="section__headline mb-1 mb-md-2">
+									</div>
+									<div class="w-100">
+									</div>
+									<div data-split-text-type="lines,words" data-split-text-set="words"
+										class="section-content__heading split-text js-split-text">
+										<h2>Common Facilities
+										</h2>
+									</div>
+									<div class="w-100">
+									</div>
+									<div data-split-text-type="lines" data-split-text-set="lines"
+										class="section-content__text split-text js-split-text mt-1">
+										<ul class="my-bullets">
+											<li>Club House
+											</li>
+											<li>Jogging and Strolling Tracks
+											</li>
+											<li>Power Back-up
+											</li>
+											<li>Swimming Pool
+											</li>
+											<li>Lift
+											</li>
+											<li>Security
+											</li>
+											<li>Park
+											</li>
+											<li>Reserved Parking
+											</li>
+											<li>Service/Goods Lift
+											</li>
+											<li>Visitors Parking
+											</li>
+											<li>Intercom Facility
+											</li>
+											<li>Maintenance Staff
+											</li>
+										</ul>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="col-lg-6 order-lg-1 bg-light-2">
+							<div
+								class="section-slider-images container-fluid container-fluid_paddings container_px-md-0">
+								<div class="slider slider-images js-slider-images">
+									<!-- slider HEADER -->
+									<div class="slider-images__header">
+										<div class="row no-gutters justify-content-between">
+											<div class="col-auto">
+												<div class="slider__counter slider__counter_mini">
+													<div class="js-slider__counter-current swiper-container">
+														<div class="swiper-wrapper">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-auto">
+												<div class="slider__total slider__total_mini js-slider__counter-total">I
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- - slider HEADER -->
+									<div data-drag-mouse="true" data-drag-cursor="true"
+										data-drag-class="slider-images_touched" data-auto-height="true"
+										data-slides-per-view="1" class="swiper-container js-slider-images__slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide overflow d-flex-centered text-center">
+												<div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%"
+													class="w-100 h-100">
+													<div class="slider__zoom-container w-100 h-100">
+														<img src="#" data-src="https://placehold.co/1280x1280.jpg"
+															width="1280" height="1280" alt="" class="swiper-lazy" />
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide overflow d-flex-centered text-center">
+												<div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%"
+													class="w-100 h-100">
+													<div class="slider__zoom-container w-100 h-100">
+														<img src="#" data-src="https://placehold.co/1280x1280.jpg"
+															width="1280" height="1280" alt="" class="swiper-lazy" />
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide overflow d-flex-centered text-center">
+												<div data-swiper-parallax="10%" data-swiper-parallax-zoom="10%"
+													class="w-100 h-100">
+													<div class="slider__zoom-container w-100 h-100">
+														<img src="#" data-src="https://placehold.co/1280x1280.jpg"
+															width="1280" height="1280" alt="" class="swiper-lazy" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- slider FOOTER -->
+									<div class="slider-images__footer">
+										<div class="row no-gutters justify-content-center">
+											<div class="col-auto">
+												<!-- slider DOTS -->
+												<div class="slider__dots js-slider__dots">
+													<div class="slider__dot slider__dot_active">
+														<svg viewBox="0 0 60 60" version="1.1"
+															xmlns="http://www.w3.org/2000/svg"
+															xmlns:xlink="http://www.w3.org/1999/xlink"
+															class="svg-circle">
+															<circle cx="30" cy="30" r="29" fill="none" class="circle">
+															</circle>
+														</svg>
+													</div>
+													<div class="slider__dot">
+														<svg viewBox="0 0 60 60" version="1.1"
+															xmlns="http://www.w3.org/2000/svg"
+															xmlns:xlink="http://www.w3.org/1999/xlink"
+															class="svg-circle">
+															<circle cx="30" cy="30" r="29" fill="none" class="circle">
+															</circle>
+														</svg>
+													</div>
+													<div class="slider__dot">
+														<svg viewBox="0 0 60 60" version="1.1"
+															xmlns="http://www.w3.org/2000/svg"
+															xmlns:xlink="http://www.w3.org/1999/xlink"
+															class="svg-circle">
+															<circle cx="30" cy="30" r="29" fill="none" class="circle">
+															</circle>
+														</svg>
+													</div>
+													<div class="slider__dot">
+														<svg viewBox="0 0 60 60" version="1.1"
+															xmlns="http://www.w3.org/2000/svg"
+															xmlns:xlink="http://www.w3.org/1999/xlink"
+															class="svg-circle">
+															<circle cx="30" cy="30" r="29" fill="none" class="circle">
+															</circle>
+														</svg>
+													</div>
+												</div>
+												<!-- - slider DOTS -->
+											</div>
+										</div>
+									</div>
+									<!-- - slider FOOTER -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- - sections CONTENT & IMAGE #2 -->
+				<!-- section VIDEO -->
+				<section data-arts-os-animation="data-arts-os-animation" data-grid-columns="1" data-grid-tablet="1"
+					data-grid-mobile="1" data-arts-theme-text="light"
+					class="section section-video section-content section-image js-gallery section-offset offset_bottom container-fluid bg-dark-2 pt-medium mb-medium">
+					<div class="section-offset__content">
+						<header class="section-video__header text-center pb-small">
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-lg-8">
+										<div class="section__headline mb-1 mb-md-2 mx-auto">
+										</div>
+										<div class="w-100">
+										</div>
+										<div data-split-text-type="lines" data-split-text-set="lines"
+											class="section-content__heading split-text js-split-text">
+											<h2>Commercial Reel
+											</h2>
+										</div>
+									</div>
+								</div>
+							</div>
+						</header>
+						<div class="section-video__container section section_h-700 section-content__image">
+							<a href="https://www.youtube.com/watch?v=2d1VrCvdzbY" data-autoplay="data-autoplay"
+								class="section-video__link">
+								<div data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="0"
+									data-arts-cursor-label="Play" data-arts-cursor-hide-native="true"
+									data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+									class="section-video__link-inner">
+									<div class="section-video__icon material-icons">play_arrow
+									</div>
+								</div>
+							</a>
+							<div class="section__bg">
+								<div data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15"
+									class="section-image__wrapper">
+									<div>
+										<div data-src="https://shubhamgroups.in//frontend/shubham/assets/img/assets/project6/img-6-5.jpg"
+											class="lazy-bg">
+										</div>
+									</div>
+								</div>
+								<div class="overlay overlay_dark">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- - section VIDEO -->
+				<!-- Contact form -->
+				<div class="container-fluid container_px-xs-0">
+					<section data-arts-os-animation="data-arts-os-animation"
+						class="section bg-white mt-small section-contacts section-properties section-content">
+						<div class="container-fluid no-gutters">
+							<div class="row no-gutters">
+								<div class="col-lg col-12">
+									<div class="bg-white d-flex flex-column container-fluid py-md-3 py-1">
+										<div class="section-properties__item my-2">
+											<div data-split-text-type="lines,words" data-split-text-set="words"
+												class="figure-info split-text js-split-text">
+												<div class="figure-info__option small-caps">Office
+												</div>
+												<div class="figure-info__value paragraph">707, Parth Solitaire, Sec-9E,
+													<br /> Kalamboli, Navi Mumbai,
+													<br />Maharashtra - 410218
+												</div>
+											</div>
+										</div>
+										<div class="section-properties__item my-2">
+											<div data-split-text-type="lines,words" data-split-text-set="words"
+												class="figure-info split-text js-split-text">
+												<div class="figure-info__option small-caps">Want to Talk?
+												</div>
+												<div class="figure-info__value paragraph">
+													<a href="mailto:reply@shubhamgroups.in">reply@shubhamgroups.in</a>
+													<a href="tel:9321736091">+ 91 9321736091</a>
+													<a href="tel:9867667394">+ 91 9867667394</a>
+												</div>
+											</div>
+										</div>
+										<div class="section-properties__item my-2">
+											<div data-split-text-type="lines,words" data-split-text-set="words"
+												class="figure-info split-text js-split-text">
+												<div class="figure-info__option small-caps">Social Media
+												</div>
+												<ul class="social">
+													<li class="social__item">
+														<a href="#" class="fa fa-facebook-f"></a>
+													</li>
+													<li class="social__item">
+														<a href="#" class="fa fa-twitter"></a>
+													</li>
+													<li class="social__item">
+														<a href="#" class="fa fa-instagram"></a>
+													</li>
+													<li class="social__item">
+														<a href="#" class="fa fa-behance"></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg col-12">
+									<section class="section section-form">
+										[[This-Is-Contact-Form purpose=jijai_angan]]
+									</section>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<!-- Contact form end -->
+			</main>
+			<!-- PAGE FOOTER -->
+			[[This-Is-Component title=&#039;Footer&#039;]]
+			<!-- - PAGE FOOTER -->
 		</div>
-		<!-- - sections CONTENT & IMAGE #2 -->
-		<!-- section VIDEO -->
-		<section data-arts-os-animation="data-arts-os-animation" data-grid-columns="1" data-grid-tablet="1" data-grid-mobile="1" data-arts-theme-text="light" class="section section-video section-content section-image js-gallery section-offset offset_bottom container-fluid bg-dark-2 pt-medium mb-medium">
-		  <div class="section-offset__content">
-			<header class="section-video__header text-center pb-small">
-			  <div class="container">
-				<div class="row justify-content-center">
-				  <div class="col-lg-8">
-					<div class="section__headline mb-1 mb-md-2 mx-auto">
-					</div>
-					<div class="w-100">
-					</div>
-					<div data-split-text-type="lines" data-split-text-set="lines" class="section-content__heading split-text js-split-text">
-					  <h2>Commercial Reel
-					  </h2>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			</header>
-			<div class="section-video__container section section_h-700 section-content__image">
-			  <a href="https://www.youtube.com/watch?v=2d1VrCvdzbY" data-autoplay="data-autoplay" class="section-video__link"><div data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="0" data-arts-cursor-label="Play" data-arts-cursor-hide-native="true" data-arts-cursor-magnetic="data-arts-cursor-magnetic" class="section-video__link-inner">
-				<div class="section-video__icon material-icons">play_arrow
-				</div>
-				</div></a>
-			  <div class="section__bg">
-				<div data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15" class="section-image__wrapper">
-				  <div>
-					<div data-src="https://shubhamgroups.in//frontend/shubham/assets/img/assets/project6/img-6-5.jpg" class="lazy-bg">
-					</div>
-				  </div>
-				</div>
-				<div class="overlay overlay_dark">
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</section>
-		<!-- - section VIDEO -->
-		<!-- Contact form -->
-		<div class="container-fluid container_px-xs-0">
-		  <section data-arts-os-animation="data-arts-os-animation" class="section bg-white mt-small section-contacts section-properties section-content">
-			<div class="container-fluid no-gutters">
-			  <div class="row no-gutters">
-				<div class="col-lg col-12">
-				  <div class="bg-white d-flex flex-column container-fluid py-md-3 py-1">
-					<div class="section-properties__item my-2">
-					  <div data-split-text-type="lines,words" data-split-text-set="words" class="figure-info split-text js-split-text">
-						<div class="figure-info__option small-caps">Office
-						</div>
-						<div class="figure-info__value paragraph">707, Parth Solitaire, Sec-9E,
-						  <br/> Kalamboli, Navi Mumbai,
-						  <br/>Maharashtra - 410218
-						</div>
-					  </div>
-					</div>
-					<div class="section-properties__item my-2">
-					  <div data-split-text-type="lines,words" data-split-text-set="words" class="figure-info split-text js-split-text">
-						<div class="figure-info__option small-caps">Want to Talk?
-						</div>
-						<div class="figure-info__value paragraph">
-						  <a href="mailto:reply@shubhamgroups.in">reply@shubhamgroups.in</a>
-						  <br/>+91 84229996971
-						  <br/>
-						</div>
-					  </div>
-					</div>
-					<div class="section-properties__item my-2">
-					  <div data-split-text-type="lines,words" data-split-text-set="words" class="figure-info split-text js-split-text">
-						<div class="figure-info__option small-caps">Social Media
-						</div>
-						<ul class="social">
-						  <li class="social__item">
-							<a href="#" class="fa fa-facebook-f"></a>
-						  </li>
-						  <li class="social__item">
-							<a href="#" class="fa fa-twitter"></a>
-						  </li>
-						  <li class="social__item">
-							<a href="#" class="fa fa-instagram"></a>
-						  </li>
-						  <li class="social__item">
-							<a href="#" class="fa fa-behance"></a>
-						  </li>
-						</ul>
-					  </div>
-					</div>
-				  </div>
-				</div>
-				<div class="col-lg col-12">
-				  <section class="section section-form">
-					[[This-Is-Contact-Form purpose=jijai_angan]]
-				  </section>
-				</div>
-			  </div>
-			</div>
-		  </section>
-		</div>
-		<!-- Contact form end -->
-	  </main>
-	  <!-- PAGE FOOTER -->
-	  [[This-Is-Component title=&#039;Footer&#039;]]
-	  <!-- - PAGE FOOTER -->
+		<!-- - PAGE MAIN -->
 	</div>
-	<!-- - PAGE MAIN -->
-  </div> 
-  [[This-Is-Jijai-Shader]]
-  [[This-Is-Asset-Loader style=jijai]]
+	[[This-Is-Jijai-Shader]]
+	[[This-Is-Asset-Loader style=jijai]]
 </body>
